@@ -3,7 +3,7 @@
 import numpy as np
 np.random.seed(4)
 import pandas as pd
-import matplotlib
+import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from matplotlib.figure import Figure
 import tkinter as tk
@@ -46,10 +46,10 @@ class Application(tk.Frame):
 
         ttk.Label(self.parent, text="Carga archivo .xlsx o .csv").grid(row=0)
 
-        lf = ttk.Labelframe(self.parent, text='Ventas')
-        lf.grid(row=1, column=0, sticky='nwes', padx=3, pady=3)
+        self.lf = ttk.Labelframe(self.parent, text='Ventas')
+        self.lf.grid(row=1, column=0, sticky='nwes', padx=3, pady=3)
 
-
+        '''
         t = np.arange(0.0,3.0,0.01)
         df = pd.DataFrame({'t':t, 's':((2*t/3)*np.pi+120)})
 
@@ -61,11 +61,16 @@ class Application(tk.Frame):
         self.canvas = FigureCanvasTkAgg(fig, master=lf)
         self.canvas.draw()
         self.canvas.get_tk_widget().grid(row=0, column=0)
-
+        '''
 
     def graficar_predicciones(real, prediccion):
-        plt.plot(real[0:len(prediccion)],color='red', label='Valor real de la acción')
-        plt.plot(prediccion, color='blue', label='Predicción de la acción')
+        
+        
+        #fig = Figure(figsize=(5,4), dpi=100)
+        
+        
+        plt.plot(real[0:len(prediccion)],color='red', label='Valor real')
+        plt.plot(prediccion, color='blue', label='Predicción')
         plt.ylim(1.1 * np.min(prediccion)/2, 1.1 * np.max(prediccion))
         plt.xlabel('Tiempo')
         plt.ylabel('Valor de la acción')
