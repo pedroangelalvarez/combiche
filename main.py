@@ -10,6 +10,7 @@ import tkinter as tk
 from tkinter.filedialog import askopenfilename
 from tkinter.messagebox import showerror
 from tkinter import ttk
+from tkinter import StringVar
 
 from sklearn.preprocessing import MinMaxScaler
 from keras.models import Sequential
@@ -43,8 +44,12 @@ class Application(tk.Frame):
         self.menubar.add_cascade(label = "Ayuda", menu = self.helpmenu)
 
         self.parent.config(menu = self.menubar)
+        
+        self.text1 = StringVar()
+        self.text1.set('Cargar archivo .xlsx o .csv')
 
-        ttk.Label(self.parent, text="Carga archivo .xlsx o .csv").grid(row=0)
+        self.texto1 = ttk.Label(self.parent, textvariable=self.text1)
+        self.texto1.grid(row=0)
 
         self.lf = ttk.Labelframe(self.parent, text='Ventas')
         self.lf.grid(row=1, column=0, sticky='nwes', padx=3, pady=3)
@@ -63,19 +68,22 @@ class Application(tk.Frame):
         self.canvas.get_tk_widget().grid(row=0, column=0)
         '''
 
-    def graficar_predicciones(real, prediccion):
+    def graficar_predicciones(self, real, prediccion):
         
         
         #fig = Figure(figsize=(5,4), dpi=100)
-        
-        
+
+        fig = plt.figure(figsize=(4, 5))
         plt.plot(real[0:len(prediccion)],color='red', label='Valor real')
         plt.plot(prediccion, color='blue', label='Predicción')
         plt.ylim(1.1 * np.min(prediccion)/2, 1.1 * np.max(prediccion))
         plt.xlabel('Tiempo')
-        plt.ylabel('Valor de la acción')
+        plt.ylabel('Ingresos')
         plt.legend()
-        plt.show()
+        #plt.show()
+        canvas = FigureCanvasTkAgg(fig, master=self.lf)
+        canvas.draw()
+        canvas.get_tk_widget().grid(row=1, column=1)
 
     def selectFile(self):
         fname = askopenfilename(filetypes=(("Archivo Dataset", "*.csv"),
@@ -83,7 +91,7 @@ class Application(tk.Frame):
                                            ("Todos los archivos", "*.*") ))
         if fname:
             try:
-                print(fname)
+                self.text1.set(fname)
                 self.fileSelect = fname
             except:
                 print("")
@@ -98,8 +106,14 @@ class Application(tk.Frame):
 
         set_entrenamiento['High'].plot(legend=True)
         set_validacion['High'].plot(legend=True)
+
+        fig = plt.figure(figsize=(5, 5))
+        plt.plot(set_entrenamiento['High'])
+        plt.plot(set_validacion['High'])
         plt.legend(['Entrenamiento (2006-2016)', 'Validación (2017)'])
-        plt.show()
+        canvas = FigureCanvasTkAgg(fig, master=self.lf)
+        canvas.draw()
+        canvas.get_tk_widget().grid(row=1, column=0)
 
         sc = MinMaxScaler(feature_range=(0,1))
         set_entrenamiento_escalado = sc.fit_transform(set_entrenamiento)
@@ -137,7 +151,7 @@ class Application(tk.Frame):
         prediccion = modelo.predict(X_test)
         prediccion = sc.inverse_transform(prediccion)
 
-        graficar_predicciones(set_validacion.values,prediccion)
+        self.graficar_predicciones(set_validacion.values,prediccion)
 
 
 
