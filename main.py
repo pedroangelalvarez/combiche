@@ -101,16 +101,16 @@ class Application(tk.Frame):
         print("archivo a entrenar: "+self.fileSelect)
         dataset = pd.read_csv(self.fileSelect, index_col='Date', parse_dates=['Date'])
         dataset.head()
-        set_entrenamiento = dataset[:'2016'].iloc[:,1:2]
-        set_validacion = dataset['2017':].iloc[:,1:2]
+        set_entrenamiento = dataset[:'2019'].iloc[:,0:1]
+        set_validacion = dataset['2020'].iloc[:,0:1]
 
-        set_entrenamiento['High'].plot(legend=True)
-        set_validacion['High'].plot(legend=True)
+        set_entrenamiento['Cantidad'].plot(legend=True)
+        set_validacion['Cantidad'].plot(legend=True)
 
         fig = plt.figure(figsize=(5, 5))
-        plt.plot(set_entrenamiento['High'])
-        plt.plot(set_validacion['High'])
-        plt.legend(['Entrenamiento (2006-2016)', 'Validación (2017)'])
+        plt.plot(set_entrenamiento['Cantidad'])
+        plt.plot(set_validacion['Cantidad'])
+        plt.legend(['Entrenamiento (2018-2019)', 'Validación (2020)'])
         canvas = FigureCanvasTkAgg(fig, master=self.lf)
         canvas.draw()
         canvas.get_tk_widget().grid(row=1, column=0)
@@ -158,5 +158,6 @@ class Application(tk.Frame):
 
 if __name__ == "__main__":
     root = tk.Tk()
+    root.geometry("800x500")
     Application(root)#.pack(side="top", fill="both", expand=True)
     root.mainloop()
