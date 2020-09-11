@@ -16,22 +16,22 @@ datos = []
 for i in range(1,len(data)):
     datos.append(str(data[i][0]))
 
-start_date = date(2018, 1, 2)
-end_date = date(2019, 12, 31)
+start_date = date(2018, 1, 1)
+end_date = date(2020, 9, 4)
 cont = 0
-ant=0
 cati=""
 for single_date in daterange(start_date, end_date):
     cati+=str(single_date.strftime("%Y-%m-%d"))
     cati+=str(",")
     if str(single_date.strftime("%Y-%m-%d")) in datos:
         cont+=1
-        cati+=str(data[cont][1])
-        ant = data[cont][1]
+        cati+=str(data[cont][1])+","
     else:
-        cati+=str(ant)
+        cati+=str("0,")
+    cati+=str(single_date.weekday())+","
+    cati+=str(single_date.strftime("%m"))
     cati+="\n"
-f= open("dataument.csv","w+")
+f= open("datafinal.csv","w+")
 print(cati)
 f.write(cati)
 f.close()
