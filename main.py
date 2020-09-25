@@ -3,14 +3,14 @@
 '''
 import numpy as np
 np.random.seed(4)
-import pandas as pd
-import matplotlib.pyplot as plt
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-from matplotlib.figure import Figure
 from sklearn.preprocessing import MinMaxScaler
 from keras.models import Sequential
 from keras.layers import Dense, LSTM
 '''
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+from matplotlib.figure import Figure
+
 import pandas as pd
 import numpy as np
 import matplotlib.pylab as plt
@@ -88,11 +88,11 @@ class Application(tk.Frame):
         self.cal1 = DateEntry(self.parent,dateformat=3,width=12, background='darkblue',foreground='white', borderwidth=4,year =2020,month=2,day=15)
         self.cal1.grid(row=1, column=1)
 
-        self.cal2 = DateEntry(self.parent,dateformat=3,width=12, background='darkblue',foreground='white', borderwidth=4,yeaar =2020,month=2,day=29)
-        self.cal2.grid(row=1, column=2)
+        #self.cal2 = DateEntry(self.parent,dateformat=3,width=12, background='darkblue',foreground='white', borderwidth=4,yeaar =2020,month=2,day=29)
+        #self.cal2.grid(row=1, column=2)
 
         self.butInter = Button(self.parent, text ="Predecir", command = self.graficar_predicciones)
-        self.butInter.grid(row=1, column=3)
+        self.butInter.grid(row=1, column=2)
 
         self.lf = ttk.Labelframe(self.parent, text='Ventas')
         self.lf.grid(row=2, column=0, sticky='nwes', padx=3, pady=3)
@@ -150,8 +150,8 @@ class Application(tk.Frame):
         '''
         ##INTERPRETACION
         PASOS = 7
-        fechaIni = str(self.cal1.get_date() - datetime.timedelta(days=31))
-        fechaFin = str(self.cal1.get_date())
+        fechaIni = str(self.cal1.get_date() - datetime.timedelta(days=32))
+        fechaFin = str(self.cal1.get_date() - datetime.timedelta(days=1))
         #fechaFin = str(self.cal2.get_date())
         print(fechaFin)
         print(fechaIni)
@@ -362,7 +362,7 @@ class Application(tk.Frame):
             print(training_data.shape,target_data.shape,valid_data.shape,valid_target.shape)
 
 
-            EPOCHS=80
+            EPOCHS=120
 
             self.model = self.crear_modeloEmbeddings()
 
@@ -385,17 +385,25 @@ class Application(tk.Frame):
 
             results=self.model.predict([valid_data['weekday'],valid_data['month'],valid_continuas])
 
+            
+            '''
             plt.scatter(range(len(valid_target)),valid_target,c='g')
             plt.scatter(range(len(results)),results,c='r')
             plt.title('validate')
-            plt.show()
+            '''
+            #plt.show()
+            
 
+            fig = plt.figure(figsize=(6, 5))
             plt.plot(history.history['loss'], label='loss')
             plt.title('loss')
             plt.plot(history.history['val_loss'], label='val loss')
             plt.title('validate loss')
             plt.legend(loc='best')
-            plt.show()
+            #plt.show()
+            canvas = FigureCanvasTkAgg(fig, master=self.lf)
+            canvas.draw()
+            canvas.get_tk_widget().grid(row=2, column=1)
 
             '''
             plt.title('Accuracy')
@@ -413,9 +421,12 @@ class Application(tk.Frame):
             compara2.columns = ['real', 'prediccion']
             compara2['diferencia'] = compara2['real'] - compara2['prediccion']
             
+            fig = plt.figure(figsize=(6, 5))
             compara2['real'].plot()
             compara2['prediccion'].plot()
-
+            canvas = FigureCanvasTkAgg(fig, master=self.lf)
+            canvas.draw()
+            canvas.get_tk_widget().grid(row=2, column=2)
 
 
             
