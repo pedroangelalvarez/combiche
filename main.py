@@ -33,7 +33,7 @@ import tkinter as tk
 from tkinter.filedialog import askopenfilename
 from tkinter.messagebox import showerror
 from tkinter import ttk
-from tkinter import StringVar, Label
+from tkinter import StringVar, Label, Button
 from tkcalendar import Calendar, DateEntry
 
 import time
@@ -60,6 +60,8 @@ class Application(tk.Frame):
         self.filemenu.add_separator()
         self.filemenu.add_command(label = "Guardar reporte", command = self.saveReport)
         self.filemenu.add_separator()
+        self.filemenu.add_command(label = "Guardar model", command = self.saveModel)
+        self.filemenu.add_separator()
         self.filemenu.add_command(label = "Salir", command = root.quit)
         self.menubar.add_cascade(label = "Dataset", menu = self.filemenu)
         self.editmenu = tk.Menu(self.menubar, tearoff=0)
@@ -83,11 +85,14 @@ class Application(tk.Frame):
         self.labelR = Label(self.parent,text="Ingrese rango de fechas: ")
         self.labelR.grid(row=1, column=0)
 
-        self.cal1 = DateEntry(self.parent,dateformat=3,width=12, background='darkblue',foreground='white', borderwidth=4,year =2018,month=4,day=3)
+        self.cal1 = DateEntry(self.parent,dateformat=3,width=12, background='darkblue',foreground='white', borderwidth=4,year =2020,month=2,day=15)
         self.cal1.grid(row=1, column=1)
 
         self.cal2 = DateEntry(self.parent,dateformat=3,width=12, background='darkblue',foreground='white', borderwidth=4,yeaar =2020,month=2,day=29)
         self.cal2.grid(row=1, column=2)
+
+        self.butInter = Button(self.parent, text ="Predecir", command = self.graficar_predicciones)
+        self.butInter.grid(row=1, column=3)
 
         self.lf = ttk.Labelframe(self.parent, text='Ventas')
         self.lf.grid(row=2, column=0, sticky='nwes', padx=3, pady=3)
@@ -106,6 +111,7 @@ class Application(tk.Frame):
         self.canvas.get_tk_widget().grid(row=0, column=0)
         '''
     
+    
     def saveReport(self):
         if path.exists('report.png'):
             workbook = xlsxwriter.Workbook('reporte.xlsx')
@@ -120,11 +126,15 @@ class Application(tk.Frame):
             ws.add_image(img)
             wb.save('reporte.xlsx')
 
-    def graficar_predicciones(self, real, prediccion):
+
+    def saveModel(self):
+        print("GUARDADO")
+
+    def graficar_predicciones(self):
         
         
         #fig = Figure(figsize=(5,4), dpi=100)
-
+        '''
         fig = plt.figure(figsize=(6, 5))
         plt.plot(real[0:len(prediccion)],color='red', label='Valor real')
         plt.plot(prediccion, color='blue', label='Predicción')
@@ -137,6 +147,80 @@ class Application(tk.Frame):
         canvas = FigureCanvasTkAgg(fig, master=self.lf)
         canvas.draw()
         canvas.get_tk_widget().grid(row=2, column=2)
+        '''
+        ##INTERPRETACION
+        PASOS = 7
+        fechaIni = str(self.cal1.get_date() - datetime.timedelta(days=31))
+        fechaFin = str(self.cal1.get_date())
+        #fechaFin = str(self.cal2.get_date())
+        print(fechaFin)
+        print(fechaIni)
+        ultimosDias = self.df[fechaIni:fechaFin]
+        values = ultimosDias['unidades'].values
+
+        # ensure all data is float
+        values = values.astype('float32')
+        # normalize features
+        scaler = MinMaxScaler(feature_range=(-1, 1))
+
+        values=values.reshape(-1, 1) # esto lo hacemos porque tenemos 1 sola dimension
+
+        scaled = scaler.fit_transform(values)
+
+        reframed = self.series_to_supervised(scaled, PASOS, 1)
+        reframed.reset_index(inplace=True, drop=True)
+
+        contador=0
+        reframed['weekday']=ultimosDias['weekday']
+        reframed['month']=ultimosDias['month']
+
+        for i in range(reframed.index[0],reframed.index[-1]):
+            reframed['weekday'].loc[contador]=ultimosDias['weekday'][i+8]
+            reframed['month'].loc[contador]=ultimosDias['month'][i+8]
+            contador=contador+1
+        reframed.head()
+        
+        reordenado=reframed[ ['weekday','month','var1(t-7)','var1(t-6)','var1(t-5)','var1(t-4)','var1(t-3)','var1(t-2)','var1(t-1)'] ]
+        reordenado.dropna(inplace=True)
+        values = reordenado.values
+        x_test = values[5:, :]
+        x_test = x_test.reshape((x_test.shape[0], 1, x_test.shape[1]))
+        
+
+        ultDiaSemana = reordenado.weekday[len(reordenado)-1]
+
+        def agregarNuevoValor(x_test,nuevoValor,ultDiaSemana):
+            for i in range(x_test.shape[2]-3):
+                x_test[0][0][i+2] = x_test[0][0][i+3]
+            ultDiaSemana=ultDiaSemana+1
+            if ultDiaSemana>6:
+                ultDiaSemana=0
+            x_test[0][0][0]=ultDiaSemana
+            x_test[0][0][1]=12
+            x_test[0][0][x_test.shape[2]-1]=nuevoValor
+            return x_test,ultDiaSemana
+
+        results=[]
+        for i in range(7):
+            dia=np.array([x_test[0][0][0]])
+            mes=np.array([x_test[0][0][1]])
+            valores=np.array([x_test[0][0][2:9]])
+            parcial=self.model.predict([dia, mes, valores])
+            results.append(parcial[0])
+            print('pred',i,x_test)
+            x_test,ultDiaSemana=agregarNuevoValor(x_test,parcial[0],ultDiaSemana)
+
+        adimen = [x for x in results]
+        inverted = scaler.inverse_transform(adimen)
+        #inverted
+
+
+        prediccionProxSemanaDiciembre = pd.DataFrame(inverted)
+        prediccionProxSemanaDiciembre.columns = ['pronostico']
+        prediccionProxSemanaDiciembre.plot()
+        prediccionProxSemanaDiciembre.to_csv('pronostico.csv')
+
+        print(prediccionProxSemanaDiciembre)
 
     def selectFile(self):
         fname = askopenfilename(filetypes=(("Archivo Dataset", "*.csv"),
@@ -148,7 +232,7 @@ class Application(tk.Frame):
             except:
                 print("")
     
-    def series_to_supervised(scaled, data, n_in=1, n_out=1, dropnan=True):
+    def series_to_supervised(self,data, n_in=1, n_out=1, dropnan=True):
         n_vars = 1 if type(data) is list else data.shape[1]
         df = pd.DataFrame(data)
         cols, names = list(), list()
@@ -179,54 +263,113 @@ class Application(tk.Frame):
         model.add(Dense(1, activation='tanh'))
         model.compile(loss='mean_absolute_error',optimizer='Adam',metrics=["mse"])
         model.summary()
-        return model    
+        return model
+    
+    def agregarNuevoValor(self,x_test,nuevoValor):
+        for i in range(x_test.shape[2]-3):
+            x_test[0][0][i+2] = x_test[0][0][i+3]
+        ultDiaSemana=ultDiaSemana+1
+        if ultDiaSemana>6:
+            ultDiaSemana=0
+        x_test[0][0][0]=ultDiaSemana
+        x_test[0][0][1]=12
+        x_test[0][0][x_test.shape[2]-1]=nuevoValor
+        return x_test,ultDiaSemana
+    
+    def crear_modeloEmbeddings(self):
+        PASOS=7
+        emb_dias = 2 #tamanio profundidad de embeddings
+        emb_meses = 4
+
+        in_dias = Input(shape=[1], name = 'dias')
+        emb_dias = Embedding(7+1, emb_dias)(in_dias)
+        in_meses = Input(shape=[1], name = 'meses')
+        emb_meses = Embedding(12+1, emb_meses)(in_meses)
+
+        in_cli = Input(shape=[PASOS], name = 'cli')
+
+        fe = concatenate([(emb_dias), (emb_meses)])
+
+        x = Flatten()(fe)
+        x = Dense(PASOS,activation='tanh')(x)
+        outp = Dense(1,activation='tanh')(x)
+        model = Model(inputs=[in_dias,in_meses,in_cli], outputs=outp)
+
+        model.compile(loss='mean_absolute_error', 
+                    optimizer='adam',
+                    metrics=['MSE'])
+
+        model.summary()
+        return model
 
     def entrenamiento(self):
         if "csv" in self.fileSelect:
-            fechaIni = str(self.cal1.get_date())
-            fechaFin = str(self.cal2.get_date())
+            '''
             dias = (pd.to_datetime(fechaFin) - pd.to_datetime(fechaIni)).days
             diasValidos = int(20*dias/100)
             finValido = datetime.datetime.strptime(fechaFin, '%Y-%m-%d') 
             inicioValido = finValido - timedelta(days=diasValidos)
             inicioEntrenamiento = datetime.datetime.strptime(fechaIni, '%Y-%m-%d') 
             finEntrenamiento = inicioValido - timedelta(days=1)
+            '''
+            self.df = pd.read_csv(self.fileSelect,  parse_dates=[0], header=None,index_col=0, names=['fecha','unidades'])
+            self.df.head()
 
-            df = pd.read_csv(self.fileSelect,  parse_dates=[0], header=None,index_col=0, squeeze=True,names=['fecha','unidades'])
-            df.describe()
-            print(df.head())
+            self.df['weekday']=[x.weekday() for x in self.df.index]
+            self.df['month']=[x.month for x in self.df.index]
+            self.df.head()
+            self.df.describe()
+
+
+            print(self.df.head())
             PASOS=7
             # load dataset
-            values = df.values
+            values = self.df['unidades'].values
+
             # ensure all data is float
             values = values.astype('float32')
             # normalize features
             scaler = MinMaxScaler(feature_range=(-1, 1))
+
             values=values.reshape(-1, 1) # esto lo hacemos porque tenemos 1 sola dimension
+
             scaled = scaler.fit_transform(values)
-            # frame as supervised learning
+
             reframed = self.series_to_supervised(scaled, PASOS, 1)
+            reframed.reset_index(inplace=True, drop=True)
+
+            contador=0
+            reframed['weekday']=self.df['weekday']
+            reframed['month']=self.df['month']
+
+            for i in range(reframed.index[0],reframed.index[-1]):
+                reframed['weekday'].loc[contador]=self.df['weekday'][i+8]
+                reframed['month'].loc[contador]=self.df['month'][i+8]
+                contador=contador+1
             reframed.head()
 
-            values = reframed.values
-            n_train_days = len(df['2018'])+len(df['2019']) - (30+PASOS)
-            train = values[:n_train_days, :]
-            test = values[n_train_days:, :]
-            # split into input and outputs
-            x_train, y_train = train[:, :-1], train[:, -1]
-            x_val, y_val = test[:, :-1], test[:, -1]
-            # reshape input to be 3D [samples, timesteps, features]
-            x_train = x_train.reshape((x_train.shape[0], 1, x_train.shape[1]))
-            x_val = x_val.reshape((x_val.shape[0], 1, x_val.shape[1]))
-            print(x_train.shape, y_train.shape, x_val.shape, y_val.shape)
+            reordenado=reframed[ ['weekday','month','var1(t-7)','var1(t-6)','var1(t-5)','var1(t-4)','var1(t-3)','var1(t-2)','var1(t-1)','var1(t)'] ]
+            reordenado.dropna(inplace=True)
 
-            EPOCHS=40
+            training_data = reordenado.drop('var1(t)',axis=1)#.values
+            target_data=reordenado['var1(t)']
+            #training_data.head()
+            valid_data = training_data[len(values)-30:len(values)]
+            valid_target=target_data[len(values)-30:len(values)]
 
-            model = self.crear_modeloFF()
+            training_data = training_data[0:len(values)-30]
+            target_data=target_data[0:len(values)-30]
+            print(training_data.shape,target_data.shape,valid_data.shape,valid_target.shape)
 
-            history=model.fit(x_train,y_train,epochs=EPOCHS,validation_data=(x_val,y_val),batch_size=PASOS)
 
-            results=model.predict(x_val)
+            EPOCHS=80
+
+            self.model = self.crear_modeloEmbeddings()
+
+            continuas=training_data[['var1(t-7)','var1(t-6)','var1(t-5)','var1(t-4)','var1(t-3)','var1(t-2)','var1(t-1)']]
+            valid_continuas=valid_data[['var1(t-7)','var1(t-6)','var1(t-5)','var1(t-4)','var1(t-3)','var1(t-2)','var1(t-1)']]
+
+            history=self.model.fit([training_data['weekday'],training_data['month'],continuas], target_data, epochs=EPOCHS,validation_data=([valid_data['weekday'],valid_data['month'],valid_continuas],valid_target))
             '''
             plt.scatter(range(len(y_val)),y_val,c='g')
             plt.scatter(range(len(results)),results,c='r')
@@ -240,47 +383,46 @@ class Application(tk.Frame):
             plt.show()
             '''
 
-            ultimosDias = df['2020-02-01':'2020-02-29']
-            values = ultimosDias.values
-            values = values.astype('float32')
-            # normalize features
-            values=values.reshape(-1, 1) # esto lo hacemos porque tenemos 1 sola dimension
-            scaled = scaler.fit_transform(values)
-            reframed = self.series_to_supervised(scaled, PASOS, 1)
-            reframed.drop(reframed.columns[[7]], axis=1, inplace=True)
-            reframed.head(7)
+            results=self.model.predict([valid_data['weekday'],valid_data['month'],valid_continuas])
 
-            values = reframed.values
-            x_test = values[6:, :]
-            x_test = x_test.reshape((x_test.shape[0], 1, x_test.shape[1]))
+            plt.scatter(range(len(valid_target)),valid_target,c='g')
+            plt.scatter(range(len(results)),results,c='r')
+            plt.title('validate')
+            plt.show()
 
-            def agregarNuevoValor(x_test,nuevoValor):
-                for i in range(x_test.shape[2]-1):
-                    x_test[0][0][i] = x_test[0][0][i+1]
-                x_test[0][0][x_test.shape[2]-1]=nuevoValor
-                return x_test
+            plt.plot(history.history['loss'], label='loss')
+            plt.title('loss')
+            plt.plot(history.history['val_loss'], label='val loss')
+            plt.title('validate loss')
+            plt.legend(loc='best')
+            plt.show()
 
-            results=[]
-            for i in range(7):
-                parcial=model.predict(x_test)
-                results.append(parcial[0])
-                print(x_test)
-                x_test=agregarNuevoValor(x_test,parcial[0])
+            '''
+            plt.title('Accuracy')
+            plt.plot(history.history['mean_squared_error'])
+            plt.show()
+            '''
+
+
+            compara = pd.DataFrame(np.array([valid_target, [x[0] for x in results]])).transpose()
+            compara.columns = ['real', 'prediccion']
+
+            inverted = scaler.inverse_transform(compara.values)
+
+            compara2 = pd.DataFrame(inverted)
+            compara2.columns = ['real', 'prediccion']
+            compara2['diferencia'] = compara2['real'] - compara2['prediccion']
             
-            adimen = [x for x in results]    
-            inverted = scaler.inverse_transform(adimen)
-            prediccion1SemanaDiciembre = pd.DataFrame(inverted)
-            prediccion1SemanaDiciembre.columns = ['pronostico']
-            prediccion1SemanaDiciembre.plot()
-            prediccion1SemanaDiciembre.to_csv('pronostico.csv')
-            print(prediccion1SemanaDiciembre)
+            compara2['real'].plot()
+            compara2['prediccion'].plot()
 
-            i=0
-            for fila in prediccion1SemanaDiciembre.pronostico:
-                i=i+1
-                ultimosDias.loc['2020-03-0' + str(i) + ' 00:00:00'] = fila
-                print(fila)
-            ultimosDias.tail(14)
+
+
+            
+
+
+
+
             '''
 
             dataset = pd.read_csv(self.fileSelect, index_col='Date', parse_dates=['Date'])

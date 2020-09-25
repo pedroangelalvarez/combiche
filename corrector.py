@@ -25,11 +25,11 @@ for single_date in daterange(start_date, end_date):
     cati+=str(",")
     if str(single_date.strftime("%Y-%m-%d")) in datos:
         cont+=1
-        cati+=str(data[cont][1])+","
+        cati+=str(data[cont][1])
     else:
-        cati+=str("0,")
-    cati+=str(single_date.weekday())+","
-    cati+=str(single_date.strftime("%m"))
+        cati+=str("0")
+    #cati+=","+str(single_date.weekday())+","
+    #cati+=str(single_date.strftime("%m"))
     cati+="\n"
 f= open("datafinal.csv","w+")
 print(cati)
