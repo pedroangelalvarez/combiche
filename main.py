@@ -14,6 +14,7 @@ from matplotlib.figure import Figure
 import pandas as pd
 import numpy as np
 import matplotlib.pylab as plt
+import matplotlib
 
 plt.rcParams['figure.figsize'] = (16, 9)
 plt.style.use('fast')
@@ -33,6 +34,7 @@ import tkinter as tk
 from tkinter.filedialog import askopenfilename
 from tkinter.messagebox import showerror
 from tkinter import ttk
+from tkinter import HORIZONTAL
 from tkinter import StringVar, Label, Button
 from tkcalendar import Calendar, DateEntry
 
@@ -58,10 +60,10 @@ class Application(tk.Frame):
         self.filemenu.add_command(label = "Cargar data", command = self.selectFile)
 
         self.filemenu.add_separator()
-        self.filemenu.add_command(label = "Guardar reporte", command = self.saveReport)
-        self.filemenu.add_separator()
-        self.filemenu.add_command(label = "Guardar model", command = self.saveModel)
-        self.filemenu.add_separator()
+        #self.filemenu.add_command(label = "Guardar reporte", command = self.saveReport)
+        #self.filemenu.add_separator()
+        #self.filemenu.add_command(label = "Guardar model", command = self.saveModel)
+        #self.filemenu.add_separator()
         self.filemenu.add_command(label = "Salir", command = root.quit)
         self.menubar.add_cascade(label = "Dataset", menu = self.filemenu)
         self.editmenu = tk.Menu(self.menubar, tearoff=0)
@@ -85,17 +87,19 @@ class Application(tk.Frame):
         self.labelR = Label(self.parent,text="Ingrese rango de fechas: ")
         self.labelR.grid(row=1, column=0)
 
-        self.cal1 = DateEntry(self.parent,dateformat=3,width=12, background='darkblue',foreground='white', borderwidth=4,year =2020,month=2,day=15)
-        self.cal1.grid(row=1, column=1)
+        self.cal1 = DateEntry(self.parent,dateformat=3,width=12, background='darkblue',foreground='white', borderwidth=4,year =2020,month=3,day=1)
+        self.cal1.grid(row=2, column=0)
 
         #self.cal2 = DateEntry(self.parent,dateformat=3,width=12, background='darkblue',foreground='white', borderwidth=4,yeaar =2020,month=2,day=29)
         #self.cal2.grid(row=1, column=2)
 
         self.butInter = Button(self.parent, text ="Predecir", command = self.graficar_predicciones)
-        self.butInter.grid(row=1, column=2)
+        self.butInter.grid(row=2, column=1)
+
+        ttk.Separator(self.parent, orient=HORIZONTAL).grid(row=1, column=3,columnspan=4, ipadx=250)
 
         self.lf = ttk.Labelframe(self.parent, text='Ventas')
-        self.lf.grid(row=2, column=0, sticky='nwes', padx=3, pady=3)
+        self.lf.grid(row=3, column=0, sticky='nwes', padx=3, pady=3)
 
         '''
         t = np.arange(0.0,3.0,0.01)
@@ -149,6 +153,10 @@ class Application(tk.Frame):
         canvas.get_tk_widget().grid(row=2, column=2)
         '''
         ##INTERPRETACION
+
+        for widget in self.lf.winfo_children():
+            widget.destroy()
+
         PASOS = 7
         fechaIni = str(self.cal1.get_date() - datetime.timedelta(days=32))
         fechaFin = str(self.cal1.get_date() - datetime.timedelta(days=1))
@@ -158,13 +166,10 @@ class Application(tk.Frame):
         ultimosDias = self.df[fechaIni:fechaFin]
         values = ultimosDias['unidades'].values
 
-        # ensure all data is float
         values = values.astype('float32')
-        # normalize features
         scaler = MinMaxScaler(feature_range=(-1, 1))
 
-        values=values.reshape(-1, 1) # esto lo hacemos porque tenemos 1 sola dimension
-
+        values=values.reshape(-1, 1) 
         scaled = scaler.fit_transform(values)
 
         reframed = self.series_to_supervised(scaled, PASOS, 1)
@@ -215,12 +220,31 @@ class Application(tk.Frame):
         #inverted
 
 
-        prediccionProxSemanaDiciembre = pd.DataFrame(inverted)
-        prediccionProxSemanaDiciembre.columns = ['pronostico']
-        prediccionProxSemanaDiciembre.plot()
-        prediccionProxSemanaDiciembre.to_csv('pronostico.csv')
+        prediccionProxSemana = pd.DataFrame(inverted)
+        prediccionProxSemana.columns = ['pronostico']
+        prediccionProxSemana.plot()
+        prediccionProxSemana.to_csv('pronostico.csv')
 
-        print(prediccionProxSemanaDiciembre)
+        predicciones = prediccionProxSemana.to_numpy()
+        y_values=[]
+        for i in range(len(predicciones)):
+            y_values.append(predicciones[i][0])
+
+        x_values = []
+        for i in range(len(predicciones)):
+            x_values.append(datetime.datetime.strptime(str(self.cal1.get_date() + datetime.timedelta(days=i)),"%Y-%m-%d").date())
+        
+        fig = plt.figure(figsize=(5,5))
+        dates = matplotlib.dates.date2num(x_values)
+        matplotlib.pyplot.plot_date(dates, y_values)
+        plt.plot(x_values, y_values)
+        plt.gcf().autofmt_xdate()
+        plt.title('Predicción de la semana')
+        #plt.legend(loc='best')
+        #plt.show()
+        canvas = FigureCanvasTkAgg(fig, master=self.lf)
+        canvas.draw()
+        canvas.get_tk_widget().grid(row=3, column=0)
 
     def selectFile(self):
         fname = askopenfilename(filetypes=(("Archivo Dataset", "*.csv"),
@@ -255,6 +279,7 @@ class Application(tk.Frame):
             agg.dropna(inplace=True)
         return agg
 
+    '''
     def crear_modeloFF(self):
         PASOS=7
         model = Sequential() 
@@ -264,6 +289,7 @@ class Application(tk.Frame):
         model.compile(loss='mean_absolute_error',optimizer='Adam',metrics=["mse"])
         model.summary()
         return model
+    '''
     
     def agregarNuevoValor(self,x_test,nuevoValor):
         for i in range(x_test.shape[2]-3):
@@ -278,7 +304,7 @@ class Application(tk.Frame):
     
     def crear_modeloEmbeddings(self):
         PASOS=7
-        emb_dias = 2 #tamanio profundidad de embeddings
+        emb_dias = 2 
         emb_meses = 4
 
         in_dias = Input(shape=[1], name = 'dias')
@@ -323,15 +349,12 @@ class Application(tk.Frame):
 
             print(self.df.head())
             PASOS=7
-            # load dataset
             values = self.df['unidades'].values
 
-            # ensure all data is float
             values = values.astype('float32')
-            # normalize features
             scaler = MinMaxScaler(feature_range=(-1, 1))
 
-            values=values.reshape(-1, 1) # esto lo hacemos porque tenemos 1 sola dimension
+            values=values.reshape(-1, 1) 
 
             scaled = scaler.fit_transform(values)
 
@@ -393,7 +416,7 @@ class Application(tk.Frame):
             '''
             #plt.show()
             
-
+            
             fig = plt.figure(figsize=(6, 5))
             plt.plot(history.history['loss'], label='loss')
             plt.title('loss')
@@ -403,7 +426,8 @@ class Application(tk.Frame):
             #plt.show()
             canvas = FigureCanvasTkAgg(fig, master=self.lf)
             canvas.draw()
-            canvas.get_tk_widget().grid(row=2, column=1)
+            canvas.get_tk_widget().grid(row=3, column=1)
+            
 
             '''
             plt.title('Accuracy')
@@ -426,8 +450,8 @@ class Application(tk.Frame):
             compara2['prediccion'].plot()
             canvas = FigureCanvasTkAgg(fig, master=self.lf)
             canvas.draw()
-            canvas.get_tk_widget().grid(row=2, column=2)
-
+            canvas.get_tk_widget().grid(row=3, column=2)
+            
 
             
 
