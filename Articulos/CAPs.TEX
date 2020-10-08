@@ -1,0 +1,1242 @@
+\chapter{Introducción}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+%\renewcommand{\baselinestretch}{2} %doble espacio paratodo el texto
+%\renewcommand{\baselinestretch }{1.5}
+
+Las empresas para elaborar sus planes de mercadeo y su planeación requieren la elaboración inicial de un pronóstico de ventas, el cual les permitirá proyectar las posibles ventas futuras basándose
+en datos históricos de la misma empresa, con el fin de planear, administrar y controlar los presupuestos necesarios para un buen uso de los recursos que se requerirán para cumplir con las metas propuestas.
+
+El pronóstico de ventas es una herramienta comercial que permite estimar las ventas a futuro, con el fin de establecer metas en un determinado periodo, para su elaboración se tienen en cuenta los resultados históricos y las tendencias de ventas presentadas por el área comercial.
+
+En base a eso, la empresa (restaurant Combiche-Trujillo), mediante sus datos históricos de ventas, desea conocer cuáles serán las ventas que obtendrán en los siguientes periodos posterior a su
+análisis. Con el apoyo de las redes neuronales, se busca estimar las ganancias que se obtendrán según el número de ventas pronosticadas , dado que en la actualidad, existen varios restaurantes en la ciudad de Trujillo, y que gracias a la aplicación de dicha herramienta computacional, contribuirá a que la empresa tome medidas de precaución cuando el mercado esté bajo.
+
+\section{Justificación de la investigación}
+La importancia de esta investigación desde un punto de vista informático se justifica académicamente, como un aporte para la investigación y una motivación para profundizar en inteligencia artificial, redes neuronales.
+
+Este proyecto se justifica socialmente, ya que no solo beneficiará a la empresa, restaurant Combiche - Trujillo, sino a los comensales que desean degustar las variedades de platos que estan a la venta, y al ser realizado con sistemas basado en conocimiento mediante RNA la aplicación irá mejorando a medida que se vaya usando en el pronóstico de las ventas, ya que tiene la principal ventaja de ir aprendiendo.
+
+\section{Formulación del problema}
+El problema de la empresa es establecer medidas de precaución ante las bajas ventas que se puedan tener y para ello se necesita de una herramienta computacional que pronostique, en base a las ventas históricas de la empresa, si hay ganancias o pérdidas de las ventas para tomar una decisión que beneficie a la empresa. Analizando nuestro problema, nos nace la siguiente pregunta:
+ 
+ \begin{center} 
+     ¿Cómo pronosticar las ventas de un producto utilizando una red neuronal artificial?
+ \end{center}
+
+\section{Hipótesis}
+Mediante el desarrollo de un sistema basado en conocimiento utilizando R.N.A. se podrá pronosticar las ventas en el Mall Aventura Plaza.
+
+
+
+
+\section{Objetivos}
+\subsection{Generales}
+Desarrollar un sistema basado en conocimiento mediante RNA para pronosticar las ventas de un producto.
+\subsection{Específicos}
+\begin{itemize}
+\item Realizar una investigación bibliográfica para recolectar datos referentes al tema de investigación y analizar los resultados de una encuesta aplicada a un experto en ventas.
+\item Aplicar la metodología Common Kads especial para sistemas basados en conocimientos.
+\item Diseñar la arquitectura de nuestro sistema basado en conocimiento.
+\item Entrenar el software basándonos en el modelo computacional diseñado previamente.
+\item Analizar y comparar los resultados del software contra otros métodos de pronósticos de ventas (lineal, algorítmico).
+\end{itemize}
+
+\section{Estructura de la tesis}
+
+Nuestro trabajo de investigación tiene los siguientes capítulos:
+
+\begin{itemize}
+ \item En el primer capítulo se desarrolla los aspectos generales así como la justificación, formulación del problema, hipótesis de la investigación y  objetivos del presente trabajo de investigación.
+ \item En el segundo capítulo se realiza la recopilación de diferentes conceptos y definiciones que es de mucha importancia a lo largo de toda la investigación, como la metodología de investigación, inteligencia artificial, sistemas inteligentes, redes neuronales, perceptrón, perceptrón multicapa, backpropagation., también se define definiciones de clasificación automática de documentos, así como su representación vectorial y el centroide del conjunto de palabras, similitud aplicando métodos de clasificación automática de documentos, también describimos los tipos de documentos y por último como conceptos finales, consideramos a los gestores, plataformas y lenguajes que utilizaremos así como MySQL Workbench 8.0, NeatBeans IDE 8.2, Java y Joone.
+ \item En el tercer capítulo se analiza, comprende, implementa  y optimiza las soluciones de los sistemas inteligentes para la clasificación automática de documentos. Empezando por algunos problemas de algoritmos actuales. También la prueba a seguir de redes neuronales, se diseñan los modelos propuestos y se explica la implementación del sistema.
+ \item En el cuarto capítulo se contrasta los resultados con el prototipo de la aplicación de sistemas inteligentes para la clasificación automática de documentos.
+ \item En el quinto capítulo se presenta las conclusiones de nuestro trabajo de investigación, demostrando los objetivos cumplidos.
+\end{itemize}
+
+
+
+
+\chapter{Materiales y Métodos}
+\renewcommand{\baselinestretch}{2} %doble espacio paratodo el texto}
+
+\section{Marco teórico}
+El siguiente capítulo presenta conceptos importantes que utilizamos como parte fundamental para el desarrollo de nuestra tesis, este material bibliográfico fue investigado por la relación que tiene con los temas de nuestra investigación. La investigación se tornó muy amplia, principalmente en los conceptos claves para nuestro conocimiento científico, el cual ayudó a desarrollar la tesis, inteligencia artificial, sistemas inteligentes, redes neuronales, perceptrón, backpropagation, conceptos importantes ya que sin ellos sería imposible el modelamiento y desarrollo.
+
+\subsection{Metodología Common Kads}
+
+La metodología elegida para el desarrollo del software es la metodología ágil $Common$ $Kads$. Es una metodología diseñada para el análisis y la construcción de sistemas basados en  conocimiento (SBC) de forma análoga a los métodos empleados en ingeniería de software. Fue propuesta y desarrollada por un grupo de investigadores pertenecientes a diversos países de la comunidad Europea, a través del programa ESPRIT para la innovación y la aplicación de tecnología informática avanzada. Lo que se pretendía era crear un estándar para la ingeniería del conocimiento y
+sistemas de conocimiento con el cual se pudieran construir sistemas industriales de calidad a gran escala, en una forma estructurada y controlada. \citep{lagos2002commonkads}.
+
+
+\subsubsection{Descripción}
+En $Common$ $KADS$ podemos ver reflejadas algunas ideas que han emergido, no solo de la experiencia en la ingeniería del conocimiento, sino también en el campo de la ingeniería del software en general. Estas ideas se pueden concretar en tres conceptos: modelado, reutilización y gestión del riesgo.
+
+El modelado se refiere la configuración ideal que representa de manera simplificada una teoría, la cual ayuda a comprender las teorías y leyes.
+
+La reutilización se centra en utilizar nuevamente productos ya creados anteriormente una o varias veces las cuales sean necesarias.
+
+Gestión del riesgo se refiere al proceso de identificar, analizar y responder a factores de riesgo a lo largo de la vida de un proyecto, beneficiando los objetivos propuestos.
+
+La metodología $Common KADS$ abarca todo el ciclo de desarrollo de software mediante un número de modelos interrelacionados que capturan los principales rasgos del sistema y de su entorno.
+El proceso de desarrollo de SBC consiste en rellenar un conjunto de plantillas de los modelos. Asociados a las plantillas, $Common KADS$ define estados de los modelos que caracterizan hitos en el desarrollo de cada modelo. Estos estados permiten la gestión del proyecto, cuyo desarrollo se realiza de una forma cíclica dirigida por los riesgos. \citep{lagos2002commonkads}.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.7]{imagenes/ModelosKaps.png}
+		
+		\caption{Modelo definidos por KADS.}
+		Fuente: \cite{lagos2002commonkads}.
+
+	\label{fig:ModelosKaps}
+\end{figure}
+La metodología $Common Kads$ tiene tres etapas: el contexto, concepto y artefacto; en cada etapa contienen modelos, en la etapa de contexto tiene modelo, organizacional, modelo de tarea y modelo de agente; en concepto tiene modelo de conocimiento y modelo de comunicación; y en artefacto tiene modelo de diseño.
+
+La relación que fija con UML son los siguientes diagramas: diagrama de clases, diagrama de estados, diagrama de actividades y diagrama de casos de uso. \citep{lagos2002commonkads}\\
+
+\subsection{Inteligencia Artificial (IA)}
+Empecemos esto con una pregunta clave: ¿Qué es la inteligencia artificial?. Aunque es un término de compleja definición, esta puede ser catalogada como una rama de la ciencia que se dedica al estudio de la forma en que se desarrolla el proceso del pensamiento humano para reproducirlo en un ente artificial. Es por ello que para poder lograrlo, la I.A. centra su estudio en dos áreas: el cuerpo humano (estudio de la inteligencia) y el ordenador electrónico. Teniendo en cuenta que para poder reproducir el pensamiento es necesario conocerlo, como primera meta para la investigación de los científicos fue entender los procesos cognoscitivos de la mente humana. De esta manera definir su modelo de inteligencia, para luego proceder a programarlo en ordenadores, simulando cada uno de los procesos y comprobando los resultados de sus teorías. \citep{Belzebu2009}. 
+
+Según \cite{mccarthy1989artificial}, acuñó la expresión ``inteligencia artificial'', y la definió como: ``la ciencia e ingenio de hacer máquinas inteligentes, especialmente programas de cómputo inteligentes''.
+
+\subsection{Sistemas inteligentes}
+Los sistemas inteligentes radican en un conjunto de herramientas y aplicaciones que agrupados llevan a cabo la recopilación, extracción y formato de información obtenida de distintas fuentes con el único propósito de crear medios inteligentes y artificiales para múltiples usos. Frecuentemente se usa para el soporte en la toma de decisiones, sin embargo, esta no es su única funcionalidad.\\
+Son sistemas que, durante su existencia, aprenden y almacenan para luego actuar continuamente de forma interna o externa, de forma que pueda alcanzar su propósito superándose cada vez. Tiene su propio objetivo esencial y para alcanzarlo, escoge una acción tomada de las experiencias que   ha almacenado en su memoria.
+
+Para poder hablar de un sistema inteligente es necesario que exista un entorno con el cual el sistema pueda interactuar y, además, el sistema inteligente debe contener ``sentidos'' que le permitan recibir comunicaciones de dicho entorno y con ello poder transmitir información. El sistema actúa continuamente   y cuenta con una memoria para archivar el resultado de sus acciones. 
+Como se dijo anteriormente, este sistema tiene un objetivo, por lo cual, el conseguirlo significaría el hecho de seleccionar la respuesta adecuada ante cada estimulo. También se caracteriza porque a través de su memoria, durante su existencia, aprende de sus experiencias, logrando así, mejorar tanto su rendimiento como su eficiencia. Por último, es necesario indicar que este sistema consume energía, la cual   utiliza en sus procesos internos y su actuar. \citep{Alejandro2017}.
+
+\subsubsection{Capacidades requeridas}
+Según \cite{Alejandro2017}, un sistema inteligente podrá ser considerado completo, si se incluye dentro de estas diversas funcionalidades, tales como :
+
+\begin{itemize}
+\item \textbf{Inteligencia:} Es la capacidad de alcanzar nuestros objetivos.  La inteligencia incluye la capacidad de aprender a lograrlo. 
+\item \textbf{Conceptualización:} Un concepto es el elemento primordial del pensamiento. Es el almacenamiento físico, material de información (en neuronas o electrones). Todos los conceptos de la memoria están interrelacionados en red. La capacidad de poder conceptualizar implica el desarrollo de distintos niveles de abstracción.
+\item \textbf{Reglas de actuación:} Una regla de actuación es la consecuencia de una experiencia o el resultado de interpretar la propia memoria, es decir, relaciona situaciones y efectos de la acción.
+\item \textbf{Memoria:} La memoria es un almacenamiento físico de conceptos y reglas de actuación, que incluye la experiencia del sistema.
+\item \textbf{Aprendizaje:} Posiblemente, es la capacidad más importante de un sistema inteligente, ya que este aprende conceptos a partir de la información obtenida a través de los sentidos. Aprende también reglas de actuación a base de su experiencia, la cual en ocasiones, la actuación se almacena con su valor. Una regla de actuación aumenta en valor si permitió el logro de un objetivo. El aprendizaje incluye la inserción de conceptos abstractos, a base de ejemplos concretos y la creación de conceptos compuestos que contienen los conceptos de partes de un objeto. Entonces el aprendizaje también se define como la capacidad de detectar relaciones (patrones) entre la parte (``situación la parte'', ``situación futura'') de una regla de actuación.
+\end{itemize}
+
+\subsection{Red Neuronal Artificial (RNA)}
+Una red neuronal es un sistema de procesadores paralelos conectados entre sí en forma de grafo dirigido. Esquemáticamente cada elemento de procesamiento (neuronas) de la red se
+representa como un nodo. Estas conexiones
+establecen una estructura jerárquica que tratando de
+emular la fisiología del cerebro busca nuevos
+modelos de procesamiento para solucionar
+problemas concretos del mundo real. Lo importante
+en el desarrollo de la técnica de las RNA es su útil
+comportamiento al aprender, reconocer y aplicar
+relaciones entre objetos y tramas de objetos propios
+del mundo real. \citep{freeman1991neural}
+
+Las ventajas de la red neuronal son:
+\begin{enumerate}
+\item Aprendizaje adaptativo: Son adaptables debido a la capacidad de autoajuste de los elementos procesales (neuronas) que componen el sistema.
+\item Auto organización: La auto organización consiste en la modificación de la red neuronal completa para llevar a cabo un objetivo específico. Cuando las redes neuronales se usan para reconocer ciertas clases de patrones, ellas auto organizan la información usada.
+\item Tolerancia a fallos: Las redes neuronales pueden aprender a reconocer patrones con ruido, distorsionado o incompletos. Esta es una tolerancia a fallos respecto a los datos. Las redes pueden seguir realizando su función (con cierta degradación) aunque se destruya parte de la red.
+\item Operación en tiempo real: Las redes neuronales se adaptan bien a esto debido a su implementación paralela.
+\item Fácil inserción dentro de la tecnología existente: Con las herramientas computacionales existentes (no del tipo computadora), una red puede ser rápidamente entrenada, comprobada, verificada y trasladada a una implementación hardware de bajo coste.
+\end{enumerate}
+
+\subsection{Tipos de aprendizaje}
+Hay dos métodos de aprendizaje importantes, que son: aprendizaje supervisado y no supervisado, la diferencia entre ambos tipos depende en la existencia o no de un agente externo que controle todo el proceso. \citep{matich2001redes}:
+
+\subsubsection{Aprendizaje supervisado}
+El aprendizaje supervisado se caracteriza porque el proceso de aprendizaje se realiza mediante un entrenamiento controlado por un agente externo (supervisor, maestro) que determina la respuesta que debería generar la red a partir de una entrada determinada.
+
+En este tipo de aprendizaje se suelen considerar, a su vez, tres formas de llevarlo a cabo, que dan lugar a los siguientes aprendizajes supervisados: Aprendizaje por corrección de error, aprendizaje por refuerzo y aprendizaje estocástico. \citep{matich2001redes}.
+
+\subsection{Elementos básicos}
+A continuación se puede ver, en la Figura \ref{fig:rnaBasico}, un esquema de una red neuronal: 
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.8]{imagenes/rnaBasico.png}
+		\caption{Red neuronal artificial.}
+		\begin{center}
+    Fuente: \cite{redneuronalimagen}.
+    \end{center}
+	\label{fig:rnaBasico}
+\end{figure}
+
+Esta red neuronal está constituida por neuronas interconectadas y arregladas en tres capas. Los datos ingresan por medio de la “capa de entrada”, pasan a través de la “capa oculta” y salen por la “capa de salida”. Cabe mencionar que la capa oculta puede estar constituida por varias capas.
+
+\subsubsection{Función de entrada (input function)}
+La neurona trata a muchos valores de entrada como si fueran uno solo; esto recibe el nombre de entrada global. Por lo tanto, ahora nos enfrentamos al problema de cómo se pueden combinar estas simples entradas $(in_{i1}, in_{i2}, ...)$ dentro de la entrada global, $gin_{i}$. Esto se logra a través de la función de entrada, la cual se calcula a partir del vector entrada. La función de entrada puede describirse como sigue:
+
+\begin{equation}
+input_{i}=(in_{i1} \bullet w_{i1})\ast (in_{i2} \bullet w_{i2} \ast ... (in_{in} \bullet w_{in})
+\end{equation}
+
+donde: $\ast$ representa al operador apropiado (por ejemplo: máximo, sumatoria, productoria, etc.), $n$ al número de entradas a la neurona $n_{i}$ y $w_{i}$ al peso. \citep{matich2001redes}.
+
+\subsubsection{Función de activación (activation function)}
+Una neurona biológica puede estar activa (excitada) o inactiva (no excitada); es decir, que tiene un “estado de activación”. Las neuronas artificiales también tienen diferentes estados de activación; algunas de ellas solamente dos, al igual que las biológicas, pero otras pueden tomar cualquier valor dentro de un conjunto determinado. \citep{matich2001redes}.\\
+La función activación calcula el estado de actividad de una neurona; transformando la entrada global (menos el umbral, $\sigma_{i}$) en un valor (estado) de activación, cuyo rango normalmente va de (0 a 1) o de (–1 a 1). Esto es así, porque una neurona puede estar totalmente inactiva (0 o –1) o activa (1).
+La función activación, es una función de la entrada global ($gin_{i}$) menos el umbral ($\sigma_{i}$). Las funciones de activación más comúnmente utilizadas se detallan a continuación:
+
+\begin{itemize}
+\item Función Lineal
+\end{itemize}
+
+\begin{equation}
+f(x)=\left\lbrace 
+\begin{array}{lll}
+-1 \ \ x \leq -1 / a\\
+a \ast x \ \ -1/a<x<1/a\\
+1 \ \ x \geq 1/a
+\end{array}
+\end{equation}
+con $x=gin_{i} -	\sigma, $ y $a >0.$\\
+Los valores de salida obtenidos por medio de esta función de activación serán: $a\cdot(gin_{i} - \sigma_{i})$, cuando el argumento de $(gin_{i} - \sigma_{i})$ esté comprendido dentro del rango $(-1/a, 1/a)$. Por encima o por debajo de esta zona se fija la salida en 1 o –1, respectivamente.
+Cuando $a = 1$ (siendo que la misma afecta la pendiente de la gráfica), la salida es igual a la entrada. \citep{matich2001redes}.
+
+\begin{itemize}
+    \item Función Sigmoidea
+\end{itemize}
+
+\begin{equation}
+f(x)= \frac{1}{1+e^{-gx}}, \ con \ x=gin_{i}-\sigma,
+\label{funcionSigmoidea}
+\end{equation}
+Los valores de salida que proporciona esta función están comprendidos dentro de un rango que va de 0 a 1. Al
+modificar el valor de $g$ se ve afectada la pendiente de la función de activación. 
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.6]{imagenes/Funcionsigmoidea.png}
+		\caption{Gráfico de la función sigmoide.}
+		\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:Funcionsigmoidea}
+\end{figure}
+\begin{itemize}
+    \item Función Tangente hiperbólica
+\end{itemize}
+
+\begin{equation}
+f(x)= \frac{e^{gx}-e^{-gx}}{e^{gx}+e^{-gx}}, con x=gin_{i}-\sigma,
+\end{equation}
+Los valores de salida de la función tangente hiperbólica están comprendidos dentro de un rango que va de -1 a 1. Al modificar el valor de $g$ se ve afectada la pendiente de la función de activación. 
+
+\subsubsection{Función de salida (output function)}
+El último componente que una neurona necesita es la función de salida. El valor resultante de esta función es la salida de la neurona $i$ ($out_{i}$); por ende, la función de salida determina que valor se transfiere a las neuronas vinculadas. Si la función de
+activación está por debajo de un umbral determinado, ninguna salida se pasa a la neurona subsiguiente. Normalmente, no cualquier valor es permitido como una entrada para una neurona, por lo tanto, los valores de salida están comprendidos en el rango
+$[0, 1]$ o $[-1, 1]$. También pueden ser binarios ${0, 1}$ o ${-1, 1}$. \citep{matich2001redes}.
+
+Dos de las funciones de salida más comunes son cuando: la salida es la misma que la entrada (función identidad), o binaria, que devuelve uno cuando el $act_{i}$ es mayor  o igual que el umbral $\epsilon_{i}$, caso contrario es cero. 
+
+\subsection{Perceptrón}
+El perceptrón lee los valores de entrada, después suma todas las entradas teniendo en cuenta los pesos y por último el resultado lo introduce en una función de activación que nos genera el resultado final. \citep{perceptron2017}.
+
+\subsubsection{Perceptrón simple}
+Se determina los pesos sinápticos y el umbral que proporcione el óptimo ajuste de la entrada con la salida, estas variables, para determinar estas variables se sigue un proceso adaptativo, el cual  comienza con valores aleatorios y se van modificando según la diferencia entre los valores deseados y los calculados por la red.
+
+Recordar que el perceptrón sólo es capaz de representar funciones lineales, dado que no dispone de capas ocultas, para esto existen los perceptrones multicapa.
+
+\begin{table}[h!]
+\centering
+\caption{Componentes del perceptrón.}
+\label{ComponentePerceptron}
+\begin{tabular}{|c|l|}
+\hline
+\rowcolor[HTML]{2E9AFE} 
+{\color[HTML]{FFFFFF} \textbf{\begin{tabular}[c]{@{}c@{}}Componentes del\\ perceptrón\end{tabular}}} & \multicolumn{1}{c|}{\cellcolor[HTML]{2E9AFE}{\color[HTML]{FFFFFF} \textbf{Definición}}}                                                                                                                          \\ \hline
+\rowcolor[HTML]{81DAF5} 
+Entradas                                                                                             & Es la información que recibe el perceptrón.                                                                                                                                                                      \\ \hline
+\rowcolor[HTML]{81DAF5} 
+Pesos                                                                                                & \begin{tabular}[c]{@{}l@{}}Son los valores numéricos que se encargan de establecer la\\ influencia de una entrada en la salida deseada.\end{tabular}                                                             \\ \hline
+\rowcolor[HTML]{81DAF5} 
+Bias                                                                                                 & \begin{tabular}[c]{@{}l@{}}Es un parámetro que tienen algunos modelos de redes\\ neuronales el cual permite encontrar fácilmente la\\ separación entre posibilidades de salida de una red neuronal.\end{tabular} \\ \hline
+\rowcolor[HTML]{81DAF5} 
+\begin{tabular}[c]{@{}c@{}}Función de \\ activación\end{tabular}                                     & \begin{tabular}[c]{@{}l@{}}Se encarga de determinar un valor de salida una\\ vez se han procesado cada una de las entradas.\end{tabular}                                                                         \\ \hline
+\end{tabular}
+\begin{center}
+Fuente: Elaboración propia según \cite{perceptron2017}.
+\end{center}
+\end{table}
+\newpage
+En la Tabla \ref{ComponentePerceptron}  se representan los componente del perceptrón simple.
+
+El entrenamiento del perceptrón es un proceso iterativo y sigue los siguientes pasos, hasta lograr reducir el error:
+\begin{itemize}
+    \item Paso 1: Inicializar los pesos y el bias.
+\item Paso 2: Calcular las salidas (net) con los pesos y el bias.
+\item Paso 3: Obtener la salida utilizando la función de activación y calcular cada valor del error.
+\item Paso 4: Corregir el Bias y los pesos.
+\end{itemize}
+
+\subsubsection{Perceptrón Multicapa}
+El Perceptrón multicapa es una red de alimentación hacia delante compuesta por una capa de N
+neuronas de entrada (sensores), otra capa formada por M neuronas de salida y un número determinado
+de capas ocultas. (Ver Figura \ref{Fig:21}). El tamaño de éstas dependerán de la dificultad de la correspondencia
+a implementar. \citep{muntintroduccion}.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.4]{imagenes/perpceMultiCapa.jpg}
+		\caption{Representación de un red multicapa.}
+		\begin{center}
+    Fuente: Alba Morera (2018).
+    \end{center}
+	\label{Fig:21}
+\end{figure}
+\newpage
+El objetivo que se busca con este tipo de red es el mismo, establecer una correspondencia entre un
+conjunto de entrada y un conjunto de salidas deseadas, de manera que:
+
+\begin{equation}
+(x_{1},...,x_{n}) \epsilon \mathbb{R}_{N} \rightarrow (y_{1},...,y_{n}) \epsilon \mathbb{R}_{M}
+\end{equation}
+
+Para ello se dispone de un conjunto de p pares de entrenamiento de manera que sabemos perfectamente que al patrón de entrada $(x_{1}^{k},...,x_{N}^{k})$ le corresponde la salida $(y_{1}^{k},...,y_{M}^{k}), k = 1,...,p$. Así, nuestro
+conjunto de entrenamiento es:
+\begin{equation}
+{(x_{1}^{k},...,x_{N}^{k}) \rightarrow (y_{1}^{k},...,y_{M}^{k}),k? 1, ..., p}
+\end{equation}
+
+\subsection{Backpropagation}
+La red neuronal propaga la señal de los datos de entrada hacia adelante a través de sus parámetros hacia el momento de la decisión, y luego propaga hacia atrás la información sobre el error, a la inversa a través de la red, para que pueda alterar los parámetros. Esto sucede paso a paso:
+\begin{itemize}
+\item La red adivina los datos, utilizando sus parámetros.
+\item La red se mide con una función de pérdida.
+\item El error se propaga hacia atrás para ajustar los parámetros equivocados.
+\end{itemize}
+
+La propagación hacia atrás de errores o retropropagación (del inglés backpropagation) es un método de cálculo del gradiente utilizado en algoritmos de aprendizaje supervisado utilizados para entrenar redes neuronales artificiales. El método emplea un ciclo propagación (adaptación de dos fases). Una vez que se ha aplicado un patrón a la entrada de la red como estímulo, este se propaga desde la primera capa a través de las capas siguientes de la red, hasta generar una salida. La señal de salida se compara con la salida deseada y se calcula una señal de error para cada una de las salidas.
+
+Las salidas de error se propagan hacia atrás, partiendo de la capa de salida, hacia todas las neuronas de la capa oculta que contribuyen directamente a la salida. Sin embargo, las neuronas de la capa oculta sólo reciben una fracción de la señal total del error, basándose aproximadamente en la contribución relativa que haya aportado cada neurona a la salida original. Este proceso se repite, capa por capa, hasta que todas las neuronas de la red hayan recibido una señal de error que describa su contribución relativa al error total.
+
+La importancia de este proceso consiste en que, a medida que se entrena la red, las neuronas de las capas intermedias se organizan a sí mismas de tal modo que las distintas neuronas aprenden a reconocer distintas características del espacio total de entrada. Después del entrenamiento, cuando se les presente un patrón arbitrario de entrada que contenga ruido o que esté incompleto, las neuronas de la capa oculta de la red responderán con una salida activa si la nueva entrada contiene un patrón que se asemeje a aquella característica que las neuronas individuales hayan aprendido a reconocer durante su entrenamiento.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.7]{imagenes/ecuacionesBackpropagation.png}
+		\caption{Ecuaciones del backpropagation.}
+		\begin{center}
+    Fuente: \cite{ecuBack}.
+    \end{center}
+	\label{Fig:ecuacionesBackpropagation}
+\end{figure}
+
+Donde: BP1 es para el error en la capa de salida, BP2 es para el error en términos del error en la siguiente capa, BP3 es para la tasa de cambio del costo con respecto a cualquier sesgo en la red y BP4 es para la tasa de cambio del costo con respecto a cualquier peso en la red.
+
+\subsection{Definición de regresión }
+Según \cite{pat2013introduccion}, el término de regresión es uno de los pilares estadísticos más modernos el cual hace referencia al análisis simultaneo de dos o más variables relacionadas entre sí.
+
+Una de las variables se le conoce como variable dependiente (y) y la otra como variable independiente (x).
+
+\begin{equation}
+    Y=B_{0}+B_{1}X_{1}+B_{2}X_{2}+...+B_{k}X_{k}
+\end{equation}
+
+Donde:
+$Y$:  es la variable dependiente, la cual también es denominada variable respuesta
+$X_{i}$:  es la variable independiente i, la cual también se llama exploratoria
+$B_{i}$:  es el coeficiente del modelo para la variable $X_{i}$
+
+Tanto la variable independiente como las independientes deben ser métricas, aunque las independientes también pueden tener valores cualitativos
+
+\subsubsection{Fases del análisis de regresión múltiple}
+Según \cite{pat2013introduccion}, las fases son:
+
+\begin{itemize}
+    \item Identificar problema o área de oportunidad.
+    \item Seleccionar las variables dependientes e independientes.
+    \item Recolectar variables.
+    \item Realizar análisis descriptivo del tipo de relación entre variables.
+    \item Seleccionar método.
+    \item Calcular coeficientes del modelo de regresión lineal múltiple para construir la función.
+    \item Identificar problemas de colinealidad o multicolinealidad.
+    \item Realizar prueba global de la ecuación.
+    \item Efectuar pruebas individuales de los coeficientes.
+    \item Probar cumplimiento de los supuestos del análisis.
+    \item .Interpretar coeficientes de determinación, correlación, determinación ajustado y error estándar.
+    \item Analizar los coeficientes de la ecuación de regresión.
+    \item Elaborar pronósticos puntuales y por intervalo.
+\end{itemize}
+
+\subsection{Mysql Worbench}
+MySQL Workbench es un software creado por la empresa Sun Microsystems, esta herramienta permite modelar diagramas de Entidad-Relación para bases de datos MySQL. Con esta herramienta se puede elaborar una representación visual de las tablas, vistas, procedimientos almacenados y claves foráneas de la base de datos. Además, es capaz de sincronizar el modelo en desarrollo con la base de datos real. Se puede realizar una ingeniería directa e ingeniería inversa para exportar e importar el esquema de una base de datos ya existente el cual haya sido guardado o hecho copia de seguridad con MySQL Administrador. MySQL Workbench puede generar también el guión necesario para crear la base de datos que se ha dibujado en el esquema; es compatible con los modelos de base de datos de DBDesigner 4 y soporta las novedades incorporadas en MySQL 5.x. \citep{MySQLWorkbench}.
+\subsection{Python}
+Python es un lenguaje de programación interpretado simple pero poderoso que cierra la brecha entre la programación de C y la de shell y, por lo tanto, es ideal para la "programación desechable" y la creación rápida de prototipos. Su sintaxis se construye a partir de construcciones tomadas de una variedad de otros lenguajes; las más destacadas son las influencias de ABC, C, Modula-3 e Icon. El intérprete de Python se puede ampliar fácilmente con nuevas funciones y tipos de datos implementados en C. Python también es adecuado como lenguaje de extensión para aplicaciones C altamente personalizables, como editores o administradores de ventanas. Python está disponible para varios sistemas operativos, entre los que se encuentran varios tipos de UNIX (incluido Linux), el sistema operativo Apple Macintosh, MS-DOS, MS-Windows 3.1, Windows NT y OS / 2. Es conciso, pero intenta ser exacto y completo. La semántica de los tipos de objetos incorporados no esenciales y de las funciones y módulos incorporados se describe en la Referencia de la biblioteca de Python. \citep{rossum1995python}.
+
+\subsection{TensorFlow}
+TensorFlow implementa una visión de la teoría de la probabilidad adaptada al paradigma moderno de aprendizaje profundo de computación diferenciable de extremo a extremo. Basado en dos abstracciones básicas, ofrece bloques de construcción flexibles para el cálculo probabilístico. Las distribuciones proporcionan métodos rápidos y numéricamente estables para generar muestras y calcular estadísticas, por ejemplo, densidad logarítmica. Los bijectors proporcionan transformaciones de seguimiento de volumen componibles con almacenamiento en caché automático. Juntos, permiten la construcción modular de distribuciones y transformaciones de alta dimensión que no son posibles con bibliotecas anteriores (por ejemplo, pixelCNN, flujos autorregresivos y redes residuales reversibles). Son el caballo de batalla detrás de los sistemas de programación probabilísticos profundos como Edward y potencian la inferencia rápida de caja negra en modelos probabilísticos construidos sobre componentes de redes profundas.. \citep{dillon2017tensorflow}.
+
+\section{Método de la investigación}
+\subsection{Tipo de investigación}
+La presente tesis es del tipo experimental.
+
+\subsection{Variables de la Investigación}
+\subsubsection{Variable Dependiente}
+Pronosticar las ventas en el Mall Aventura Plaza.
+\subsubsection{Variable Independiente}
+Sistema basado en conocimiento mediante RNA.
+
+\subsection{Operacionalización de la variable}
+Nos permiten realizar mediciones y determinar la validez de la hipótesis que fue planteada en la investigación. 
+
+\begin{table}[h!]
+\centering
+\caption{Indicadores para en nuestra investigación.}
+\label{IndicadoresBase}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor[HTML]{68CBD0} 
+{\color[HTML]{FFFFFF} Variable dependiente} & {\color[HTML]{FFFFFF} Descripción} & \multicolumn{2}{c|}{\cellcolor[HTML]{68CBD0}{\color[HTML]{FFFFFF} Indicador}} \\ \hline
+\rowcolor[HTML]{DAE8FC} 
+\cellcolor[HTML]{DAE8FC} & \cellcolor[HTML]{DAE8FC} & Sensibilidad: & $\frac{\textup{Verdaderos positivos}}{\textup{Verdaderos positivos + falsos negativos}}$ \\ \cline{3-4} 
+\rowcolor[HTML]{DAE8FC} 
+\cellcolor[HTML]{DAE8FC} & \cellcolor[HTML]{DAE8FC} & Precisión: & $\frac{\textup{Verdaderos positivos}}{\textup{Verdaderos positivos + falsos positivos}}$ \\ \cline{3-4} 
+\rowcolor[HTML]{DAE8FC} 
+\cellcolor[HTML]{DAE8FC} & \cellcolor[HTML]{DAE8FC} & Exactitud: & $\frac{\textup{Verdaderos positivos + Verdaderos negativos}}{\textup{Total de documentos}}$ \\ \cline{3-4} 
+\rowcolor[HTML]{DAE8FC} 
+\multirow{-4}{*}{\cellcolor[HTML]{DAE8FC}\begin{tabular}[c]{@{}c@{}}Pronosticar las \\ ventas en el\\ Mall Aventura\\ Plaza \end{tabular}} & \multirow{-4}{*}{\cellcolor[HTML]{DAE8FC}\begin{tabular}[c]{@{}c@{}}Técnica inteligente  \\para pronosticar las \\ ventas \end{tabular}} & Tiempo: & Representado en segundos \\ \hline
+\end{tabular}
+\begin{center}
+    Fuente: Elaboración propia.
+\end{center}
+\end{table}
+
+
+\section{Recolección de datos para la elaboración del modelo}
+\subsection{Técnica}
+%Observación, fue la técnica aplicada para la recolección de datos, específicamente la observación estructurada. Indicando como únicas respuestas 1 = SI, 0 = NO (ver Tabla: \ref{Tabla: DatosPoblación}).
+
+\subsection{Población}
+La población para nuestra investigación son las ventas en los últimos 12 meses de diversos productos en el Mall Aventura Plaza - Trujillo.
+
+\subsection{Muestra}
+%Este conjunto de documentos está conformado por una población de 134 documentos, los cuales fueron datos tomados de la recepción en una oficina al azar de la Universidad Nacional de Trujillo, Dirección de Calidad Universitaria, estos documentos fueron editados de tal forma que no permita dar a conocer nombres o datos que podrían ser utilizados con otros fines que no sean de estudio o investigación. Los datos obtenidos fueron:
+%\begin{table}[h!]
+%\centering
+%\caption{Datos obtenidos para la investigación.}
+%\label{tab:my-table}
+%\begin{tabular}{|l|c|}
+%\hline
+%\rowcolor[HTML]{2E9AFE} 
+%\multicolumn{1}{|c|}{\cellcolor[HTML]{2E9AFE}{\color[HTML]{FFFFFF} \textbf{Día}}}   & {\color[HTML]{FFFFFF} \textbf{Cantidad de documentos}} \\ \hline
+%\rowcolor[HTML]{81DAF5} 
+%Lunes 26                                                                            & 28                                                     \\ \hline
+%\rowcolor[HTML]{81DAF5} 
+%Martes 27                                                                           & 31                                                     \\ \hline
+%\rowcolor[HTML]{81DAF5} 
+%Miércoles 28                                                                        & 22                                                     \\ \hline
+%\rowcolor[HTML]{81DAF5} 
+%Jueves 29                                                                           & 32                                                     \\ \hline
+%\rowcolor[HTML]{81DAF5} 
+%Viernes 30                                                                          & 21                                                     \\ \hline
+%\rowcolor[HTML]{2E9AFE} 
+%\multicolumn{1}{|c|}{\cellcolor[HTML]{2E9AFE}{\color[HTML]{FFFFFF} \textbf{Total}}} & {\color[HTML]{FFFFFF} \textbf{134}}                    \\ \hline
+%\end{tabular}
+%\begin{center}
+%Fuente: Elaboración propia.
+%\end{center}
+%\end{table}
+
+%\begin{table}[h!]
+%\centering
+%\caption{Tipos de documentos y sus cantidades.}
+%\label{tab:my-table}
+%\begin{tabular}{|l|c|}
+%\hline
+%\rowcolor[HTML]{2E9AFE} 
+%\multicolumn{1}{|c|}{\cellcolor[HTML]{2E9AFE}{\color[HTML]{FFFFFF} \textbf{Tipo de documento}}} & {\color[HTML]{FFFFFF} \textbf{Cantidad}} \\ \hline
+%\rowcolor[HTML]{81DAF5} 
+%Oficio                                                                                          & 54                                       \\ \hline
+%\rowcolor[HTML]{81DAF5} 
+%Oficio múltiple                                                                                 & 14                                       \\ \hline
+%\rowcolor[HTML]{81DAF5} 
+%Informe                                                                                         & 24                                       \\ \hline
+%\rowcolor[HTML]{81DAF5} 
+%Solicitud                                                                                       & 22                                       \\ \hline
+%\rowcolor[HTML]{81DAF5} 
+%Resolución rectoral                                                                             & 14                                       \\ \hline
+%\rowcolor[HTML]{81DAF5} 
+%Memorandum                                                                                      & 6                                        \\ \hline
+%\rowcolor[HTML]{2E9AFE} 
+%\multicolumn{1}{|c|}{\cellcolor[HTML]{2E9AFE}{\color[HTML]{FFFFFF} \textbf{Total}}}             & {\color[HTML]{FFFFFF} \textbf{134}}      \\ \hline
+%\end{tabular}
+%\begin{center}
+%Fuente: Elaboración propia.
+%\end{center}
+%\end{table}
+
+%\begin{figure}[h!]
+%	\centering
+%		\includegraphics[scale=0.5]{imagenes/RepreGrafica.png}
+%		\caption{Diagrama de tipos de documentos.}
+%	\begin{center}
+%    Fuente: Elaboración propia.
+%    \end{center}
+%	\label{fig:RepreGrafica}
+%\end{figure}
+%Estos datos fueron recogidos de la oficina y tienen lugar en el tiempo en la última semana de agosto del 2019.
+
+\subsubsection{Muestra por conveniencia}
+Permite seleccionar aquellos casos accesibles que acepten ser incluidos. Esto, fundamentado en la conveniente accesibilidad y proximidad de los sujetos para el investigador. \citep{otzen2017tecnicas}.
+
+\section{Etapas de la investigación}
+Nuestra investigación comprenderá  las siguientes etapas:
+\begin{itemize}
+\item La investigación bibliográfica a través de búsqueda de artículos en la web, libros y casos de estudio en relación con el tema de investigación (pronósticos de ventas).
+\item La aplicación de la metodología del sistema basado en conocimiento (Common Kads).
+\item Recolección de nuestra población, ventas, los cuales se utilizó en el desarrollo de la investigación.
+\item Teniendo en cuenta que se necesita entrenar a las redes neuronales, puesto que son  que las redes neuronales son heurísticas se requieren un constante ajuste para obtener un óptimo resultado.
+\item Comparar resultados del software contra otros métodos de pronósticos de ventas (lineal, algorítmico).
+
+\end{itemize}
+
+\chapter{Sistema Basado en Conocimiento Mediante RNA paraPronósticar las Ventas en el Mall Aventura}
+\renewcommand{\baselinestretch}{2} %doble espacio paratodo el texto
+
+\section{Análisis}
+
+\subsection{Requerimiento funcional}
+La siguiente imagen (ver Figura: \ref{fig:reqFuncional}) hace referencia y describen las actividades de nuestra aplicación.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.7]{imagenes/reqFuncional.png}
+		\caption{Requerimiento funcional de investigación.}
+	\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:reqFuncional}
+\end{figure}
+\newpage
+Usuario-administrador: 
+\begin{itemize}
+    \item Cargar documento y subir los documentos a clasificar.
+    \item Reportar documentos documentos clasificados, por tipo y por destino.
+    \item Mostrar gráfico de porcentaje de la cantidad de documentos clasificados, por tipo y por destino.
+\end{itemize}
+Administrador: 
+\begin{itemize}
+    \item Administrar permisos y ver los accesos que tiene los usuarios.
+    \item Registrar, nuevo usuario para que tenga acceso a la aplicación. 
+\end{itemize}
+
+\subsection{Requemiento no funcional}
+Describe otras prestaciones, características y/o limitaciones de la aplicación.
+
+\begin{table}[h!]
+\centering
+\caption{Requerimiento no funcional de nuestra investigación.}
+\label{tab:my-table}
+\begin{tabular}{|c|l|}
+\hline
+\rowcolor[HTML]{68CBD0} 
+{\color[HTML]{FFFFFF} \textbf{Requerimiento no funcional}} & \multicolumn{1}{c|}{\cellcolor[HTML]{68CBD0}{\color[HTML]{FFFFFF} \textbf{Descripción}}} \\ \hline
+\rowcolor[HTML]{DAE8FC} 
+\textbf{Usabilidad} & \begin{tabular}[c]{@{}l@{}}Aplicación de fácil manejo, con interfaces gráficas simples y con \\ iconos predictivos.\end{tabular} \\ \hline
+\rowcolor[HTML]{DAE8FC} 
+\textbf{Eficiencia} & \begin{tabular}[c]{@{}l@{}}Aplicación eficiente, ligera y con respuesta rápida,  en 300 \\ milésimas de segundo aproximadamente por documento.\end{tabular} \\ \hline
+\rowcolor[HTML]{DAE8FC} 
+\textbf{Dependibilidad} & \begin{tabular}[c]{@{}l@{}}Aplicación disponible.\\ Aplicación confiable.\\ Aplicación integro, sin alteraciones.\\ Fácil mantenimiento de la aplicación.\end{tabular} \\ \hline
+\rowcolor[HTML]{DAE8FC} 
+\textbf{Seguridad} & Tiene control para el acceso de información. \\ \hline
+\end{tabular}
+\begin{center}
+    Fuente: Elaboración propia.
+\end{center}
+\end{table}
+
+\section{Diseño}
+\subsection{Diagrama de clases}
+Modelo el cual seguiremos en el desarrollo del sistema.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.7]{imagenes/diagramadeClases22.png}
+		\caption{Modelo de diagrama de clases para la investigación de la tesis.}
+	\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:diagramaClasesTesis}
+\end{figure}
+\newpage
+\subsection{Diagrama de modelos de estados}
+Modelo de estados el cual seguiremos en el desarrollo del sistema.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.7]{imagenes/ModeloEstado.png}
+		\caption{Modelo de estados para la investigación de la tesis.}
+	\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:ModeloEstado}
+\end{figure}
+
+\subsection{Diagrama de casos de uso}
+Modelo de casos de uso el cual seguiremos en el desarrollo del sistema.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.6]{imagenes/diagramaCasosUsoTesis.png}
+		\caption{Modelo de casos de uso para la investigación de la tesis.}
+	\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:diagramaCasosUsoTesis}
+\end{figure}
+\begin{itemize}
+    \item Cargar documentos, permite subir documentos digitalizados a la aplicación.
+    \item Administrar cuentas, permite al administrador administrar las cuentas así como ver el registro de cada usuario y crear usuarios nuevos.
+    \item Administrar documentos, permite al administrador ver la hora y fecha de la carga de documentos por usuario.
+    \item Reporte archivos, permite solicitar los documentos que se subieron a la aplicación.
+\end{itemize}
+
+\subsection{Diagrama de componentes}
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.7]{imagenes/diagramadeComponentes2.png}
+		\caption{Diagrama de componentes de nuestra investigación.}
+	\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:diagramadecomponentes}
+\end{figure}
+\newpage
+\subsection{Diagrama de secuencia}
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.5]{imagenes/dsecuencia222.png}
+		\caption{Modelo de secuencia para clasificar automáticamente documentos.}
+	\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:dsecuencia222}
+\end{figure}
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.5]{imagenes/dsecuencia2.png}
+		\caption{Modelo de secuencia para reporte de documentos.}
+	\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:dsecuencia2}
+\end{figure}
+\newpage
+
+
+
+\subsection{Diagrama de la base de datos entidad relación}
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.8]{imagenes/entidadrelacion.png}
+		\caption{Diagrama de la base de datos de entidad relación.}
+	\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:entidadrelacion}
+\end{figure}
+%\section{Diseño}
+\subsection{Diseño de interfaces}
+A continuación se muestran las interfaces de la aplicación:
+
+En la Figura \ref{fig:InterfazAppCap3}, se muestra el login tanto para el administrador como para los usuarios.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.43]{imagenes/interfazApp.jpeg}
+		\caption{Login de la aplicación.}
+		\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:InterfazAppCap3}
+\end{figure}
+
+\newpage
+En la Figura \ref{fig:OpcionesAppCap3}, se muestra todas las opciones que tiene el administrador después de haber ingresado su login.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.55]{imagenes/OpcionesApp.png}
+		\caption{Interfaz principal.}
+		\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:OpcionesAppCap3}
+\end{figure}
+\newpage
+En la Figura \ref{fig:CargaDocumentossCap3}, se muestra la interfaz de cargar los documentos luego de dar click en la opción de cargar documento de la Figura \ref{fig:OpcionesAppCap3}.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.7]{imagenes/CargaDocumentosss.png}
+		\caption{Interfaz de la carga de los documentos.}
+		\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:CargaDocumentossCap3}
+\end{figure}
+
+En la Figura \ref{fig:CargamultipleDocCap3}, se muestra una interfaz para seleccionar los multiples documentos a subir.
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.5]{imagenes/CargamultipleDoc.png}
+		\caption{Interfaz de la búsqueda múltiple de documentos.}
+		\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:CargamultipleDocCap3}
+\end{figure}
+\newpage
+En la Figura \ref{fig:reporteDocumentosCap3}, se muestra el reporte de los documentos cargados en la aplicación, listos para su selección y muestra en cualquiera de los formatos (.PDF, .DOCX o .DOC).
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.55]{imagenes/reporteDocumentoss.png}
+		\caption{Interfaz de reporte de los documentos.}
+		\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:reporteDocumentosCap3}
+\end{figure}
+
+\newpage
+\subsection{Diseño de algoritmo}
+
+El siguiente diagrama de flujo en el cual mostramos el proceso de implementación computacional que seguimos para el desarrollo.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.9]{imagenes/DiagramFlujoPropia.png}
+		\caption{Diagrama de flujo para el desarrollo de la investigación.}
+	\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:39}
+\end{figure}
+\newpage
+\subsection{Extracción de datos}
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.5]{imagenes/extradatos.png}
+		\caption{Extracción de datos.}
+	\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:extracciondedatos}
+\end{figure}
+
+Limpieza:
+Extracción de los caracteres necesarios para formar el vector.
+Con la librería POI eliminamos todas las imágenes y encabezados (marca de agua) del documento, para poder llegar al texto a utilizar.
+El algoritmo convierte el salto de línea en null, asi evitamos espacios en blanco.
+El algoritmo convierte todas las letras a mayúsculas para una mejor lectura.
+
+Preparación:
+Se prepara el vector de caracter, el vector entra por cada neurona de entrada.
+Usa una capa oculta, la cual con la función sigmoide nos da una respuesta y la más aproximada a uno nos dara como respuesta el tipo de documento.
+
+Salida:
+La función sigmoide nos da como respuesta un valor, para sigmoide[0] el tipo de documento asignado es informe, para sigmoide[1] el tipo de documento asignado es solicitud, para sigmoide[2] el tipo de documento asignado es memorandum, para sigmoide[3] el tipo de documento asignado es oficio y para sigmoide[4] el tipo de documento asignado es resolución rectoral.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.4]{imagenes/DescriPatron.png}
+		\caption{Descripción del patrón.}
+	\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:DescriPatron}
+\end{figure}
+\subsection{Arquitectura de la aplicación}
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.4]{imagenes/arquitecturaaaa.png}
+		\caption{Arquitectura de la aplicación.}
+	\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:arquitecturaaaa}
+\end{figure}
+
+\section{Implementación}
+Nos enfocamos en la resolución de la tesis y el desarrollo del sistema inteligente, un software realizado en java en la plataforma de Netbeans 8.1, como gestor de datos utilizaremos Workbench MySQL y Joone como diseñador de la red neuronal, el cual nos mostrará los resultados óptimos de nuestra clasificación de documentos a través de nuestra aplicación. Detallamos cómo y qué conceptos tuvimos en cuenta para el desarrollo de la aplicación, mostramos también los procesos de implementación computacional más importantes que fueron realizados durante el desarrollo de la investigación.
+
+%%% diagrama de flujo
+
+\section{Entrenamiento}
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.6]{imagenes/redNeuroJoone.png}
+		\caption{Red neuronal en Joone.}
+	\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:redNeuroJoone}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.8]{imagenes/redeopocas.png}
+		\caption{Entrenamiento de las 5000 épocas.}
+	\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:redeopocas}
+\end{figure}
+El cual se hizo con un total de 5000 épocas.
+
+Los datos utilizados fueron extraídos de diversas oficinas de la Universidad Nacional de Trujillo, los cuales conforman la Dataset.
+
+\begin{table}[h!]
+\centering
+\caption{Datos del entrenamiento}
+\label{dataset}
+\begin{tabular}{|c|c|l|}
+\hline
+\rowcolor[HTML]{68CBD0} 
+\textbf{Función} & \textbf{Cantidad} & \multicolumn{1}{c|}{\cellcolor[HTML]{68CBD0}\textbf{Tipo}} \\ \hline
+\rowcolor[HTML]{DAE8FC} 
+Entrenamiento & 400 documentos & \begin{tabular}[c]{@{}l@{}}No especificados, tomados solo\\ para esta función\end{tabular} \\ \hline
+\rowcolor[HTML]{DAE8FC} 
+Validación & 100 documentos & \begin{tabular}[c]{@{}l@{}}Oficio = 20\\ Solicitud = 20\\ Memorandum = 20\\ Informe = 20\\ Resolución rectoral = 20\end{tabular} \\ \hline
+\rowcolor[HTML]{DAE8FC} 
+Muestra & 134 documentos & \begin{tabular}[c]{@{}l@{}}Oficio = 68\\ Solicitud = 22\\ Memorandum = 6\\ Informe = 24\\ Resolución rectoral = 14\end{tabular} \\ \hline
+\end{tabular}
+\begin{center}
+    Fuente: Elaboración propia.
+\end{center}
+\end{table}
+\newpage
+Las siguientes tablas muestran nuestras pruebas en el desarrollo de la red.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.7]{imagenes/pesosDeSalida.png}
+		\caption{Pesos de salida.}
+		\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:pesosDeSalida}
+\end{figure}
+
+\begin{table}[h!]
+\centering
+\caption{Vector de aprendizaje.}
+\label{VectorApren}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline
+\rowcolor[HTML]{68CBD0} 
+\multicolumn{8}{|c|}{\cellcolor[HTML]{68CBD0}{\color[HTML]{FFFFFF} \textbf{Vectores de aprendizaje}}} \\ \hline
+\rowcolor[HTML]{68CBD0} 
+{\color[HTML]{FFFFFF} \textbf{Informe}} & {\color[HTML]{FFFFFF} \textbf{Solicitud}} & {\color[HTML]{FFFFFF} \textbf{Memorandum}} & {\color[HTML]{FFFFFF} \textbf{Oficio}} & {\color[HTML]{FFFFFF} \textbf{Resolución}} & {\color[HTML]{FFFFFF} \textbf{Múltiple}} & {\color[HTML]{FFFFFF} \textbf{Pedido}} & {\color[HTML]{FFFFFF} \textbf{Reclamo}} \\ \hline
+1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\ \hline
+0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\ \hline
+0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 \\ \hline
+\end{tabular}
+\begin{center}
+    Fuente: Elaboración propia.
+\end{center}
+\end{table}
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.6]{imagenes/pesosDeSalida.png}
+		\caption{Pesos de salida.}
+		\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:pesosDeSalida}
+\end{figure}
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.6]{imagenes/Bias.png}
+		\caption{Bias.}
+		\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:Bias}
+\end{figure}
+
+\section{Funcionamiento de las redes neuronales}
+Al cargar un documento se va ingresando el vector característico y se interpreta en la red neuronal.
+Este es un caso de cómo la red neuronal va a ir funcionando con este documento.
+Los vectores característicos van a a responder cuando se activen y estos van a dar lugar a activar la neurona.
+
+\textbf{Funciones:}
+
+Una de las principales funciones es ``CargarDocumentos.java'' la cual usa un componente que le permite una selección múltiple, una ventaja del software es que recibe documentos que estén guardados en diferentes formatos, con la librería POIFSF nos permite reconocer las extensiones .doc, .docx., .pdf, de la misma forma algún documento que se ingrese en otro tipo de formato o ya sea como imagen (.jpg, .jpeg, .png, .gif) lo leerá como invalido.
+
+La función BuscarDocumentos, se desarrolló buscando las características que tiene un documento para clasificarlo como un tipo específico.
+
+En este caso el documento por evaluar será oficio, la neurona en la capa de entrada se activa cuando una parte contiene la palabra solicitud y al mismo tiempo petición.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.6]{imagenes/IniciovectorCaracteristico.png}
+		\caption{Inicio de vector característico.}
+	\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:IniciovectorCaracteristico}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.6]{imagenes/IniciocapaEntrada.png}
+		\caption{Activando neuronas en la capa de entrada.}
+	\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:IniciocapaEntrada}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.5]{imagenes/IniciocapaOculta.png}
+		\caption{Activando neuronas en la capa oculta.}
+	\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:IniciocapaOculta}
+\end{figure}
+\newpage
+Si se activan esos unos, se activan en la capa de entrada esas neuronas.
+
+Y al final en la capa de salida se activa solo una y da la respuesta, cada neurona de salida nos da una respuesta diferente, en este caso la segunda neurona nos da como respuesta una solicitud.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.4]{imagenes/IniciocapaSalida.png}
+		\caption{Activando neuronas en la capa de salida.}
+	\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:IniciocapaSalida}
+\end{figure}
+\newpage
+\section{Función activación}
+La neurona no sólo transmite la entrada que recibe, la función de activación utiliza la suma ponderada de la entrada anterior y la transforma como salida. La función sigmoide denotada por \re{funcionSigmoidea}, donde se denota la constante exponencial, que es aproximadamente 2.71828.
+
+En nuestra aplicación la función sigmoide nos mostrará el resultado de nuestra búsqueda dando numéricamente la opción que más se acerca al resultado que queremos llegar. En este caso ``Solicitud'' es el resultado que más se aproxima a 1.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.8]{imagenes/ResultadoFunSigmoide.png}
+		\caption{Resultado de la función sigmoide en la aplicación.}
+		\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:ResultadoFunSigmoide}
+\end{figure}
+En la Tabla \ref{VectorApren} nos muestra cuales son los vectores.
+\newpage
+
+
+\newpage
+
+
+\chapter{Resultados y discusión de la tesis}
+
+En la aplicación del sistema inteligente conseguimos resultados esperados que van de acuerdo con la hipótesis planteada.
+
+
+\section{Resultados computacionales}
+Con los indicadores de la Tabla: \ref{IndicadoresBase}, se obtuvo los siguientes resultados:
+\begin{itemize}
+\item \textbf{Verdadero positivo: }documentos correctos encontrados.
+\item \textbf{Falso positivo: } documentos incorrectos encontrados.
+\item \textbf{Verdadero negativo: } documentos correctos no encontrados.
+\item \textbf{Falso negativo: } documentos incorrectos no encontrados.
+\end{itemize}
+
+%\begin{table}[h!]
+%\centering
+%\caption{Tabla de indicadores.}
+%\begin{tabular}{|c|c|c|}
+%\hline
+%\rowcolor[HTML]{2E9AFE} 
+%{\color[HTML]{FFFFFF} \textbf{Indicadores}}               & {\color[HTML]{FFFFFF} \textbf{Descripción}}                                                 & {\color[HTML]{FFFFFF} \textbf{Instrumento}} \\ \hline
+%rowcolor[HTML]{81DAF5} 
+%Sensibilidad                                               & $\frac{\textup{Verdaderos positivos}}{\textup{Verdaderos positivos + falsos negativos}}$    & Matriz de confusión                         \\ \hline
+%\rowcolor[HTML]{81DAF5} 
+%Precisión                                                 & $\frac{\textup{Verdaderos positivos}}{\textup{Verdaderos positivos + falsos positivos}}$    & Matriz de confusión                         \\ \hline
+%\rowcolor[HTML]{81DAF5} 
+%\begin{tabular}[c]{@{}c@{}}Exactitud\\(Tasa de acierto)\end{tabular} & $\frac{\textup{Verdaderos positivos + Verdaderos negativos}}{\textup{Total de documentos}}$ & Matriz de confusión                         \\ \hline
+%\rowcolor[HTML]{81DAF5} 
+%Tiempo                                                    & Representado en minutos y segundos                                                          & Cuadro comparativo                          \\ \hline
+%\end{tabular}
+%\begin{center}
+%Fuente: Elaboración propia.
+%\end{center}
+%\end{table}
+
+\subsection{Resultado según criterio subir con éxito}
+A continuación se muestra una tabla:
+
+\begin{table}[h!]
+\centering
+\caption{Tabla de valores predictivos.}
+\label{TablaVP}
+\begin{tabular}{|
+>{\columncolor[HTML]{34CDF9}}c |
+>{\columncolor[HTML]{DAE8FC}}c |
+>{\columncolor[HTML]{DAE8FC}}c |}
+\hline
+ & \cellcolor[HTML]{34CDF9}{\color[HTML]{FFFFFF} \textbf{Verdadero (V)}} & \cellcolor[HTML]{34CDF9}{\color[HTML]{FFFFFF} \textbf{Falso (F)}} \\ \hline
+{\color[HTML]{FFFFFF} \textbf{Positivo (P)}} & VP & FP \\ \hline
+{\color[HTML]{FFFFFF} \textbf{Negativo (N)}} & VN & FN \\ \hline
+\end{tabular}
+\begin{center}
+    Fuente: Elaboración propia.
+\end{center}
+\end{table}
+Donde:\\
+Verdadero, es subir con éxito.\\
+Positivo, es encontró el documento.\\
+Falso, es no subir con éxito.\\
+Negativo, es no encontró el documento.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.5]{imagenes/holaa.jpg}
+		\caption{Resultado detallado para la búsqueda, segun criterio subir con éxito}
+		\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:holaa}
+\end{figure}
+
+%Los resultados son reemplazados en nuestros indicadores (ver Fig: \ref{fig:tablaCru2}), donde para:
+%\begin{itemize}
+%\item \textbf{Verdadero positivo}, es subir con éxito y encontró el doc., es igual a 123.
+%\item \textbf{Falso positivo}, es no subir con éxito y encontró el doc., es igual a 0.
+%\item \textbf{Verdadero negativo}, es subir con éxito y no encontró el doc., es igual a 4.
+%\item \textbf{Falso negativo}, es no subir con éxito y no encontró el doc., es igual a 7.
+%\end{itemize}
+\newpage
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.7]{imagenes/tablaCru2.png}
+		\caption{Tabla cruzada: subir con exito vs. encontró el doc.}
+		\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:tablaCru2}
+\end{figure}
+
+\begin{equation}
+\frac{VP}{VP + FN} = \frac{123}{123 + 7} = \frac{123}{130}= 0.946, \ \ \ 94.6\%  \ \textup{de  sensilibidad.}
+\end{equation}
+
+\begin{equation}
+\frac{VP}{VP + FP} = \frac{123}{123 + 0} = \frac{123}{123}= 1, \ \ \ 100\% \ \textup{de precisión.}
+\end{equation}
+
+\begin{equation}
+\frac{VP + VN}{TOTAL} = \frac{123 + 4}{134} = \frac{127}{134}= 0.947, \ \ \ 94.7\% \ \textup{de exactitud.}
+\end{equation}
+
+En los resultados de criterio: Subir con éxito el documento, se obtuvo en el indicador de sensibilidad un 94.6\%, de precisión un 100\% y en exactitud un 94.7\%. Por lo tanto, consideramos nuestra hipótesis como válida.
+
+\subsection{Resultado según criterio sin error ortográfico}
+En la tabla de valores predictivos (ver Tabla: \ref{TablaVP}), se detalla a continuación los valores para el criterio sin error ortográfico:\\
+Verdadero, es subir con éxito.\\
+Positivo, es encontró el documento.\\
+Falso, es no subir con éxito.\\
+Negativo, es no encontró el documento.\\
+
+%Los resultados son reemplazados en nuestros indicadores (ver Figura: \ref{fig:tablacruSEED}), donde para:
+%\begin{itemize}
+%\item \textbf{Verdadero positivo}, es sin error ortográfico y encontró el doc., es igual a 122.
+%\item \textbf{Falso positivo}, es con error ortográfico y encontró el doc., es igual a 1.
+%\item \textbf{Verdadero negativo}, es sin error ortográfico y no encontró el doc., es igual a 1.
+%\item \textbf{Falso negativo}, es con error ortográfico y no encontró el doc., es igual a 10.
+%\end{itemize}
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.5]{imagenes/hola123.jpg}
+		\caption{Resultado detallado para la búsqueda segun criterio sin error ortográfico.}
+		\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:hola123}
+\end{figure}
+\newpage
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.7]{imagenes/tablacruSEED.png}
+		\caption{Tabla cruzada: sin error ortográfico vs. encontró el doc.}
+		\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:tablacruSEED}
+\end{figure}
+
+\begin{equation}
+\frac{VP}{VP + FN} = \frac{122}{122 + 10} = \frac{122}{132}= 0.9242, \ \ \ 92.42\% \ \textup{de sensibilidad.}
+\end{equation}
+
+\begin{equation}
+\frac{VP}{VP + FP} = \frac{122}{122 + 1} = \frac{122}{123}= 0.9918, \ \ \ 99.18\% \ \textup{de precisión.}
+\end{equation}
+
+\begin{equation}
+\frac{VP + VN}{TOTAL} = \frac{122 + 1}{134} = \frac{123}{134}= 0.917, \ \ \ 91.7\% \ \textup{de exactitud.}
+\end{equation}
+
+En los resultados del criterio: Sin error ortográfico, se obtuvo en el indicador de sensibilidad un 92.42\%, de precisión un 99.18\% y en el de exactitud un 91.7\%.
+Por lo tanto consideramos nuestra hipótesis como valida.
+
+\section{Tiempo}
+En esta parte se miden los resultados que obtuvimos con un grupo de 30 trabajadores, antes y después de utilizar la aplicación.
+
+\begin{table}[h!]
+\centering
+\caption{Tabla base de comparación de tiempos}
+\label{TablaBaseTiempo}
+\begin{tabular}{|
+>{\columncolor[HTML]{DAE8FC}}l |c|
+>{\columncolor[HTML]{DAE8FC}}l |c|}
+\hline
+\multicolumn{2}{|c|}{\cellcolor[HTML]{34CDF9}{\color[HTML]{FFFFFF} \textbf{\begin{tabular}[c]{@{}c@{}}Tiempo de búsqueda\\ sin la aplicación\end{tabular}}}} & \multicolumn{2}{c|}{\cellcolor[HTML]{34CDF9}{\color[HTML]{FFFFFF} \textbf{\begin{tabular}[c]{@{}c@{}}Tiempo de búsqueda\\ con la aplicación\end{tabular}}}} \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{34CDF9}{\color[HTML]{FFFFFF} \textbf{Pasos}}} & \cellcolor[HTML]{34CDF9}{\color[HTML]{FFFFFF} \textbf{\begin{tabular}[c]{@{}c@{}}Tiempo\\ (segundos)\end{tabular}}} & \multicolumn{1}{c|}{\cellcolor[HTML]{34CDF9}{\color[HTML]{FFFFFF} \textbf{Pasos}}} & \cellcolor[HTML]{34CDF9}{\color[HTML]{FFFFFF} \textbf{\begin{tabular}[c]{@{}c@{}}Tiempo\\ (segundos)\end{tabular}}} \\ \hline
+Ingresar a (MiPC o Este Equipo) & 60 & Abrir la aplicación & 2.5 \\ \hline
+Buscar documentos & 120 & Cargar documentos & 2 \\ \hline
+\begin{tabular}[c]{@{}l@{}}Abrir el supuesto documento\\ que necesitas\end{tabular} & 60 & \begin{tabular}[c]{@{}l@{}}Abrir el reporte y ver\\ documento buscado\end{tabular} & 2 \\ \hline
+\begin{tabular}[c]{@{}l@{}}Repetir paso 3 hasta encontrar\\ el documento buscado\end{tabular} & 300 a más & Abrir documento & 0.3 \\ \hline
+\end{tabular}
+\begin{center}
+    Fuente: Elaboración propia.
+\end{center}
+\end{table}
+
+%\begin{table}[h!]
+%\centering
+%\caption{Criterios a trabajadores antes de usar la aplicación.}
+%\begin{tabular}{|
+%>{\columncolor[HTML]{81DAF5}}c |c|}
+%\hline
+%\cellcolor[HTML]{2E9AFE}{\color[HTML]{FFFFFF} \textbf{Criterios}} & \cellcolor[HTML]{2E9AFE}{\color[HTML]{FFFFFF} \textbf{Si / No}} \\ \hline
+%Aprox. 10 minutos                                                 &                                                                 \\ \hline
+%Aprox. 20 minutos                                                 &                                                                 \\ \hline
+%\end{tabular}
+%\begin{center}
+%Fuente: Elaboración propia.
+%\end{center}
+%\end{table}
+
+Con la Tabla \ref{TablaBaseTiempo} se obtuvieron los resultados (ver Tabla: \ref{Tabla: EncuentaSinApp}) de los cuales se sacó una media aritmética de aproximadamente 760.2 segundos, de los cuales 22 trabajadores demoraban aproximadamente 600 segundos en buscar un documento y 8 trabajadores demoraban aproximadamente 1200 segundos, lo que haces un total de 22800 segundos para 30 trabajadores 
+
+%e aplicó de la misma forma la técnica de la Observación Estructurada a la  misma población de 30 trabajadores, pero esta vez usando la aplicación para la búsqueda.
+%Indicando como únicas respuestas 1= SI, 0=NO
+
+%\begin{algorithm}
+%\begin{algorithmic}[htbp]
+%\begin{enumerate}
+%\item Abrir la aplicación. -->(1 segundo)
+%\item Cargar documentos. --> (2 segundos)
+%\item Abrir el reporte y ver documento buscado. --> (1 segundo)
+%\item Abrir documento. --> (0.300 milésimas de segundo)
+%\item Fin.
+%\end{enumerate}
+%\end{algorithmic}
+%\caption{Pasos para la búsqueda de documentos con la aplicación}
+%\label{alg:algoritmoCA}
+%\end{algorithm}
+
+%\begin{table}[h!]
+%\centering
+%\caption{Criterios a trabajadores después de usar la aplicación.}
+%\begin{tabular}{|
+%>{\columncolor[HTML]{81DAF5}}c |c|}
+%\hline
+%\cellcolor[HTML]{2E9AFE}{\color[HTML]{FFFFFF} \textbf{Criterios}} & \cellcolor[HTML]{2E9AFE}{\color[HTML]{FFFFFF} \textbf{SI / NO}} \\ \hline
+%Aprox. 5 segundos                                                 &                                                                 \\ \hline
+%Aprox. 10 segundos                                                 &                                                                 \\ \hline
+%\end{tabular}
+%\begin{center}
+%Fuente: Elaboración propia.
+%\end{center}
+%\end{table}
+
+Se aplicó la Tabla: \ref{TablaBaseTiempo} y los resultados (ver Tabla: \ref{Tabla: EncuentaConApp}) fueron muy favorables con un total de 16 personas que tardaron aproximadamente 5 segundos en la búsqueda de documentos y 14 personas que tardaron aproximadamente 10 segundos, dándonos un total de 220 segundos para 30 trabajadores, lo cual nos da un media de 7.33 segundos, con este resultado mostramos la optimización de tiempo al usar la aplicación.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.7]{imagenes/matricrua10min20min.png}
+		\caption{Trabajadores antes de usar la aplicación.}
+		\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:matricrua10min20min}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.7]{imagenes/matricrua2seg5seg.png}
+		\caption{Trabajadores usando la aplicación.}
+		\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:matricrua2seg5seg}
+\end{figure}
+
+Estos resultados nos muestran que se llegó al objetivo, cumpliendo con optimizar uno de los principales recursos, el tiempo. Con esto concluimos logrando todos los objetivos planteados para nuestra tesis.
+
+\begin{table}[h!]
+\centering
+\caption{Resultados con tiempos, sin usar la aplicación y usando la aplicación}
+\label{tab:my-table}
+\begin{tabular}{|c|c|}
+\hline
+\rowcolor[HTML]{2E9AFE} 
+{\color[HTML]{FFFFFF} \textbf{Sin aplicación}} & {\color[HTML]{FFFFFF} \textbf{Con aplicación}} \\ \hline
+\rowcolor[HTML]{81DAF5} 
+760.2 segundos                                  & 7.33 segundos                                  \\ \hline
+\end{tabular}
+\begin{center}
+Fuente: Elaboración propia.
+\end{center}
+\end{table}
+\newpage
+Logrando reducir el tiempo de 760.2 segundos a 7.33 segundos, esto significa un ahorro de tiempo en más de 752 segundos en la búsqueda por documento.
+
+
+
+\newpage
+
+
+\chapter{Consideraciones finales}
+
+
+\section{Conclusiones}
+
+Al finalizar la investigación se pudo cumplir con los objetivos específicos propuestos,los cuales se detallan acontinuación:
+\begin{enumerate}
+\item Durante esta investigación se pudo explicar la problemática de la demora en la búsqueda de documentos así como la solución aplicando un software la cual contiene como principal mecanismo el uso de los sistemas inteligentes, en este caso se determinó usar redes neuronales, perceptrón y backpropagation, la cual nos permitió establecer un lapso de tiempo muy reducido al momento de la búsqueda de los documentos.
+\item Se cumplió con la implementación de un prototipo para la clasificación de documentos, la cual es muy sencilla y útil para el usuario de cualquier oficina.
+\item En la investigación se logró una sensibilidad del 94.6\%, precisión del 100\% y exactitud del 94.7\% en el criterio de subir con éxito y encontró el documento.
+\item  En la investigación se logró una sensibilidad del 92.42\%, precisión del 99.18\% y exactitud del 91.7\% en el criterio de documento sin error ortográfico y encontró el documento.
+\item Se optimizó reducir el tiempo de 760.2 segundos a 7.33 segundos, esto significa un ahorro de tiempo en más de 752 segundos en la búsqueda por documento.
+\end{enumerate}
+
+\section{Trabajos futuros}
+
+Si bien esta investigación cumple con la hipótesis y objetivos específicos planteados, durante la presente tesis, se presentaron algunas ideas que podrían mejorar la aplicación, por ejemplo:
+
+\begin{itemize}
+\item Diseñar más a detalle la jerarquía de las oficinas de la Universidad Nacional de Trujillo, lo cual se podría llegar hasta cada escuela, como sus jerarquías internas dentro de ellas, creando una clasificación mas minuciosa.
+\item Proponer diseñar una red local en todas las oficinas de la Universidad Nacional de Trujillo para su clasificación de los documentos de manera que permita mejorar  aun más los tiempos de emisión y recepción de documentos a diferentes oficinas.
+\item Crear un app móvil y de esta forma tener un alcance a más usuarios.
+\end{itemize}
+
+
+
+\cleardoublepage
+\renewcommand\bibname{Referencias bibliográficas}
+\addcontentsline{toc}{chapter}{ Referencias bibliográfícas}
+\bibliographystyle{apalike}   % estilo de la bibliografía APA.
+\bibliography{Bibliografia}   % Archivo de Bibliografia.bib.
+

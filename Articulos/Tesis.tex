@@ -1,0 +1,88 @@
+\documentclass[12pt]{report}
+
+%\usepackage[a4paper, left = 2.5cm, top = 2.5cm, bottom = 2cm, right = 2cm]{geometry}
+%\usepackage{showframe}
+\usepackage{vmargin}
+
+\setpapersize{A4}
+\setmargins{3cm}       % margen izquierdo
+{2.5cm}                  % margen superior
+{15.5cm}                 % anchura del texto
+{23.7cm}                % altura del texto
+{0pt}                   % altura de los encabezados
+{0cm}                    % espacio entre el texto y los encabezados
+{10pt}                    % altura del pie de página
+{1cm}                    % espacio entre el texto y el pie de página
+
+
+
+\usepackage[spanish,es-tabla]{babel} % Idioma español con tablas
+\usepackage{longtable}     % Usado para diseñar grandes tablas.
+\usepackage{multirow} % para las tablas
+
+\usepackage{amsmath, amssymb, amsfonts, latexsym, anyfontsize}
+\usepackage{color, alltt, times}
+\setcounter{secnumdepth}{3} %para que ponga 1.1.1.1 en subsubsecciones
+\setcounter{tocdepth}{3}    % para que ponga subsubsecciones en el indice
+\usepackage{setspace}       % Usado para %\onehalfspace  \doublespacing  \singlespace
+\usepackage{booktabs}       % Para formar tablas
+\usepackage{appendix}       % para los anexos
+\usepackage{url}            % para citar las urls
+\usepackage{pdfpages}       % para insertar documentos de tipo PDF en latex
+\usepackage{epstopdf}       % para insertar imagenes en formato eps obtenidas en Matlab
+\usepackage{graphicx}       % para las imagenes y gráficos
+\usepackage{subfigure}      % para subfiguras
+%\usepackage[round]{natbib}
+\usepackage[utf8]{inputenc}         % Para escribir en castellano
+\usepackage[T1]{fontenc}
+
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\input{spanishAlgorithmic} % mi archivo de traducción
+
+\usepackage[x11names,table]{xcolor}
+
+\usepackage{tikz,tkz-tab, tcolorbox}
+\usepackage{caption}
+\usepackage[round]{natbib} 
+ 
+ 
+\begin{document}
+
+
+\baselineskip 1cm
+\pagestyle{plain}
+\include{Datos}              % Datos de la tesis
+\listoffigures               % indice de figuras
+\addcontentsline{toc}{chapter}{Índice de Figuras}
+\listoftables                % indice de tablas
+\addcontentsline{toc}{chapter}{Índice de Tablas}
+\tableofcontents             % indice de materias
+\include{Caps}                % Capitulos de la tesis
+
+\include{Apendice}   
+        % Apendice
+\includepdf[pages=1,pagecommand={},offset=2.7cm -2.7cm]{DECLARACION_JURADA.pdf}
+\includepdf[pages=1,pagecommand={},offset=2.7cm -2.7cm]{CARTA_AUTORIZACION.pdf}
+
+%\includepdf[pagecommand={},width=\textwidth]{DECLARACION_JURADA.pdf}
+%\includepdf[pagecommand={},width=\textwidth]{CARTA_AUTORIZACION.pdf}
+
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
