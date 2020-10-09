@@ -1,0 +1,44 @@
+\babel@toc {spanish}{}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Modelo definidos por KADS.\relax }}{8}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Red neuronal artificial.\relax }}{14}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Gráfico de la función sigmoide.\relax }}{17}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Representación de un red multicapa.\relax }}{20}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Ecuaciones del backpropagation.\relax }}{23}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Requerimiento funcional de investigación.\relax }}{32}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Modelo de diagrama de clases para la investigación de la tesis.\relax }}{34}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Modelo de estados para la investigación de la tesis.\relax }}{34}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Modelo de casos de uso para la investigación de la tesis.\relax }}{35}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagrama de componentes de nuestra investigación.\relax }}{36}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Modelo de secuencia para clasificar automáticamente documentos.\relax }}{37}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Modelo de secuencia para reporte de documentos.\relax }}{37}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Diagrama de la base de datos de entidad relación.\relax }}{38}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Login de la aplicación.\relax }}{39}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Interfaz principal.\relax }}{39}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Interfaz de la carga de los documentos.\relax }}{40}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Interfaz de la búsqueda múltiple de documentos.\relax }}{41}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Interfaz de reporte de los documentos.\relax }}{41}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Diagrama de flujo para el desarrollo de la investigación.\relax }}{42}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Extracción de datos.\relax }}{43}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Descripción del patrón.\relax }}{44}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Arquitectura de la aplicación.\relax }}{44}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Red neuronal en Joone.\relax }}{45}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Entrenamiento de las 5000 épocas.\relax }}{46}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Pesos de salida.\relax }}{47}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Pesos de salida.\relax }}{48}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Bias.\relax }}{48}%
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Inicio de vector característico.\relax }}{50}%
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Activando neuronas en la capa de entrada.\relax }}{50}%
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Activando neuronas en la capa oculta.\relax }}{51}%
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Activando neuronas en la capa de salida.\relax }}{51}%
+\contentsline {figure}{\numberline {3.27}{\ignorespaces Resultado de la función sigmoide en la aplicación.\relax }}{52}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Resultado detallado para la búsqueda, segun criterio subir con éxito\relax }}{55}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Tabla cruzada: subir con exito vs. encontró el doc.\relax }}{55}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Resultado detallado para la búsqueda segun criterio sin error ortográfico.\relax }}{57}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Tabla cruzada: sin error ortográfico vs. encontró el doc.\relax }}{57}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Trabajadores antes de usar la aplicación.\relax }}{59}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Trabajadores usando la aplicación.\relax }}{60}%
+\addvspace {10\p@ }

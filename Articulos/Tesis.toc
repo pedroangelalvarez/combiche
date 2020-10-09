@@ -1,0 +1,78 @@
+\contentsline {chapter}{Dedicatoria}{\es@scroman {i}}%
+\contentsline {chapter}{Agradecimientos}{\es@scroman {ii}}%
+\contentsline {chapter}{Resumen}{\es@scroman {iii}}%
+\contentsline {chapter}{Abstract}{\es@scroman {iv}}%
+\contentsline {chapter}{Lista de símbolos}{\es@scroman {v}}%
+\babel@toc {spanish}{}
+\contentsline {chapter}{Índice de Figuras}{\es@scroman {viii}}%
+\contentsline {chapter}{Índice de Tablas}{\es@scroman {ix}}%
+\contentsline {chapter}{\numberline {1}Introducción}{1}%
+\contentsline {section}{\numberline {1.1}Justificación de la investigación}{2}%
+\contentsline {section}{\numberline {1.2}Formulación del problema}{2}%
+\contentsline {section}{\numberline {1.3}Hipótesis}{3}%
+\contentsline {section}{\numberline {1.4}Objetivos}{3}%
+\contentsline {subsection}{\numberline {1.4.1}Generales}{3}%
+\contentsline {subsection}{\numberline {1.4.2}Específicos}{3}%
+\contentsline {section}{\numberline {1.5}Estructura de la tesis}{4}%
+\contentsline {chapter}{\numberline {2}Materiales y Métodos}{6}%
+\contentsline {section}{\numberline {2.1}Marco teórico}{6}%
+\contentsline {subsection}{\numberline {2.1.1}Metodología Common Kads}{7}%
+\contentsline {subsubsection}{\numberline {2.1.1.1}Descripción}{7}%
+\contentsline {subsection}{\numberline {2.1.2}Inteligencia Artificial (IA)}{9}%
+\contentsline {subsection}{\numberline {2.1.3}Sistemas inteligentes}{10}%
+\contentsline {subsubsection}{\numberline {2.1.3.1}Capacidades requeridas}{11}%
+\contentsline {subsection}{\numberline {2.1.4}Red Neuronal Artificial (RNA)}{12}%
+\contentsline {subsection}{\numberline {2.1.5}Tipos de aprendizaje}{13}%
+\contentsline {subsubsection}{\numberline {2.1.5.1}Aprendizaje supervisado}{14}%
+\contentsline {subsection}{\numberline {2.1.6}Elementos básicos}{14}%
+\contentsline {subsubsection}{\numberline {2.1.6.1}Función de entrada (input function)}{15}%
+\contentsline {subsubsection}{\numberline {2.1.6.2}Función de activación (activation function)}{15}%
+\contentsline {subsubsection}{\numberline {2.1.6.3}Función de salida (output function)}{17}%
+\contentsline {subsection}{\numberline {2.1.7}Perceptrón}{18}%
+\contentsline {subsubsection}{\numberline {2.1.7.1}Perceptrón simple}{18}%
+\contentsline {subsubsection}{\numberline {2.1.7.2}Perceptrón Multicapa}{20}%
+\contentsline {subsection}{\numberline {2.1.8}Backpropagation}{21}%
+\contentsline {subsection}{\numberline {2.1.9}Definición de regresión }{23}%
+\contentsline {subsubsection}{\numberline {2.1.9.1}Fases del análisis de regresión múltiple}{24}%
+\contentsline {subsection}{\numberline {2.1.10}Mysql Worbench}{25}%
+\contentsline {subsection}{\numberline {2.1.11}Python}{26}%
+\contentsline {subsection}{\numberline {2.1.12}TensorFlow}{27}%
+\contentsline {section}{\numberline {2.2}Método de la investigación}{27}%
+\contentsline {subsection}{\numberline {2.2.1}Tipo de investigación}{27}%
+\contentsline {subsection}{\numberline {2.2.2}Variables de la Investigación}{28}%
+\contentsline {subsubsection}{\numberline {2.2.2.1}Variable Dependiente}{28}%
+\contentsline {subsubsection}{\numberline {2.2.2.2}Variable Independiente}{28}%
+\contentsline {subsection}{\numberline {2.2.3}Operacionalización de la variable}{28}%
+\contentsline {section}{\numberline {2.3}Recolección de datos para la elaboración del modelo}{29}%
+\contentsline {subsection}{\numberline {2.3.1}Técnica}{29}%
+\contentsline {subsection}{\numberline {2.3.2}Población}{29}%
+\contentsline {subsection}{\numberline {2.3.3}Muestra}{29}%
+\contentsline {subsubsection}{\numberline {2.3.3.1}Muestra por conveniencia}{29}%
+\contentsline {section}{\numberline {2.4}Etapas de la investigación}{29}%
+\contentsline {chapter}{\numberline {3}Sistema Basado en Conocimiento Mediante RNA paraPronósticar las Ventas en el Mall Aventura}{31}%
+\contentsline {section}{\numberline {3.1}Análisis}{31}%
+\contentsline {subsection}{\numberline {3.1.1}Requerimiento funcional}{31}%
+\contentsline {subsection}{\numberline {3.1.2}Requemiento no funcional}{33}%
+\contentsline {section}{\numberline {3.2}Diseño}{33}%
+\contentsline {subsection}{\numberline {3.2.1}Diagrama de clases}{33}%
+\contentsline {subsection}{\numberline {3.2.2}Diagrama de modelos de estados}{34}%
+\contentsline {subsection}{\numberline {3.2.3}Diagrama de casos de uso}{35}%
+\contentsline {subsection}{\numberline {3.2.4}Diagrama de componentes}{36}%
+\contentsline {subsection}{\numberline {3.2.5}Diagrama de secuencia}{37}%
+\contentsline {subsection}{\numberline {3.2.6}Diagrama de la base de datos entidad relación}{38}%
+\contentsline {subsection}{\numberline {3.2.7}Diseño de interfaces}{38}%
+\contentsline {subsection}{\numberline {3.2.8}Diseño de algoritmo}{42}%
+\contentsline {subsection}{\numberline {3.2.9}Extracción de datos}{43}%
+\contentsline {subsection}{\numberline {3.2.10}Arquitectura de la aplicación}{44}%
+\contentsline {section}{\numberline {3.3}Implementación}{45}%
+\contentsline {section}{\numberline {3.4}Entrenamiento}{45}%
+\contentsline {section}{\numberline {3.5}Funcionamiento de las redes neuronales}{49}%
+\contentsline {section}{\numberline {3.6}Función activación}{52}%
+\contentsline {chapter}{\numberline {4}Resultados y discusión de la tesis}{53}%
+\contentsline {section}{\numberline {4.1}Resultados computacionales}{53}%
+\contentsline {subsection}{\numberline {4.1.1}Resultado según criterio subir con éxito}{54}%
+\contentsline {subsection}{\numberline {4.1.2}Resultado según criterio sin error ortográfico}{56}%
+\contentsline {section}{\numberline {4.2}Tiempo}{58}%
+\contentsline {chapter}{\numberline {5}Consideraciones finales}{61}%
+\contentsline {section}{\numberline {5.1}Conclusiones}{61}%
+\contentsline {section}{\numberline {5.2}Trabajos futuros}{62}%

@@ -179,14 +179,6 @@ La función activación, es una función de la entrada global ($gin_{i}$) menos 
 \item Función Lineal
 \end{itemize}
 
-\begin{equation}
-f(x)=\left\lbrace 
-\begin{array}{lll}
--1 \ \ x \leq -1 / a\\
-a \ast x \ \ -1/a<x<1/a\\
-1 \ \ x \geq 1/a
-\end{array}
-\end{equation}
 con $x=gin_{i} -	\sigma, $ y $a >0.$\\
 Los valores de salida obtenidos por medio de esta función de activación serán: $a\cdot(gin_{i} - \sigma_{i})$, cuando el argumento de $(gin_{i} - \sigma_{i})$ esté comprendido dentro del rango $(-1/a, 1/a)$. Por encima o por debajo de esta zona se fija la salida en 1 o –1, respectivamente.
 Cuando $a = 1$ (siendo que la misma afecta la pendiente de la gráfica), la salida es igual a la entrada. \citep{matich2001redes}.
@@ -914,9 +906,10 @@ Y al final en la capa de salida se activa solo una y da la respuesta, cada neuro
     \end{center}
 	\label{fig:IniciocapaSalida}
 \end{figure}
+
 \newpage
 \section{Función activación}
-La neurona no sólo transmite la entrada que recibe, la función de activación utiliza la suma ponderada de la entrada anterior y la transforma como salida. La función sigmoide denotada por \re{funcionSigmoidea}, donde se denota la constante exponencial, que es aproximadamente 2.71828.
+La neurona no sólo transmite la entrada que recibe, la función de activación utiliza la suma ponderada de la entrada anterior y la transforma como salida. La función sigmoide denotada por funcionSigmoidea, donde se denota la constante exponencial, que es aproximadamente 2.71828.
 
 En nuestra aplicación la función sigmoide nos mostrará el resultado de nuestra búsqueda dando numéricamente la opción que más se acerca al resultado que queremos llegar. En este caso ``Solicitud'' es el resultado que más se aproxima a 1.
 
