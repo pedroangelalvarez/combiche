@@ -36,7 +36,7 @@ Desarrollar un sistema basado en conocimiento mediante RNA para pronosticar las 
 \subsection{Específicos}
 \begin{itemize}
 \item Realizar una investigación bibliográfica para recolectar datos referentes al tema de investigación y analizar los resultados de una encuesta aplicada a un experto en ventas.
-\item Aplicar la metodología Common Kads especial para sistemas basados en conocimientos.
+\item Aplicar la metodología RUP para sistemas basados en conocimientos.
 \item Diseñar la arquitectura de nuestro sistema basado en conocimiento.
 \item Entrenar el software basándonos en el modelo computacional diseñado previamente.
 \item Analizar y comparar los resultados del software contra otros métodos de pronósticos de ventas (lineal, algorítmico).
@@ -44,7 +44,7 @@ Desarrollar un sistema basado en conocimiento mediante RNA para pronosticar las 
 
 \section{Estructura de la tesis}
 
-Nuestro trabajo de investigación tiene los siguientes capítulos:
+En presente trabajo de investigación tiene los siguientes capítulos:
 
 \begin{itemize}
  \item En el primer capítulo se desarrolla los aspectos generales así como la justificación, formulación del problema, hipótesis de la investigación y  objetivos del presente trabajo de investigación.
@@ -62,37 +62,6 @@ Nuestro trabajo de investigación tiene los siguientes capítulos:
 
 \section{Marco teórico}
 El siguiente capítulo presenta conceptos importantes que utilizamos como parte fundamental para el desarrollo de nuestra tesis, este material bibliográfico fue investigado por la relación que tiene con los temas de nuestra investigación. La investigación se tornó muy amplia, principalmente en los conceptos claves para nuestro conocimiento científico, el cual ayudó a desarrollar la tesis, inteligencia artificial, sistemas inteligentes, redes neuronales, perceptrón, backpropagation, conceptos importantes ya que sin ellos sería imposible el modelamiento y desarrollo.
-
-\subsection{Metodología Common Kads}
-
-La metodología elegida para el desarrollo del software es la metodología ágil $Common$ $Kads$. Es una metodología diseñada para el análisis y la construcción de sistemas basados en  conocimiento (SBC) de forma análoga a los métodos empleados en ingeniería de software. Fue propuesta y desarrollada por un grupo de investigadores pertenecientes a diversos países de la comunidad Europea, a través del programa ESPRIT para la innovación y la aplicación de tecnología informática avanzada. Lo que se pretendía era crear un estándar para la ingeniería del conocimiento y
-sistemas de conocimiento con el cual se pudieran construir sistemas industriales de calidad a gran escala, en una forma estructurada y controlada. \citep{lagos2002commonkads}.
-
-
-\subsubsection{Descripción}
-En $Common$ $KADS$ podemos ver reflejadas algunas ideas que han emergido, no solo de la experiencia en la ingeniería del conocimiento, sino también en el campo de la ingeniería del software en general. Estas ideas se pueden concretar en tres conceptos: modelado, reutilización y gestión del riesgo.
-
-El modelado se refiere la configuración ideal que representa de manera simplificada una teoría, la cual ayuda a comprender las teorías y leyes.
-
-La reutilización se centra en utilizar nuevamente productos ya creados anteriormente una o varias veces las cuales sean necesarias.
-
-Gestión del riesgo se refiere al proceso de identificar, analizar y responder a factores de riesgo a lo largo de la vida de un proyecto, beneficiando los objetivos propuestos.
-
-La metodología $Common KADS$ abarca todo el ciclo de desarrollo de software mediante un número de modelos interrelacionados que capturan los principales rasgos del sistema y de su entorno.
-El proceso de desarrollo de SBC consiste en rellenar un conjunto de plantillas de los modelos. Asociados a las plantillas, $Common KADS$ define estados de los modelos que caracterizan hitos en el desarrollo de cada modelo. Estos estados permiten la gestión del proyecto, cuyo desarrollo se realiza de una forma cíclica dirigida por los riesgos. \citep{lagos2002commonkads}.
-
-\begin{figure}[h!]
-	\centering
-		\includegraphics[scale=0.7]{imagenes/ModelosKaps.png}
-		
-		\caption{Modelo definidos por KADS.}
-		Fuente: \cite{lagos2002commonkads}.
-
-	\label{fig:ModelosKaps}
-\end{figure}
-La metodología $Common Kads$ tiene tres etapas: el contexto, concepto y artefacto; en cada etapa contienen modelos, en la etapa de contexto tiene modelo, organizacional, modelo de tarea y modelo de agente; en concepto tiene modelo de conocimiento y modelo de comunicación; y en artefacto tiene modelo de diseño.
-
-La relación que fija con UML son los siguientes diagramas: diagrama de clases, diagrama de estados, diagrama de actividades y diagrama de casos de uso. \citep{lagos2002commonkads}\\
 
 \subsection{Inteligencia Artificial (IA)}
 Empecemos esto con una pregunta clave: ¿Qué es la inteligencia artificial?. Aunque es un término de compleja definición, esta puede ser catalogada como una rama de la ciencia que se dedica al estudio de la forma en que se desarrolla el proceso del pensamiento humano para reproducirlo en un ente artificial. Es por ello que para poder lograrlo, la I.A. centra su estudio en dos áreas: el cuerpo humano (estudio de la inteligencia) y el ordenador electrónico. Teniendo en cuenta que para poder reproducir el pensamiento es necesario conocerlo, como primera meta para la investigación de los científicos fue entender los procesos cognoscitivos de la mente humana. De esta manera definir su modelo de inteligencia, para luego proceder a programarlo en ordenadores, simulando cada uno de los procesos y comprobando los resultados de sus teorías. \citep{Belzebu2009}. 
@@ -398,9 +367,10 @@ Nos permiten realizar mediciones y determinar la validez de la hipótesis que fu
 %Observación, fue la técnica aplicada para la recolección de datos, específicamente la observación estructurada. Indicando como únicas respuestas 1 = SI, 0 = NO (ver Tabla: \ref{Tabla: DatosPoblación}).
 
 \subsection{Población}
-La población para nuestra investigación son las ventas en los últimos 12 meses de diversos productos en el Mall Aventura Plaza - Trujillo.
+La población para nuestra investigación son las ventas del 2018 hasta el 2020 en el Restaurante Combiche en el Mall Aventura Plaza - Trujillo.
 
 \subsection{Muestra}
+Este conjunto de datos está conformado por un dataset de 968 registros, que representan las ventas durante el período enero del 2018 hasta agosto del 2020.
 %Este conjunto de documentos está conformado por una población de 134 documentos, los cuales fueron datos tomados de la recepción en una oficina al azar de la Universidad Nacional de Trujillo, Dirección de Calidad Universitaria, estos documentos fueron editados de tal forma que no permita dar a conocer nombres o datos que podrían ser utilizados con otros fines que no sean de estudio o investigación. Los datos obtenidos fueron:
 %\begin{table}[h!]
 %\centering
@@ -474,7 +444,7 @@ Permite seleccionar aquellos casos accesibles que acepten ser incluidos. Esto, f
 Nuestra investigación comprenderá  las siguientes etapas:
 \begin{itemize}
 \item La investigación bibliográfica a través de búsqueda de artículos en la web, libros y casos de estudio en relación con el tema de investigación (pronósticos de ventas).
-\item La aplicación de la metodología del sistema basado en conocimiento (Common Kads).
+\item La aplicación de la metodología RUP.
 \item Recolección de nuestra población, ventas, los cuales se utilizó en el desarrollo de la investigación.
 \item Teniendo en cuenta que se necesita entrenar a las redes neuronales, puesto que son  que las redes neuronales son heurísticas se requieren un constante ajuste para obtener un óptimo resultado.
 \item Comparar resultados del software contra otros métodos de pronósticos de ventas (lineal, algorítmico).

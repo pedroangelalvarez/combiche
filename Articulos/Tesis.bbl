@@ -1,0 +1,89 @@
+\begin{thebibliography}{}
+
+\bibitem[Cruz, 2012]{Alejandro2017}
+Cruz, A. (2012).
+\newblock Definiciones de sistemas inteligentes y 5 ejemplos de sistemas
+  inteligentes.
+\newblock
+  url={http://www.academia.edu/10376257/Definiciones-de-sistemas-inteligentes-y-5-ejemplos-de-sistemas-inteligentes
+  }.
+\newblock [Online; accedado Octubre 05, 2019].
+
+\bibitem[Dillon et~al., 2017]{dillon2017tensorflow}
+Dillon, J.~V., Langmore, I., Tran, D., Brevdo, E., Vasudevan, S., Moore, D.,
+  Patton, B., Alemi, A., Hoffman, M., and Saurous, R.~A. (2017).
+\newblock Tensorflow distributions.
+\newblock {\em arXiv preprint arXiv:1711.10604}.
+
+\bibitem[{Erlinb}, 2017]{redneuronalimagen}
+{Erlinb} (2017).
+\newblock Redes neuronales: Conceptos básicos y aplicaciones.
+\newblock url={www.perfectcodex.com/redneuronal/2017/12/27/conceptos-basicos/}.
+\newblock [Online; accedado Octubre 01, 2019].
+
+\bibitem[{Espitia Corredor, Daniel Eduardo}, 2017]{perceptron2017}
+{Espitia Corredor, Daniel Eduardo} (2017).
+\newblock Entrenamiento del perceptron.
+\newblock
+  url={www.platzi.com/tutoriales/1352-ia/2619-entrenamiento-del-perceptron/}.
+\newblock [Online; accedado Octubre 06, 2019].
+
+\bibitem[Freeman and Skapura, 1991]{freeman1991neural}
+Freeman, J.~A. and Skapura, D.~M. (1991).
+\newblock {\em Neural networks: algorithms, applications, and programming
+  techniques}.
+\newblock Addison Wesley Longman Publishing Co., Inc.
+
+\bibitem[Matich, 2001]{matich2001redes}
+Matich, D.~J. (2001).
+\newblock Redes neuronales: Conceptos b{\'a}sicos y aplicaciones.
+\newblock {\em Universidad Tecnol{\'o}gica Nacional, M{\'e}xico}.
+
+\bibitem[McCarthy, 1989]{mccarthy1989artificial}
+McCarthy, J. (1989).
+\newblock Artificial intelligence, logic and formalizing common sense.
+\newblock In {\em Philosophical logic and artificial intelligence}, pages
+  161--190. Springer.
+
+\bibitem[{Michael A. Nielsen}, 2015]{ecuBack}
+{Michael A. Nielsen} (2015).
+\newblock Redes neuronales y aprendizaje profundo: Cómo funciona el algoritmo
+  de backpropagation.
+\newblock url={www.neuralnetworksanddeeplearning.com/chap2.html}.
+\newblock [Online; accedado Octubre 01, 2019].
+
+\bibitem[Munt, 2018]{muntintroduccion}
+Munt, A.~M. (2018).
+\newblock Introducci{\'o}n a los modelos de redes neuronales artificiales el
+  perceptr{\'o}n simple y multicapa.
+\newblock {\em Universidad de Zaragoza, España}.
+
+\bibitem[{MySQL Workbench}, 2019]{MySQLWorkbench}
+{MySQL Workbench} (2019).
+\newblock Mysql workbench.
+\newblock url={www.mysql.com/products/workbench/}.
+\newblock [Online; accedado Octubre 07, 2019].
+
+\bibitem[Otzen and Manterola, 2017]{otzen2017tecnicas}
+Otzen, T. and Manterola, C. (2017).
+\newblock T{\'e}cnicas de muestreo sobre una poblaci{\'o}n a estudio.
+\newblock {\em International Journal of Morphology}, 35(1):227--232.
+
+\bibitem[Pat~Fern{\'a}ndez et~al., 2013]{pat2013introduccion}
+Pat~Fern{\'a}ndez, L.~A., Menchaca, M., Fern{\'a}ndez, P., Mart{\'\i}nez~Luis,
+  D., et~al. (2013).
+\newblock {\em Introducci{\'o}n a los modelos de regresi{\'o}n}.
+\newblock Number EE/519.536 I5.
+
+\bibitem[Prince, 2009]{Belzebu2009}
+Prince, B.~D. (2009).
+\newblock Inteligencia artificial. ¿qué es?
+\newblock
+  url={http://inteligencia-artificial-delabarrita.blogspot.pe/2009/10/en-que-consiste-y-en-que-se-fundamenta.html}.
+\newblock [Online; accedado Octubre 04, 2019].
+
+\bibitem[Rossum, 1995]{rossum1995python}
+Rossum, G. (1995).
+\newblock Python reference manual.
+
+\end{thebibliography}

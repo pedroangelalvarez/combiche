@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Tesis.aux
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+A level-1 auxiliary file: Datos.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+A level-1 auxiliary file: Caps.aux
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+The style file: apalike.bst
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: Apendice.aux
+Database file #1: Bibliografia.bib
+Warning--there's a number but no series in pat2013introduccion
+Warning--empty publisher in pat2013introduccion
+Warning--empty journal in rossum1995python
+You've used 14 entries,
+            1935 wiz_defined-function locations,
+            555 strings with 6291 characters,
+and the built_in function-call counts, 4531 in all, are:
+= -- 451
+> -- 177
+< -- 14
++ -- 58
+- -- 58
+* -- 327
+:= -- 846
+add.period$ -- 48
+call.type$ -- 14
+change.case$ -- 96
+chr.to.int$ -- 14
+cite$ -- 17
+duplicate$ -- 181
+empty$ -- 291
+format.name$ -- 76
+if$ -- 864
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 10
+newline$ -- 78
+num.names$ -- 42
+pop$ -- 76
+preamble$ -- 1
+purify$ -- 98
+quote$ -- 0
+skip$ -- 150
+stack$ -- 0
+substring$ -- 225
+swap$ -- 17
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 80
+warning$ -- 3
+while$ -- 33
+width$ -- 0
+write$ -- 183
+(There were 3 warnings)
