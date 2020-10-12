@@ -54,7 +54,7 @@ class Application(tk.Frame):
         tk.Frame.__init__(self, parent, *args, **kwargs)
         self.parent = parent
         self.fileSelect = ""
-        self.parent.title("Predicción de Ventas")
+        self.parent.title("Pronóstico de Ventas")
         self.menubar = tk.Menu(parent)
         self.filemenu = tk.Menu(self.menubar, tearoff = 0)
         self.filemenu.add_command(label = "Cargar data", command = self.selectFile)
@@ -93,7 +93,7 @@ class Application(tk.Frame):
         #self.cal2 = DateEntry(self.parent,dateformat=3,width=12, background='darkblue',foreground='white', borderwidth=4,yeaar =2020,month=2,day=29)
         #self.cal2.grid(row=1, column=2)
 
-        self.butInter = Button(self.parent, text ="Predecir", command = self.graficar_predicciones)
+        self.butInter = Button(self.parent, text ="Pronóstico", command = self.graficar_predicciones)
         self.butInter.grid(row=2, column=1)
 
         ttk.Separator(self.parent, orient=HORIZONTAL).grid(row=1, column=3,columnspan=4, ipadx=250)
@@ -382,10 +382,11 @@ class Application(tk.Frame):
 
             training_data = training_data[0:len(values)-30]
             target_data=target_data[0:len(values)-30]
+            print("LONGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG")
             print(training_data.shape,target_data.shape,valid_data.shape,valid_target.shape)
 
 
-            EPOCHS=120
+            EPOCHS=100
 
             self.model = self.crear_modeloEmbeddings()
 
@@ -435,7 +436,7 @@ class Application(tk.Frame):
             plt.show()
             '''
 
-
+            print("VALIDATE ")
             compara = pd.DataFrame(np.array([valid_target, [x[0] for x in results]])).transpose()
             compara.columns = ['real', 'prediccion']
 
@@ -445,9 +446,19 @@ class Application(tk.Frame):
             compara2.columns = ['real', 'prediccion']
             compara2['diferencia'] = compara2['real'] - compara2['prediccion']
             
+            print(compara2['real'])
+
+            x_vals = []
+            x_vals = self.df.index[len(values)-30:len(values)].to_numpy()
+            x_values = []
+            for x in x_vals:
+                x_values.append(str(datetime.datetime.strptime(str(x)[:10],'%Y-%m-%d').strftime('%d-%m-%Y')))
+            print(x_values)
             fig = plt.figure(figsize=(6, 5))
             compara2['real'].plot()
+            #plt.plot(x_values, compara2['real'][0])
             compara2['prediccion'].plot()
+            #plt.plot(x_values, compara2['prediccion'][0])
             canvas = FigureCanvasTkAgg(fig, master=self.lf)
             canvas.draw()
             canvas.get_tk_widget().grid(row=3, column=2)
