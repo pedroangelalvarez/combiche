@@ -19,6 +19,7 @@ import matplotlib
 plt.rcParams['figure.figsize'] = (16, 9)
 plt.style.use('fast')
 
+from keras.utils im
 from keras.models import Sequential
 from keras.layers import Dense,Activation,Flatten
 from sklearn.preprocessing import MinMaxScaler
@@ -158,12 +159,14 @@ class Application(tk.Frame):
             widget.destroy()
 
         PASOS = 7
-        fechaIni = str(self.cal1.get_date() - datetime.timedelta(days=32))
+        fechaIni = str(self.cal1.get_date() - datetime.timedelta(days=15))
         fechaFin = str(self.cal1.get_date() - datetime.timedelta(days=1))
         #fechaFin = str(self.cal2.get_date())
         print(fechaFin)
         print(fechaIni)
         ultimosDias = self.df[fechaIni:fechaFin]
+        print("ULTIMOS DIAS")
+        print(ultimosDias)
         values = ultimosDias['unidades'].values
 
         values = values.astype('float32')
@@ -394,6 +397,7 @@ class Application(tk.Frame):
             valid_continuas=valid_data[['var1(t-7)','var1(t-6)','var1(t-5)','var1(t-4)','var1(t-3)','var1(t-2)','var1(t-1)']]
 
             history=self.model.fit([training_data['weekday'],training_data['month'],continuas], target_data, epochs=EPOCHS,validation_data=([valid_data['weekday'],valid_data['month'],valid_continuas],valid_target))
+            plot_model(self.model, "multi_input_and_output_model.png", show_shapes=True)
             '''
             plt.scatter(range(len(y_val)),y_val,c='g')
             plt.scatter(range(len(results)),results,c='r')

@@ -46,31 +46,31 @@
 \contentsline {subsection}{\numberline {2.3.3}Muestra}{27}%
 \contentsline {subsubsection}{\numberline {2.3.3.1}Muestra por conveniencia}{28}%
 \contentsline {section}{\numberline {2.4}Etapas de la investigación}{28}%
-\contentsline {chapter}{\numberline {3}Sistema Basado en Conocimiento Mediante RNA paraPronósticar las Ventas en el Mall Aventura}{29}%
-\contentsline {section}{\numberline {3.1}Análisis}{29}%
-\contentsline {subsection}{\numberline {3.1.1}Requerimiento funcional}{29}%
-\contentsline {subsection}{\numberline {3.1.2}Requemiento no funcional}{31}%
-\contentsline {section}{\numberline {3.2}Diseño}{31}%
-\contentsline {subsection}{\numberline {3.2.1}Diagrama de clases}{31}%
-\contentsline {subsection}{\numberline {3.2.2}Diagrama de modelos de estados}{32}%
-\contentsline {subsection}{\numberline {3.2.3}Diagrama de casos de uso}{33}%
-\contentsline {subsection}{\numberline {3.2.4}Diagrama de componentes}{34}%
-\contentsline {subsection}{\numberline {3.2.5}Diagrama de secuencia}{35}%
-\contentsline {subsection}{\numberline {3.2.6}Diagrama de la base de datos entidad relación}{36}%
-\contentsline {subsection}{\numberline {3.2.7}Diseño de interfaces}{36}%
-\contentsline {subsection}{\numberline {3.2.8}Diseño de algoritmo}{40}%
-\contentsline {subsection}{\numberline {3.2.9}Extracción de datos}{41}%
-\contentsline {subsection}{\numberline {3.2.10}Arquitectura de la aplicación}{42}%
-\contentsline {section}{\numberline {3.3}Implementación}{43}%
-\contentsline {section}{\numberline {3.4}Entrenamiento}{43}%
-\contentsline {section}{\numberline {3.5}Funcionamiento de las redes neuronales}{47}%
-\contentsline {section}{\numberline {3.6}Función activación}{50}%
-\contentsline {chapter}{\numberline {4}Resultados y discusión de la tesis}{51}%
-\contentsline {section}{\numberline {4.1}Resultados computacionales}{51}%
-\contentsline {subsection}{\numberline {4.1.1}Resultado según criterio subir con éxito}{52}%
-\contentsline {subsection}{\numberline {4.1.2}Resultado según criterio sin error ortográfico}{54}%
-\contentsline {section}{\numberline {4.2}Tiempo}{56}%
-\contentsline {chapter}{\numberline {5}Consideraciones finales}{59}%
-\contentsline {section}{\numberline {5.1}Conclusiones}{59}%
-\contentsline {section}{\numberline {5.2}Trabajos futuros}{60}%
-\contentsline {chapter}{ Referencias bibliográfícas}{62}%
+\contentsline {chapter}{\numberline {3}Sistema Basado en Conocimiento Mediante RNA para Pronósticar las Ventas del Restaurante Combiche en el Mall Aventura}{29}%
+\contentsline {section}{\numberline {3.1}Análisis}{30}%
+\contentsline {subsection}{\numberline {3.1.1}Requerimiento funcional}{30}%
+\contentsline {subsection}{\numberline {3.1.2}Requemiento no funcional}{32}%
+\contentsline {section}{\numberline {3.2}Diseño}{32}%
+\contentsline {subsection}{\numberline {3.2.1}Diagrama de clases}{32}%
+\contentsline {subsection}{\numberline {3.2.2}Diagrama de modelos de estados}{33}%
+\contentsline {subsection}{\numberline {3.2.3}Diagrama de casos de uso}{34}%
+\contentsline {subsection}{\numberline {3.2.4}Diagrama de componentes}{35}%
+\contentsline {subsection}{\numberline {3.2.5}Diagrama de secuencia}{36}%
+\contentsline {subsection}{\numberline {3.2.6}Diagrama de la base de datos entidad relación}{37}%
+\contentsline {subsection}{\numberline {3.2.7}Diseño de interfaces}{37}%
+\contentsline {subsection}{\numberline {3.2.8}Diseño de algoritmo}{41}%
+\contentsline {subsection}{\numberline {3.2.9}Extracción de datos}{42}%
+\contentsline {subsection}{\numberline {3.2.10}Arquitectura de la aplicación}{43}%
+\contentsline {section}{\numberline {3.3}Implementación}{44}%
+\contentsline {section}{\numberline {3.4}Entrenamiento}{44}%
+\contentsline {section}{\numberline {3.5}Funcionamiento de las redes neuronales}{48}%
+\contentsline {section}{\numberline {3.6}Función activación}{51}%
+\contentsline {chapter}{\numberline {4}Resultados y discusión de la tesis}{52}%
+\contentsline {section}{\numberline {4.1}Resultados computacionales}{52}%
+\contentsline {subsection}{\numberline {4.1.1}Resultado según criterio subir con éxito}{53}%
+\contentsline {subsection}{\numberline {4.1.2}Resultado según criterio sin error ortográfico}{55}%
+\contentsline {section}{\numberline {4.2}Tiempo}{57}%
+\contentsline {chapter}{\numberline {5}Consideraciones finales}{60}%
+\contentsline {section}{\numberline {5.1}Conclusiones}{60}%
+\contentsline {section}{\numberline {5.2}Trabajos futuros}{61}%
+\contentsline {chapter}{ Referencias bibliográfícas}{63}%
