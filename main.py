@@ -397,7 +397,7 @@ class Application(tk.Frame):
             valid_continuas=valid_data[['var1(t-7)','var1(t-6)','var1(t-5)','var1(t-4)','var1(t-3)','var1(t-2)','var1(t-1)']]
 
             history=self.model.fit([training_data['weekday'],training_data['month'],continuas], target_data, epochs=EPOCHS,validation_data=([valid_data['weekday'],valid_data['month'],valid_continuas],valid_target))
-            plot_model(self.model, "multi_input_and_output_model.png", show_shapes=True)
+            #plot_model(self.model, "multi_input_and_output_model.png", show_shapes=True)
             '''
             plt.scatter(range(len(y_val)),y_val,c='g')
             plt.scatter(range(len(results)),results,c='r')
