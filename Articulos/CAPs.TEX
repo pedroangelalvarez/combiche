@@ -457,11 +457,11 @@ Nuestra investigación comprenderá  las siguientes etapas:
 \section{Análisis}
 
 \subsection{Requerimiento funcional}
-La siguiente imagen (ver Figura: \ref{fig:reqFuncional}) hace referencia y describen las actividades de nuestra aplicación.
+La siguiente imagen (ver Figura: \ref{fig:reqFuncional}) hace referencia y describen las actividades del sistema.
 
 \begin{figure}[h!]
 	\centering
-		\includegraphics[scale=0.7]{imagenes/reqFuncional.png}
+		\includegraphics[scale=0.7]{imagenes/requerimientos.png}
 		\caption{Requerimiento funcional de investigación.}
 	\begin{center}
     Fuente: Elaboración propia.
@@ -475,31 +475,24 @@ Usuario-administrador:
     \item Reportar documentos documentos clasificados, por tipo y por destino.
     \item Mostrar gráfico de porcentaje de la cantidad de documentos clasificados, por tipo y por destino.
 \end{itemize}
-Administrador: 
-\begin{itemize}
-    \item Administrar permisos y ver los accesos que tiene los usuarios.
-    \item Registrar, nuevo usuario para que tenga acceso a la aplicación. 
-\end{itemize}
 
 \subsection{Requemiento no funcional}
-Describe otras prestaciones, características y/o limitaciones de la aplicación.
+Describe otras prestaciones, características y/o limitaciones del sistema.
 
 \begin{table}[h!]
 \centering
-\caption{Requerimiento no funcional de nuestra investigación.}
+\caption{Requerimiento no funcional del sistema.}
 \label{tab:my-table}
 \begin{tabular}{|c|l|}
 \hline
-\rowcolor[HTML]{68CBD0} 
-{\color[HTML]{FFFFFF} \textbf{Requerimiento no funcional}} & \multicolumn{1}{c|}{\cellcolor[HTML]{68CBD0}{\color[HTML]{FFFFFF} \textbf{Descripción}}} \\ \hline
-\rowcolor[HTML]{DAE8FC} 
-\textbf{Usabilidad} & \begin{tabular}[c]{@{}l@{}}Aplicación de fácil manejo, con interfaces gráficas simples y con \\ iconos predictivos.\end{tabular} \\ \hline
-\rowcolor[HTML]{DAE8FC} 
-\textbf{Eficiencia} & \begin{tabular}[c]{@{}l@{}}Aplicación eficiente, ligera y con respuesta rápida,  en 300 \\ milésimas de segundo aproximadamente por documento.\end{tabular} \\ \hline
-\rowcolor[HTML]{DAE8FC} 
+\rowcolor[HTML]{aeb6b6} 
+{\color[HTML]{FFFFFF} \textbf{Requerimiento no funcional}} & \multicolumn{1}{c|}{\cellcolor[HTML]{aeb6b6}{\color[HTML]{FFFFFF} \textbf{Descripción}}} \\ \hline
+\rowcolor[HTML]{ededed} 
+\textbf{Usabilidad} & \begin{tabular}[c]{@{}l@{}}Aplicación de fácil manejo, con interfaz gráfica sencilla.\end{tabular} \\ \hline
+\rowcolor[HTML]{ededed} 
+\textbf{Eficiencia} & \begin{tabular}[c]{@{}l@{}}Aplicación eficiente, ligera y con respuesta rápida.\end{tabular} \\ \hline
+\rowcolor[HTML]{ededed} 
 \textbf{Dependibilidad} & \begin{tabular}[c]{@{}l@{}}Aplicación disponible.\\ Aplicación confiable.\\ Aplicación integro, sin alteraciones.\\ Fácil mantenimiento de la aplicación.\end{tabular} \\ \hline
-\rowcolor[HTML]{DAE8FC} 
-\textbf{Seguridad} & Tiene control para el acceso de información. \\ \hline
 \end{tabular}
 \begin{center}
     Fuente: Elaboración propia.
@@ -512,7 +505,7 @@ Modelo el cual seguiremos en el desarrollo del sistema.
 
 \begin{figure}[h!]
 	\centering
-		\includegraphics[scale=0.7]{imagenes/diagramadeClases22.png}
+		\includegraphics[scale=0.7]{imagenes/diagramaclases.png}
 		\caption{Modelo de diagrama de clases para la investigación de la tesis.}
 	\begin{center}
     Fuente: Elaboración propia.
@@ -525,7 +518,7 @@ Modelo de estados el cual seguiremos en el desarrollo del sistema.
 
 \begin{figure}[h!]
 	\centering
-		\includegraphics[scale=0.7]{imagenes/ModeloEstado.png}
+		\includegraphics[scale=0.7]{imagenes/modeloestados.png}
 		\caption{Modelo de estados para la investigación de la tesis.}
 	\begin{center}
     Fuente: Elaboración propia.
@@ -534,11 +527,30 @@ Modelo de estados el cual seguiremos en el desarrollo del sistema.
 \end{figure}
 
 \subsection{Diagrama de casos de uso}
-Modelo de casos de uso el cual seguiremos en el desarrollo del sistema.
+Modelo de caso de uso.
 
 \begin{figure}[h!]
 	\centering
-		\includegraphics[scale=0.6]{imagenes/diagramaCasosUsoTesis.png}
+		\includegraphics[scale=0.6]{imagenes/usecase.png}
+		\caption{Modelo de casos de uso para la investigación de la tesis.}
+	\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:diagramaCasosUsoTesis}
+\end{figure}
+\begin{itemize}
+    \item Cargar documentos, permite subir documentos digitalizados a la aplicación.
+    \item Administrar cuentas, permite al administrador administrar las cuentas así como ver el registro de cada usuario y crear usuarios nuevos.
+    \item Administrar documentos, permite al administrador ver la hora y fecha de la carga de documentos por usuario.
+    \item Reporte archivos, permite solicitar los documentos que se subieron a la aplicación.
+\end{itemize}
+
+\subsection{Diagrama de casos de uso del negocio}
+Modelo de caso de uso de negocio.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.6]{imagenes/casosdeusonegocio.png}
 		\caption{Modelo de casos de uso para la investigación de la tesis.}
 	\begin{center}
     Fuente: Elaboración propia.
@@ -555,7 +567,7 @@ Modelo de casos de uso el cual seguiremos en el desarrollo del sistema.
 \subsection{Diagrama de componentes}
 \begin{figure}[h!]
 	\centering
-		\includegraphics[scale=0.7]{imagenes/diagramadeComponentes2.png}
+		\includegraphics[scale=1]{imagenes/diagramacomponentes.png}
 		\caption{Diagrama de componentes de nuestra investigación.}
 	\begin{center}
     Fuente: Elaboración propia.
@@ -566,41 +578,21 @@ Modelo de casos de uso el cual seguiremos en el desarrollo del sistema.
 \subsection{Diagrama de secuencia}
 \begin{figure}[h!]
 	\centering
-		\includegraphics[scale=0.5]{imagenes/dsecuencia222.png}
+		\includegraphics[scale=1]{imagenes/diagramasecuencia.png}
 		\caption{Modelo de secuencia para clasificar automáticamente documentos.}
 	\begin{center}
     Fuente: Elaboración propia.
     \end{center}
 	\label{fig:dsecuencia222}
 \end{figure}
-\begin{figure}[h!]
-	\centering
-		\includegraphics[scale=0.5]{imagenes/dsecuencia2.png}
-		\caption{Modelo de secuencia para reporte de documentos.}
-	\begin{center}
-    Fuente: Elaboración propia.
-    \end{center}
-	\label{fig:dsecuencia2}
-\end{figure}
 \newpage
 
 
-
-\subsection{Diagrama de la base de datos entidad relación}
-\begin{figure}[h!]
-	\centering
-		\includegraphics[scale=0.8]{imagenes/entidadrelacion.png}
-		\caption{Diagrama de la base de datos de entidad relación.}
-	\begin{center}
-    Fuente: Elaboración propia.
-    \end{center}
-	\label{fig:entidadrelacion}
-\end{figure}
 %\section{Diseño}
 \subsection{Diseño de interfaces}
-A continuación se muestran las interfaces de la aplicación:
+A continuación se muestran la interfaz del sistema:
 
-En la Figura \ref{fig:InterfazAppCap3}, se muestra el login tanto para el administrador como para los usuarios.
+En la Figura \ref{fig:InterfazAppCap3}, se muestra la ventana principal.
 
 \begin{figure}[h!]
 	\centering
@@ -613,61 +605,14 @@ En la Figura \ref{fig:InterfazAppCap3}, se muestra el login tanto para el admini
 \end{figure}
 
 \newpage
-En la Figura \ref{fig:OpcionesAppCap3}, se muestra todas las opciones que tiene el administrador después de haber ingresado su login.
 
-\begin{figure}[h!]
-	\centering
-		\includegraphics[scale=0.55]{imagenes/OpcionesApp.png}
-		\caption{Interfaz principal.}
-		\begin{center}
-    Fuente: Elaboración propia.
-    \end{center}
-	\label{fig:OpcionesAppCap3}
-\end{figure}
-\newpage
-En la Figura \ref{fig:CargaDocumentossCap3}, se muestra la interfaz de cargar los documentos luego de dar click en la opción de cargar documento de la Figura \ref{fig:OpcionesAppCap3}.
-
-\begin{figure}[h!]
-	\centering
-		\includegraphics[scale=0.7]{imagenes/CargaDocumentosss.png}
-		\caption{Interfaz de la carga de los documentos.}
-		\begin{center}
-    Fuente: Elaboración propia.
-    \end{center}
-	\label{fig:CargaDocumentossCap3}
-\end{figure}
-
-En la Figura \ref{fig:CargamultipleDocCap3}, se muestra una interfaz para seleccionar los multiples documentos a subir.
-\begin{figure}[h!]
-	\centering
-		\includegraphics[scale=0.5]{imagenes/CargamultipleDoc.png}
-		\caption{Interfaz de la búsqueda múltiple de documentos.}
-		\begin{center}
-    Fuente: Elaboración propia.
-    \end{center}
-	\label{fig:CargamultipleDocCap3}
-\end{figure}
-\newpage
-En la Figura \ref{fig:reporteDocumentosCap3}, se muestra el reporte de los documentos cargados en la aplicación, listos para su selección y muestra en cualquiera de los formatos (.PDF, .DOCX o .DOC).
-
-\begin{figure}[h!]
-	\centering
-		\includegraphics[scale=0.55]{imagenes/reporteDocumentoss.png}
-		\caption{Interfaz de reporte de los documentos.}
-		\begin{center}
-    Fuente: Elaboración propia.
-    \end{center}
-	\label{fig:reporteDocumentosCap3}
-\end{figure}
-
-\newpage
 \subsection{Diseño de algoritmo}
 
 El siguiente diagrama de flujo en el cual mostramos el proceso de implementación computacional que seguimos para el desarrollo.
 
-\begin{figure}[h!]
+\begin{figure}[H]
 	\centering
-		\includegraphics[scale=0.9]{imagenes/DiagramFlujoPropia.png}
+		\includegraphics[scale=0.8]{imagenes/flujograma.png}
 		\caption{Diagrama de flujo para el desarrollo de la investigación.}
 	\begin{center}
     Fuente: Elaboración propia.
@@ -678,7 +623,7 @@ El siguiente diagrama de flujo en el cual mostramos el proceso de implementació
 \subsection{Extracción de datos}
 \begin{figure}[h!]
 	\centering
-		\includegraphics[scale=0.5]{imagenes/extradatos.png}
+		\includegraphics[scale=0.5]{imagenes/extracciondatos.png}
 		\caption{Extracción de datos.}
 	\begin{center}
     Fuente: Elaboración propia.
@@ -701,7 +646,7 @@ La función sigmoide nos da como respuesta un valor, para sigmoide[0] el tipo de
 
 \begin{figure}[h!]
 	\centering
-		\includegraphics[scale=0.4]{imagenes/DescriPatron.png}
+		\includegraphics[scale=0.4]{imagenes/vectorcaracteristico.png}
 		\caption{Descripción del patrón.}
 	\begin{center}
     Fuente: Elaboración propia.
@@ -711,7 +656,7 @@ La función sigmoide nos da como respuesta un valor, para sigmoide[0] el tipo de
 \subsection{Arquitectura de la aplicación}
 \begin{figure}[h!]
 	\centering
-		\includegraphics[scale=0.4]{imagenes/arquitecturaaaa.png}
+		\includegraphics[scale=0.4]{imagenes/arquitecturaaplicacion.png}
 		\caption{Arquitectura de la aplicación.}
 	\begin{center}
     Fuente: Elaboración propia.

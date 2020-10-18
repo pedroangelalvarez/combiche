@@ -3,8 +3,8 @@
 \contentsline {chapter}{Resumen}{\es@scroman {iii}}%
 \contentsline {chapter}{Abstract}{\es@scroman {iv}}%
 \babel@toc {spanish}{}
-\contentsline {chapter}{Índice de Figuras}{\es@scroman {vii}}%
-\contentsline {chapter}{Índice de Tablas}{\es@scroman {viii}}%
+\contentsline {chapter}{Índice de Figuras}{\es@scroman {vi}}%
+\contentsline {chapter}{Índice de Tablas}{\es@scroman {vii}}%
 \contentsline {chapter}{\numberline {1}Introducción}{1}%
 \contentsline {section}{\numberline {1.1}Justificación de la investigación}{2}%
 \contentsline {section}{\numberline {1.2}Formulación del problema}{2}%
@@ -49,28 +49,28 @@
 \contentsline {chapter}{\numberline {3}Sistema Basado en Conocimiento Mediante RNA para Pronósticar las Ventas del Restaurante Combiche en el Mall Aventura}{29}%
 \contentsline {section}{\numberline {3.1}Análisis}{30}%
 \contentsline {subsection}{\numberline {3.1.1}Requerimiento funcional}{30}%
-\contentsline {subsection}{\numberline {3.1.2}Requemiento no funcional}{32}%
+\contentsline {subsection}{\numberline {3.1.2}Requemiento no funcional}{31}%
 \contentsline {section}{\numberline {3.2}Diseño}{32}%
 \contentsline {subsection}{\numberline {3.2.1}Diagrama de clases}{32}%
 \contentsline {subsection}{\numberline {3.2.2}Diagrama de modelos de estados}{33}%
-\contentsline {subsection}{\numberline {3.2.3}Diagrama de casos de uso}{34}%
-\contentsline {subsection}{\numberline {3.2.4}Diagrama de componentes}{35}%
-\contentsline {subsection}{\numberline {3.2.5}Diagrama de secuencia}{36}%
-\contentsline {subsection}{\numberline {3.2.6}Diagrama de la base de datos entidad relación}{37}%
+\contentsline {subsection}{\numberline {3.2.3}Diagrama de casos de uso}{33}%
+\contentsline {subsection}{\numberline {3.2.4}Diagrama de casos de uso del negocio}{34}%
+\contentsline {subsection}{\numberline {3.2.5}Diagrama de componentes}{35}%
+\contentsline {subsection}{\numberline {3.2.6}Diagrama de secuencia}{36}%
 \contentsline {subsection}{\numberline {3.2.7}Diseño de interfaces}{37}%
-\contentsline {subsection}{\numberline {3.2.8}Diseño de algoritmo}{41}%
-\contentsline {subsection}{\numberline {3.2.9}Extracción de datos}{42}%
-\contentsline {subsection}{\numberline {3.2.10}Arquitectura de la aplicación}{43}%
-\contentsline {section}{\numberline {3.3}Implementación}{44}%
-\contentsline {section}{\numberline {3.4}Entrenamiento}{44}%
-\contentsline {section}{\numberline {3.5}Funcionamiento de las redes neuronales}{48}%
-\contentsline {section}{\numberline {3.6}Función activación}{51}%
-\contentsline {chapter}{\numberline {4}Resultados y discusión de la tesis}{52}%
-\contentsline {section}{\numberline {4.1}Resultados computacionales}{52}%
-\contentsline {subsection}{\numberline {4.1.1}Resultado según criterio subir con éxito}{53}%
-\contentsline {subsection}{\numberline {4.1.2}Resultado según criterio sin error ortográfico}{55}%
-\contentsline {section}{\numberline {4.2}Tiempo}{57}%
-\contentsline {chapter}{\numberline {5}Consideraciones finales}{60}%
-\contentsline {section}{\numberline {5.1}Conclusiones}{60}%
-\contentsline {section}{\numberline {5.2}Trabajos futuros}{61}%
-\contentsline {chapter}{ Referencias bibliográfícas}{63}%
+\contentsline {subsection}{\numberline {3.2.8}Diseño de algoritmo}{38}%
+\contentsline {subsection}{\numberline {3.2.9}Extracción de datos}{40}%
+\contentsline {subsection}{\numberline {3.2.10}Arquitectura de la aplicación}{41}%
+\contentsline {section}{\numberline {3.3}Implementación}{41}%
+\contentsline {section}{\numberline {3.4}Entrenamiento}{42}%
+\contentsline {section}{\numberline {3.5}Funcionamiento de las redes neuronales}{46}%
+\contentsline {section}{\numberline {3.6}Función activación}{49}%
+\contentsline {chapter}{\numberline {4}Resultados y discusión de la tesis}{50}%
+\contentsline {section}{\numberline {4.1}Resultados computacionales}{50}%
+\contentsline {subsection}{\numberline {4.1.1}Resultado según criterio subir con éxito}{51}%
+\contentsline {subsection}{\numberline {4.1.2}Resultado según criterio sin error ortográfico}{53}%
+\contentsline {section}{\numberline {4.2}Tiempo}{55}%
+\contentsline {chapter}{\numberline {5}Consideraciones finales}{58}%
+\contentsline {section}{\numberline {5.1}Conclusiones}{58}%
+\contentsline {section}{\numberline {5.2}Trabajos futuros}{59}%
+\contentsline {chapter}{ Referencias bibliográfícas}{61}%
