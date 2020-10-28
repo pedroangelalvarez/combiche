@@ -318,8 +318,6 @@ Según \cite{pat2013introduccion}, las fases son:
     \item Elaborar pronósticos puntuales y por intervalo.
 \end{itemize}
 
-\subsection{Mysql Worbench}
-MySQL Workbench es un software creado por la empresa Sun Microsystems, esta herramienta permite modelar diagramas de Entidad-Relación para bases de datos MySQL. Con esta herramienta se puede elaborar una representación visual de las tablas, vistas, procedimientos almacenados y claves foráneas de la base de datos. Además, es capaz de sincronizar el modelo en desarrollo con la base de datos real. Se puede realizar una ingeniería directa e ingeniería inversa para exportar e importar el esquema de una base de datos ya existente el cual haya sido guardado o hecho copia de seguridad con MySQL Administrador. MySQL Workbench puede generar también el guión necesario para crear la base de datos que se ha dibujado en el esquema; es compatible con los modelos de base de datos de DBDesigner 4 y soporta las novedades incorporadas en MySQL 5.x. \citep{MySQLWorkbench}.
 \subsection{Python}
 Python es un lenguaje de programación interpretado simple pero poderoso que cierra la brecha entre la programación de C y la de shell y, por lo tanto, es ideal para la "programación desechable" y la creación rápida de prototipos. Su sintaxis se construye a partir de construcciones tomadas de una variedad de otros lenguajes; las más destacadas son las influencias de ABC, C, Modula-3 e Icon. El intérprete de Python se puede ampliar fácilmente con nuevas funciones y tipos de datos implementados en C. Python también es adecuado como lenguaje de extensión para aplicaciones C altamente personalizables, como editores o administradores de ventanas. Python está disponible para varios sistemas operativos, entre los que se encuentran varios tipos de UNIX (incluido Linux), el sistema operativo Apple Macintosh, MS-DOS, MS-Windows 3.1, Windows NT y OS / 2. Es conciso, pero intenta ser exacto y completo. La semántica de los tipos de objetos incorporados no esenciales y de las funciones y módulos incorporados se describe en la Referencia de la biblioteca de Python. \citep{rossum1995python}.
 
@@ -469,11 +467,10 @@ La siguiente imagen (ver Figura: \ref{fig:reqFuncional}) hace referencia y descr
 	\label{fig:reqFuncional}
 \end{figure}
 \newpage
-Usuario-administrador: 
+Usuario: 
 \begin{itemize}
-    \item Cargar documento y subir los documentos a clasificar.
-    \item Reportar documentos documentos clasificados, por tipo y por destino.
-    \item Mostrar gráfico de porcentaje de la cantidad de documentos clasificados, por tipo y por destino.
+    \item Seleccionar la fecha a pronósticar.
+    \item Reportar futuras ventas gráficamente.
 \end{itemize}
 
 \subsection{Requemiento no funcional}
@@ -531,7 +528,7 @@ Modelo de caso de uso.
 
 \begin{figure}[h!]
 	\centering
-		\includegraphics[scale=0.6]{imagenes/usecase.png}
+		\includegraphics[scale=0.7]{imagenes/usecase.png}
 		\caption{Modelo de casos de uso para la investigación de la tesis.}
 	\begin{center}
     Fuente: Elaboración propia.
@@ -539,10 +536,9 @@ Modelo de caso de uso.
 	\label{fig:diagramaCasosUsoTesis}
 \end{figure}
 \begin{itemize}
-    \item Cargar documentos, permite subir documentos digitalizados a la aplicación.
-    \item Administrar cuentas, permite al administrador administrar las cuentas así como ver el registro de cada usuario y crear usuarios nuevos.
-    \item Administrar documentos, permite al administrador ver la hora y fecha de la carga de documentos por usuario.
-    \item Reporte archivos, permite solicitar los documentos que se subieron a la aplicación.
+    \item Reportar Ventas, el usuario reporta las ventas a un especialista.
+    \item Pronosticar Futuras Ventas, el especialista pronostica las futuras ventas a partir de los reportes.
+    \item Reportar Futuras ventas, el especialista brinda el pronóstico de las futuras ventas en un reporte.
 \end{itemize}
 
 \subsection{Diagrama de casos de uso del negocio}
@@ -550,7 +546,7 @@ Modelo de caso de uso de negocio.
 
 \begin{figure}[h!]
 	\centering
-		\includegraphics[scale=0.6]{imagenes/casosdeusonegocio.png}
+		\includegraphics[scale=0.7]{imagenes/casosdeusonegocio.png}
 		\caption{Modelo de casos de uso para la investigación de la tesis.}
 	\begin{center}
     Fuente: Elaboración propia.
@@ -558,10 +554,7 @@ Modelo de caso de uso de negocio.
 	\label{fig:diagramaCasosUsoTesis}
 \end{figure}
 \begin{itemize}
-    \item Cargar documentos, permite subir documentos digitalizados a la aplicación.
-    \item Administrar cuentas, permite al administrador administrar las cuentas así como ver el registro de cada usuario y crear usuarios nuevos.
-    \item Administrar documentos, permite al administrador ver la hora y fecha de la carga de documentos por usuario.
-    \item Reporte archivos, permite solicitar los documentos que se subieron a la aplicación.
+    \item Pronosticar Ventas, El usuario pronostica directamente las futuras ventas mediante un sistema basado en conocimiento.
 \end{itemize}
 
 \subsection{Diagrama de componentes}
@@ -596,8 +589,8 @@ En la Figura \ref{fig:InterfazAppCap3}, se muestra la ventana principal.
 
 \begin{figure}[h!]
 	\centering
-		\includegraphics[scale=0.43]{imagenes/interfazApp.jpeg}
-		\caption{Login de la aplicación.}
+		\includegraphics[scale=0.43]{imagenes/mainwindow.png}
+		\caption{Ventana Principal del Sistema.}
 		\begin{center}
     Fuente: Elaboración propia.
     \end{center}
@@ -612,7 +605,7 @@ El siguiente diagrama de flujo en el cual mostramos el proceso de implementació
 
 \begin{figure}[H]
 	\centering
-		\includegraphics[scale=0.8]{imagenes/flujograma.png}
+		\includegraphics[scale=0.7]{imagenes/flujograma.png}
 		\caption{Diagrama de flujo para el desarrollo de la investigación.}
 	\begin{center}
     Fuente: Elaboración propia.
@@ -623,7 +616,7 @@ El siguiente diagrama de flujo en el cual mostramos el proceso de implementació
 \subsection{Extracción de datos}
 \begin{figure}[h!]
 	\centering
-		\includegraphics[scale=0.5]{imagenes/extracciondatos.png}
+		\includegraphics[scale=0.4]{imagenes/extracciondatos.png}
 		\caption{Extracción de datos.}
 	\begin{center}
     Fuente: Elaboración propia.
@@ -631,18 +624,14 @@ El siguiente diagrama de flujo en el cual mostramos el proceso de implementació
 	\label{fig:extracciondedatos}
 \end{figure}
 
-Limpieza:
-Extracción de los caracteres necesarios para formar el vector.
-Con la librería POI eliminamos todas las imágenes y encabezados (marca de agua) del documento, para poder llegar al texto a utilizar.
-El algoritmo convierte el salto de línea en null, asi evitamos espacios en blanco.
-El algoritmo convierte todas las letras a mayúsculas para una mejor lectura.
+Preprocesado:
+Selección de las fechas previas(15 días) a la fecha que se quiere pronosticar, de esta manera se tiene los valores de ventas previas a dicha semana, se prepara las fechas futuras(1 semana) a partir de la fecha seleccionada.
 
 Preparación:
-Se prepara el vector de caracter, el vector entra por cada neurona de entrada.
-Usa una capa oculta, la cual con la función sigmoide nos da una respuesta y la más aproximada a uno nos dara como respuesta el tipo de documento.
+Usando los valores de ventas y fechas se le establece sus respectivos valores de Embeddings, se re-escalan los valores para luego predecir en la red neuronal pre-entrenada y se re-escala los valores obtenidos.
 
 Salida:
-La función sigmoide nos da como respuesta un valor, para sigmoide[0] el tipo de documento asignado es informe, para sigmoide[1] el tipo de documento asignado es solicitud, para sigmoide[2] el tipo de documento asignado es memorandum, para sigmoide[3] el tipo de documento asignado es oficio y para sigmoide[4] el tipo de documento asignado es resolución rectoral.
+La función tangente hiperbólica nos da como respuesta un vector, el cual indica los valores de las ventas en la próxima semana iniciando en la fecha indicada.
 
 \begin{figure}[h!]
 	\centering
@@ -653,6 +642,7 @@ La función sigmoide nos da como respuesta un valor, para sigmoide[0] el tipo de
     \end{center}
 	\label{fig:DescriPatron}
 \end{figure}
+En este vector se puede visualizar que los primeros dos valores son extraídos del día de la semana y el mes de la fecha, mientras que los otros siete indican los valores de las fechas siguiente pero re-escalado.
 \subsection{Arquitectura de la aplicación}
 \begin{figure}[h!]
 	\centering
@@ -665,181 +655,25 @@ La función sigmoide nos da como respuesta un valor, para sigmoide[0] el tipo de
 \end{figure}
 
 \section{Implementación}
-Nos enfocamos en la resolución de la tesis y el desarrollo del sistema inteligente, un software realizado en java en la plataforma de Netbeans 8.1, como gestor de datos utilizaremos Workbench MySQL y Joone como diseñador de la red neuronal, el cual nos mostrará los resultados óptimos de nuestra clasificación de documentos a través de nuestra aplicación. Detallamos cómo y qué conceptos tuvimos en cuenta para el desarrollo de la aplicación, mostramos también los procesos de implementación computacional más importantes que fueron realizados durante el desarrollo de la investigación.
+Nos enfocamos en la resolución de la tesis y el desarrollo del sistema basado en conocimiento, un software realizado en python independiente de la IDE, usando tensorflow para el entrenamiento y predicción de la red neuronal feedforward, el cual nos mostrará los resultados óptimos de nuestra pronóstico a través de nuestro sistema. \\
 
-%%% diagrama de flujo
+En el proceso de entrenamiento de la red neuronal se hizo un total de 100 épocas. Los datos utilizados fueron extraídos de la base de datos del restaurante Combiche en el Mall Aventura y almacenados en un dataset (en formato .csv).
 
-\section{Entrenamiento}
-\begin{figure}[h!]
-	\centering
-		\includegraphics[scale=0.6]{imagenes/redNeuroJoone.png}
-		\caption{Red neuronal en Joone.}
-	\begin{center}
-    Fuente: Elaboración propia.
-    \end{center}
-	\label{fig:redNeuroJoone}
-\end{figure}
-
-\begin{figure}[h!]
-	\centering
-		\includegraphics[scale=0.8]{imagenes/redeopocas.png}
-		\caption{Entrenamiento de las 5000 épocas.}
-	\begin{center}
-    Fuente: Elaboración propia.
-    \end{center}
-	\label{fig:redeopocas}
-\end{figure}
-El cual se hizo con un total de 5000 épocas.
-
-Los datos utilizados fueron extraídos de diversas oficinas de la Universidad Nacional de Trujillo, los cuales conforman la Dataset.
-
-\begin{table}[h!]
-\centering
-\caption{Datos del entrenamiento}
-\label{dataset}
-\begin{tabular}{|c|c|l|}
-\hline
-\rowcolor[HTML]{68CBD0} 
-\textbf{Función} & \textbf{Cantidad} & \multicolumn{1}{c|}{\cellcolor[HTML]{68CBD0}\textbf{Tipo}} \\ \hline
-\rowcolor[HTML]{DAE8FC} 
-Entrenamiento & 400 documentos & \begin{tabular}[c]{@{}l@{}}No especificados, tomados solo\\ para esta función\end{tabular} \\ \hline
-\rowcolor[HTML]{DAE8FC} 
-Validación & 100 documentos & \begin{tabular}[c]{@{}l@{}}Oficio = 20\\ Solicitud = 20\\ Memorandum = 20\\ Informe = 20\\ Resolución rectoral = 20\end{tabular} \\ \hline
-\rowcolor[HTML]{DAE8FC} 
-Muestra & 134 documentos & \begin{tabular}[c]{@{}l@{}}Oficio = 68\\ Solicitud = 22\\ Memorandum = 6\\ Informe = 24\\ Resolución rectoral = 14\end{tabular} \\ \hline
-\end{tabular}
-\begin{center}
-    Fuente: Elaboración propia.
-\end{center}
-\end{table}
-\newpage
-Las siguientes tablas muestran nuestras pruebas en el desarrollo de la red.
-
-\begin{figure}[h!]
-	\centering
-		\includegraphics[scale=0.7]{imagenes/pesosDeSalida.png}
-		\caption{Pesos de salida.}
-		\begin{center}
-    Fuente: Elaboración propia.
-    \end{center}
-	\label{fig:pesosDeSalida}
-\end{figure}
-
-\begin{table}[h!]
-\centering
-\caption{Vector de aprendizaje.}
-\label{VectorApren}
-\begin{tabular}{|c|c|c|c|c|c|c|c|}
-\hline
-\rowcolor[HTML]{68CBD0} 
-\multicolumn{8}{|c|}{\cellcolor[HTML]{68CBD0}{\color[HTML]{FFFFFF} \textbf{Vectores de aprendizaje}}} \\ \hline
-\rowcolor[HTML]{68CBD0} 
-{\color[HTML]{FFFFFF} \textbf{Informe}} & {\color[HTML]{FFFFFF} \textbf{Solicitud}} & {\color[HTML]{FFFFFF} \textbf{Memorandum}} & {\color[HTML]{FFFFFF} \textbf{Oficio}} & {\color[HTML]{FFFFFF} \textbf{Resolución}} & {\color[HTML]{FFFFFF} \textbf{Múltiple}} & {\color[HTML]{FFFFFF} \textbf{Pedido}} & {\color[HTML]{FFFFFF} \textbf{Reclamo}} \\ \hline
-1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\ \hline
-0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\ \hline
-0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 \\ \hline
-\end{tabular}
-\begin{center}
-    Fuente: Elaboración propia.
-\end{center}
-\end{table}
-
-\begin{figure}[h!]
-	\centering
-		\includegraphics[scale=0.6]{imagenes/pesosDeSalida.png}
-		\caption{Pesos de salida.}
-		\begin{center}
-    Fuente: Elaboración propia.
-    \end{center}
-	\label{fig:pesosDeSalida}
-\end{figure}
-\begin{figure}[h!]
-	\centering
-		\includegraphics[scale=0.6]{imagenes/Bias.png}
-		\caption{Bias.}
-		\begin{center}
-    Fuente: Elaboración propia.
-    \end{center}
-	\label{fig:Bias}
-\end{figure}
 
 \section{Funcionamiento de las redes neuronales}
-Al cargar un documento se va ingresando el vector característico y se interpreta en la red neuronal.
-Este es un caso de cómo la red neuronal va a ir funcionando con este documento.
-Los vectores característicos van a a responder cuando se activen y estos van a dar lugar a activar la neurona.
-
-\textbf{Funciones:}
-
-Una de las principales funciones es ``CargarDocumentos.java'' la cual usa un componente que le permite una selección múltiple, una ventaja del software es que recibe documentos que estén guardados en diferentes formatos, con la librería POIFSF nos permite reconocer las extensiones .doc, .docx., .pdf, de la misma forma algún documento que se ingrese en otro tipo de formato o ya sea como imagen (.jpg, .jpeg, .png, .gif) lo leerá como invalido.
-
-La función BuscarDocumentos, se desarrolló buscando las características que tiene un documento para clasificarlo como un tipo específico.
-
-En este caso el documento por evaluar será oficio, la neurona en la capa de entrada se activa cuando una parte contiene la palabra solicitud y al mismo tiempo petición.
-
-\begin{figure}[h!]
-	\centering
-		\includegraphics[scale=0.6]{imagenes/IniciovectorCaracteristico.png}
-		\caption{Inicio de vector característico.}
-	\begin{center}
-    Fuente: Elaboración propia.
-    \end{center}
-	\label{fig:IniciovectorCaracteristico}
-\end{figure}
-
-\begin{figure}[h!]
-	\centering
-		\includegraphics[scale=0.6]{imagenes/IniciocapaEntrada.png}
-		\caption{Activando neuronas en la capa de entrada.}
-	\begin{center}
-    Fuente: Elaboración propia.
-    \end{center}
-	\label{fig:IniciocapaEntrada}
-\end{figure}
-
-\begin{figure}[h!]
-	\centering
-		\includegraphics[scale=0.5]{imagenes/IniciocapaOculta.png}
-		\caption{Activando neuronas en la capa oculta.}
-	\begin{center}
-    Fuente: Elaboración propia.
-    \end{center}
-	\label{fig:IniciocapaOculta}
-\end{figure}
-\newpage
-Si se activan esos unos, se activan en la capa de entrada esas neuronas.
-
-Y al final en la capa de salida se activa solo una y da la respuesta, cada neurona de salida nos da una respuesta diferente, en este caso la segunda neurona nos da como respuesta una solicitud.
-
-\begin{figure}[h!]
-	\centering
-		\includegraphics[scale=0.4]{imagenes/IniciocapaSalida.png}
-		\caption{Activando neuronas en la capa de salida.}
-	\begin{center}
-    Fuente: Elaboración propia.
-    \end{center}
-	\label{fig:IniciocapaSalida}
-\end{figure}
+Al seleccionar la fecha, se establece vectores de fechas previas para predecir la semana siguiente, se establecen embeddings y se interpreta en la red neuronal.
+Los vectores que se obtienen en la prediccion son re-escalados para poder entenderlos.
 
 \newpage
 \section{Función activación}
-La neurona no sólo transmite la entrada que recibe, la función de activación utiliza la suma ponderada de la entrada anterior y la transforma como salida. La función sigmoide denotada por funcionSigmoidea, donde se denota la constante exponencial, que es aproximadamente 2.71828.
-
-En nuestra aplicación la función sigmoide nos mostrará el resultado de nuestra búsqueda dando numéricamente la opción que más se acerca al resultado que queremos llegar. En este caso ``Solicitud'' es el resultado que más se aproxima a 1.
-
-\begin{figure}[h!]
-	\centering
-		\includegraphics[scale=0.8]{imagenes/ResultadoFunSigmoide.png}
-		\caption{Resultado de la función sigmoide en la aplicación.}
-		\begin{center}
-    Fuente: Elaboración propia.
-    \end{center}
-	\label{fig:ResultadoFunSigmoide}
-\end{figure}
-En la Tabla \ref{VectorApren} nos muestra cuales son los vectores.
+Las redes neuronales feedforward tienen la característica de ir hacia adelante, no presentan bucles. La función de activación nos indica el valor de venta de la fecha siguiente a las fechas ingresadas. Considerando que dicho valor aún necesita re-escalarse.
 \newpage
 
+\section{Funciones del sistema:}
+
+Una de las funciones es mostrar gráficamente la pérdida(valores de la función de coste con los datos de entrenamiento).\\
+Además, reporta gráficamente los valores de testing y el pronóstico para las fechas a probar.\\
+Principalmente, muestra gráficamente los valores del pronóstico de la semana de la fecha seleccionada.
 
 \newpage
 

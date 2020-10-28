@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.12)  18 OCT 2020 01:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.12)  19 OCT 2020 00:01
 entering extended mode
 **./Tesis.tex
 (Tesis.tex
@@ -779,9 +779,6 @@ LaTeX Info: Redefining \% on input line 9.
 LaTeX Warning: Label `fig:diagramaCasosUsoTesis' multiply defined.
 
 
-LaTeX Warning: Label `fig:pesosDeSalida' multiply defined.
-
-
 LaTeX Warning: Label `tab:my-table' multiply defined.
 
 ) (Apendice.aux))
@@ -932,19 +929,16 @@ Package pdftex.def Info: imagenes/ecuacionesBackpropagation.png  used on input
 line 276.
 (pdftex.def)             Requested size: 236.60735pt x 117.51321pt.
  [21 <./imagenes/ecuacionesBackpropagation.png>] [22] [23] [24] [25]
-Overfull \hbox (12.15392pt too wide) in paragraph at lines 346--359
+Overfull \hbox (12.15392pt too wide) in paragraph at lines 344--357
  [][] 
  []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [26] [27] [28]
 Cap\'{\i }tulo 3.
 <imagenes/requerimientos.png, id=160, 561.59813pt x 286.06876pt>
 File: imagenes/requerimientos.png Graphic file (type png)
 <use imagenes/requerimientos.png>
-Package pdftex.def Info: imagenes/requerimientos.png  used on input line 464.
+Package pdftex.def Info: imagenes/requerimientos.png  used on input line 462.
 (pdftex.def)             Requested size: 393.11601pt x 200.24675pt.
 [29
 
@@ -960,265 +954,150 @@ Overfull \vbox (38.82312pt too high) has occurred while \output is active []
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes/diagramaclases.png, id=167, 310.91156pt x 161.85469pt>
+<imagenes/diagramaclases.png, id=168, 310.91156pt x 161.85469pt>
 File: imagenes/diagramaclases.png Graphic file (type png)
 <use imagenes/diagramaclases.png>
-Package pdftex.def Info: imagenes/diagramaclases.png  used on input line 508.
+Package pdftex.def Info: imagenes/diagramaclases.png  used on input line 505.
 (pdftex.def)             Requested size: 217.6366pt x 113.2975pt.
 [31 <./imagenes/requerimientos.png>] [32 <./imagenes/diagramaclases.png>]
-<imagenes/modeloestados.png, id=176, 598.48593pt x 84.315pt>
+<imagenes/modeloestados.png, id=177, 598.48593pt x 84.315pt>
 File: imagenes/modeloestados.png Graphic file (type png)
 <use imagenes/modeloestados.png>
-Package pdftex.def Info: imagenes/modeloestados.png  used on input line 521.
+Package pdftex.def Info: imagenes/modeloestados.png  used on input line 518.
 (pdftex.def)             Requested size: 418.93729pt x 59.02008pt.
-<imagenes/usecase.png, id=177, 435.87843pt x 233.37187pt>
+<imagenes/usecase.png, id=178, 435.87843pt x 233.37187pt>
 File: imagenes/usecase.png Graphic file (type png)
 <use imagenes/usecase.png>
-Package pdftex.def Info: imagenes/usecase.png  used on input line 534.
-(pdftex.def)             Requested size: 261.52907pt x 140.02419pt.
+Package pdftex.def Info: imagenes/usecase.png  used on input line 531.
+(pdftex.def)             Requested size: 305.11282pt x 163.35919pt.
 
 [33 <./imagenes/modeloestados.png> <./imagenes/usecase.png>]
-<imagenes/casosdeusonegocio.png, id=183, 295.85532pt x 161.85469pt>
+<imagenes/casosdeusonegocio.png, id=184, 295.85532pt x 161.85469pt>
 File: imagenes/casosdeusonegocio.png Graphic file (type png)
 <use imagenes/casosdeusonegocio.png>
-Package pdftex.def Info: imagenes/casosdeusonegocio.png  used on input line 553
+Package pdftex.def Info: imagenes/casosdeusonegocio.png  used on input line 549
 .
-(pdftex.def)             Requested size: 177.51454pt x 97.11354pt.
- [34 <./imagenes/casosdeusonegocio.png>]
-<imagenes/diagramacomponentes.png, id=187, 270.25969pt x 191.21437pt>
+(pdftex.def)             Requested size: 207.0973pt x 113.2975pt.
+<imagenes/diagramacomponentes.png, id=185, 270.25969pt x 191.21437pt>
 File: imagenes/diagramacomponentes.png Graphic file (type png)
 <use imagenes/diagramacomponentes.png>
 Package pdftex.def Info: imagenes/diagramacomponentes.png  used on input line 5
-70.
+63.
 (pdftex.def)             Requested size: 270.25902pt x 191.2139pt.
- [35 <./imagenes/diagramacomponentes.png>]
-<imagenes/diagramasecuencia.png, id=192, 377.15906pt x 246.9225pt>
+ [34 <./imagenes/casosdeusonegocio.png>] [35 <./imagenes/diagramacomponentes.pn
+g>]
+<imagenes/diagramasecuencia.png, id=193, 377.15906pt x 246.9225pt>
 File: imagenes/diagramasecuencia.png Graphic file (type png)
 <use imagenes/diagramasecuencia.png>
-Package pdftex.def Info: imagenes/diagramasecuencia.png  used on input line 581
+Package pdftex.def Info: imagenes/diagramasecuencia.png  used on input line 574
 .
 (pdftex.def)             Requested size: 377.15814pt x 246.92188pt.
  [36 <./imagenes/diagramasecuencia.png>]
-<imagenes/interfazApp.jpeg, id=196, 611.28375pt x 365.365pt>
-File: imagenes/interfazApp.jpeg Graphic file (type jpg)
-<use imagenes/interfazApp.jpeg>
-Package pdftex.def Info: imagenes/interfazApp.jpeg  used on input line 599.
-(pdftex.def)             Requested size: 262.8469pt x 157.10388pt.
- [37 <./imagenes/interfazApp.jpeg>]
-Overfull \hbox (2.18279pt too wide) in paragraph at lines 611--612
+<imagenes/mainwindow.png, id=197, 1023.825pt x 548.0475pt>
+File: imagenes/mainwindow.png Graphic file (type png)
+<use imagenes/mainwindow.png>
+Package pdftex.def Info: imagenes/mainwindow.png  used on input line 592.
+(pdftex.def)             Requested size: 440.23616pt x 235.65582pt.
+ [37 <./imagenes/mainwindow.png>]
+Overfull \hbox (2.18279pt too wide) in paragraph at lines 604--605
 []\T1/ptm/m/n/12 El si-guien-te dia-gra-ma de flu-jo en el cual mos-tra-mos el 
 pro-ce-so de im-ple-men-ta-ción compu-
  []
 
-<imagenes/flujograma.png, id=200, 352.4367pt x 650.43pt>
+<imagenes/flujograma.png, id=201, 352.4367pt x 650.43pt>
 File: imagenes/flujograma.png Graphic file (type png)
 <use imagenes/flujograma.png>
-Package pdftex.def Info: imagenes/flujograma.png  used on input line 615.
-(pdftex.def)             Requested size: 281.94975pt x 520.3447pt.
-[38]
-Overfull \vbox (57.49019pt too high) has occurred while \output is active []
-
-
-[39 <./imagenes/flujograma.png>]
-<imagenes/extracciondatos.png, id=208, 1075.76906pt x 472.01344pt>
+Package pdftex.def Info: imagenes/flujograma.png  used on input line 608.
+(pdftex.def)             Requested size: 246.70401pt x 455.2979pt.
+[38] [39 <./imagenes/flujograma.png>]
+<imagenes/extracciondatos.png, id=209, 1075.76906pt x 472.01344pt>
 File: imagenes/extracciondatos.png Graphic file (type png)
 <use imagenes/extracciondatos.png>
-Package pdftex.def Info: imagenes/extracciondatos.png  used on input line 626.
-(pdftex.def)             Requested size: 537.88321pt x 236.00613pt.
-
-Overfull \hbox (96.8655pt too wide) in paragraph at lines 626--627
- [][] 
- []
-
-[40 <./imagenes/extracciondatos.png>]
-<imagenes/vectorcaracteristico.png, id=212, 979.40906pt x 154.32657pt>
+Package pdftex.def Info: imagenes/extracciondatos.png  used on input line 619.
+(pdftex.def)             Requested size: 430.3pt x 188.80202pt.
+<imagenes/vectorcaracteristico.png, id=210, 979.40906pt x 154.32657pt>
 File: imagenes/vectorcaracteristico.png Graphic file (type png)
 <use imagenes/vectorcaracteristico.png>
 Package pdftex.def Info: imagenes/vectorcaracteristico.png  used on input line 
-649.
+638.
 (pdftex.def)             Requested size: 391.75668pt x 61.72952pt.
-<imagenes/arquitecturaaplicacion.png, id=213, 464.4853pt x 405.01312pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[40 <./imagenes/extracciondatos.png>]
+<imagenes/arquitecturaaplicacion.png, id=215, 464.4853pt x 405.01312pt>
 File: imagenes/arquitecturaaplicacion.png Graphic file (type png)
 <use imagenes/arquitecturaaplicacion.png>
 Package pdftex.def Info: imagenes/arquitecturaaplicacion.png  used on input lin
-e 659.
+e 649.
 (pdftex.def)             Requested size: 185.79083pt x 162.00237pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 658--659
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[41 <./imagenes/vectorcaracteristico.png>]
-<imagenes/redNeuroJoone.png, id=217, 700.11563pt x 240.9pt>
-File: imagenes/redNeuroJoone.png Graphic file (type png)
-<use imagenes/redNeuroJoone.png>
-Package pdftex.def Info: imagenes/redNeuroJoone.png  used on input line 675.
-(pdftex.def)             Requested size: 420.07262pt x 144.5411pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<imagenes/redeopocas.png, id=218, 626.34pt x 267.24844pt>
-File: imagenes/redeopocas.png Graphic file (type png)
-<use imagenes/redeopocas.png>
-Package pdftex.def Info: imagenes/redeopocas.png  used on input line 685.
-(pdftex.def)             Requested size: 501.07266pt x 213.79904pt.
-
-Overfull \hbox (60.05495pt too wide) in paragraph at lines 685--686
- [][] 
  []
 
+[41 <./imagenes/vectorcaracteristico.png> <./imagenes/arquitecturaaplicacion.pn
+g>] [42] [43] [44]
+Cap\'{\i }tulo 4.
+[45
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+]
+<imagenes/holaa.jpg, id=233, 723.70375pt x 265.99374pt>
+File: imagenes/holaa.jpg Graphic file (type jpg)
+<use imagenes/holaa.jpg>
+Package pdftex.def Info: imagenes/holaa.jpg  used on input line 744.
+(pdftex.def)             Requested size: 361.85098pt x 132.99654pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[42 <./imagenes/arquitecturaaplicacion.png>]
-
-LaTeX Warning: Text page 43 contains only floats.
-
-[43 <./imagenes/redNeuroJoone.png> <./imagenes/redeopocas.png>]
-<imagenes/pesosDeSalida.png, id=226, 296.60812pt x 158.09062pt>
-File: imagenes/pesosDeSalida.png Graphic file (type png)
-<use imagenes/pesosDeSalida.png>
-Package pdftex.def Info: imagenes/pesosDeSalida.png  used on input line 720.
-(pdftex.def)             Requested size: 207.62427pt x 110.66267pt.
-
-Overfull \hbox (30.03801pt too wide) in paragraph at lines 732--744
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: imagenes/pesosDeSalida.png Graphic file (type png)
-<use imagenes/pesosDeSalida.png>
-Package pdftex.def Info: imagenes/pesosDeSalida.png  used on input line 751.
-(pdftex.def)             Requested size: 177.96623pt x 94.85509pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<imagenes/Bias.png, id=227, 63.23625pt x 186.6975pt>
-File: imagenes/Bias.png Graphic file (type png)
-<use imagenes/Bias.png>
-Package pdftex.def Info: imagenes/Bias.png  used on input line 760.
-(pdftex.def)             Requested size: 37.94203pt x 112.01935pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[44 <./imagenes/pesosDeSalida.png>]
-
-LaTeX Warning: Text page 45 contains only floats.
-
-[45 <./imagenes/Bias.png>]
-<imagenes/IniciovectorCaracteristico.png, id=235, 374.14781pt x 284.56313pt>
-File: imagenes/IniciovectorCaracteristico.png Graphic file (type png)
-<use imagenes/IniciovectorCaracteristico.png>
-Package pdftex.def Info: imagenes/IniciovectorCaracteristico.png  used on input
- line 783.
-(pdftex.def)             Requested size: 224.4904pt x 170.73918pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<imagenes/IniciocapaEntrada.png, id=236, 373.395pt x 284.56313pt>
-File: imagenes/IniciocapaEntrada.png Graphic file (type png)
-<use imagenes/IniciocapaEntrada.png>
-Package pdftex.def Info: imagenes/IniciocapaEntrada.png  used on input line 793
-.
-(pdftex.def)             Requested size: 224.03873pt x 170.73918pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<imagenes/IniciocapaOculta.png, id=237, 377.91188pt x 283.0575pt>
-File: imagenes/IniciocapaOculta.png Graphic file (type png)
-<use imagenes/IniciocapaOculta.png>
-Package pdftex.def Info: imagenes/IniciocapaOculta.png  used on input line 803.
-
-(pdftex.def)             Requested size: 188.95547pt x 141.5284pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [46]
-
-LaTeX Warning: Text page 47 contains only floats.
-
-[47 <./imagenes/IniciovectorCaracteristico.png> <./imagenes/IniciocapaEntrada.p
-ng>]
-<imagenes/IniciocapaSalida.png, id=244, 375.65344pt x 287.57437pt>
-File: imagenes/IniciocapaSalida.png Graphic file (type png)
-<use imagenes/IniciocapaSalida.png>
-Package pdftex.def Info: imagenes/IniciocapaSalida.png  used on input line 817.
-
-(pdftex.def)             Requested size: 150.2587pt x 115.02771pt.
- [48 <./imagenes/IniciocapaOculta.png> <./imagenes/IniciocapaSalida.png>]
-<imagenes/ResultadoFunSigmoide.png, id=248, 421.575pt x 82.80937pt>
-File: imagenes/ResultadoFunSigmoide.png Graphic file (type png)
-<use imagenes/ResultadoFunSigmoide.png>
-Package pdftex.def Info: imagenes/ResultadoFunSigmoide.png  used on input line 
-833.
-(pdftex.def)             Requested size: 337.26045pt x 66.24757pt.
-
-[49 <./imagenes/ResultadoFunSigmoide.png>]
-Cap\'{\i }tulo 4.
-[50
-
-]
-<imagenes/holaa.jpg, id=255, 723.70375pt x 265.99374pt>
-File: imagenes/holaa.jpg Graphic file (type jpg)
-<use imagenes/holaa.jpg>
-Package pdftex.def Info: imagenes/holaa.jpg  used on input line 910.
-(pdftex.def)             Requested size: 361.85098pt x 132.99654pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[51]
-<imagenes/tablaCru2.png, id=260, 288.3272pt x 131.74219pt>
+<imagenes/tablaCru2.png, id=237, 288.3272pt x 131.74219pt>
 File: imagenes/tablaCru2.png Graphic file (type png)
 <use imagenes/tablaCru2.png>
-Package pdftex.def Info: imagenes/tablaCru2.png  used on input line 928.
+Package pdftex.def Info: imagenes/tablaCru2.png  used on input line 762.
 (pdftex.def)             Requested size: 201.82765pt x 92.21889pt.
- [52 <./imagenes/holaa.jpg> <./imagenes/tablaCru2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 951--956
+ [47 <./imagenes/holaa.jpg> <./imagenes/tablaCru2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 785--790
 
  []
 
-<imagenes/hola123.jpg, id=264, 723.70375pt x 265.99374pt>
+<imagenes/hola123.jpg, id=241, 723.70375pt x 265.99374pt>
 File: imagenes/hola123.jpg Graphic file (type jpg)
 <use imagenes/hola123.jpg>
-Package pdftex.def Info: imagenes/hola123.jpg  used on input line 967.
+Package pdftex.def Info: imagenes/hola123.jpg  used on input line 801.
 (pdftex.def)             Requested size: 361.85098pt x 132.99654pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[53]
-<imagenes/tablacruSEED.png, id=268, 328.22626pt x 133.24782pt>
+[48]
+<imagenes/tablacruSEED.png, id=245, 328.22626pt x 133.24782pt>
 File: imagenes/tablacruSEED.png Graphic file (type png)
 <use imagenes/tablacruSEED.png>
-Package pdftex.def Info: imagenes/tablacruSEED.png  used on input line 977.
+Package pdftex.def Info: imagenes/tablacruSEED.png  used on input line 811.
 (pdftex.def)             Requested size: 229.7568pt x 93.27283pt.
- [54 <./imagenes/hola123.jpg> <./imagenes/tablacruSEED.png>]
+ [49 <./imagenes/hola123.jpg> <./imagenes/tablacruSEED.png>]
 
-LaTeX Warning: Reference `Tabla: EncuentaSinApp' on page 55 undefined on input 
-line 1038.
+LaTeX Warning: Reference `Tabla: EncuentaSinApp' on page 50 undefined on input 
+line 872.
 
-[55]
+[50]
 
-LaTeX Warning: Reference `Tabla: EncuentaConApp' on page 56 undefined on input 
-line 1072.
+LaTeX Warning: Reference `Tabla: EncuentaConApp' on page 51 undefined on input 
+line 906.
 
-<imagenes/matricrua10min20min.png, id=275, 280.79906pt x 126.4725pt>
+<imagenes/matricrua10min20min.png, id=252, 280.79906pt x 126.4725pt>
 File: imagenes/matricrua10min20min.png Graphic file (type png)
 <use imagenes/matricrua10min20min.png>
-Package pdftex.def Info: imagenes/matricrua10min20min.png  used on input line 1
-076.
+Package pdftex.def Info: imagenes/matricrua10min20min.png  used on input line 9
+10.
 (pdftex.def)             Requested size: 196.558pt x 88.53014pt.
-<imagenes/matricrua2seg5seg.png, id=276, 280.79906pt x 124.21407pt>
+<imagenes/matricrua2seg5seg.png, id=253, 280.79906pt x 124.21407pt>
 File: imagenes/matricrua2seg5seg.png Graphic file (type png)
 <use imagenes/matricrua2seg5seg.png>
-Package pdftex.def Info: imagenes/matricrua2seg5seg.png  used on input line 108
-6.
+Package pdftex.def Info: imagenes/matricrua2seg5seg.png  used on input line 920
+.
 (pdftex.def)             Requested size: 196.558pt x 86.94923pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1226,12 +1105,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[56 <./imagenes/matricrua10min20min.png>] [57 <./imagenes/matricrua2seg5seg.png
+[51 <./imagenes/matricrua10min20min.png>] [52 <./imagenes/matricrua2seg5seg.png
 >]
 Cap\'{\i }tulo 5.
-[58
+[53
 
-] [59] [60] (Tesis.bbl
+] [54] [55] (Tesis.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 19--23
 []\T1/ptm/m/n/12 Erlinb (2017).  Re-des neu-ro-na-les: Con-cep-tos bá-si-cos y 
 apli-ca-cio-nes.
@@ -1255,14 +1134,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--30
 ceptron/.  [On-li-
  []
 
-[61
+[56
 
 
-] [62])) [63]
+] [57])) [58]
 \openout2 = `Apendice.aux'.
 
  (Apendice.tex)
-<DECLARACION_JURADA.pdf, id=304, 614.295pt x 845.1575pt>
+<DECLARACION_JURADA.pdf, id=281, 614.295pt x 845.1575pt>
 File: DECLARACION_JURADA.pdf Graphic file (type pdf)
 <use DECLARACION_JURADA.pdf>
 Package pdftex.def Info: DECLARACION_JURADA.pdf  used on input line 65.
@@ -1271,7 +1150,7 @@ File: DECLARACION_JURADA.pdf Graphic file (type pdf)
 <use DECLARACION_JURADA.pdf>
 Package pdftex.def Info: DECLARACION_JURADA.pdf  used on input line 65.
 (pdftex.def)             Requested size: 614.29349pt x 845.15544pt.
-<DECLARACION_JURADA.pdf, id=307, page=1, 614.295pt x 845.1575pt>
+<DECLARACION_JURADA.pdf, id=284, page=1, 614.295pt x 845.1575pt>
 File: DECLARACION_JURADA.pdf Graphic file (type pdf)
 <use DECLARACION_JURADA.pdf, page 1>
 Package pdftex.def Info: DECLARACION_JURADA.pdf , page1 used on input line 65.
@@ -1292,12 +1171,12 @@ File: DECLARACION_JURADA.pdf Graphic file (type pdf)
 <use DECLARACION_JURADA.pdf, page 1>
 Package pdftex.def Info: DECLARACION_JURADA.pdf , page1 used on input line 65.
 (pdftex.def)             Requested size: 598.43373pt x 823.33531pt.
- [64
+ [59
 
 
 
  <./DECLARACION_JURADA.pdf>]
-<CARTA_AUTORIZACION.pdf, id=314, 614.295pt x 845.1575pt>
+<CARTA_AUTORIZACION.pdf, id=291, 614.295pt x 845.1575pt>
 File: CARTA_AUTORIZACION.pdf Graphic file (type pdf)
 <use CARTA_AUTORIZACION.pdf>
 Package pdftex.def Info: CARTA_AUTORIZACION.pdf  used on input line 66.
@@ -1306,7 +1185,7 @@ File: CARTA_AUTORIZACION.pdf Graphic file (type pdf)
 <use CARTA_AUTORIZACION.pdf>
 Package pdftex.def Info: CARTA_AUTORIZACION.pdf  used on input line 66.
 (pdftex.def)             Requested size: 614.29349pt x 845.15544pt.
-<CARTA_AUTORIZACION.pdf, id=317, page=1, 614.295pt x 845.1575pt>
+<CARTA_AUTORIZACION.pdf, id=294, page=1, 614.295pt x 845.1575pt>
 File: CARTA_AUTORIZACION.pdf Graphic file (type pdf)
 <use CARTA_AUTORIZACION.pdf, page 1>
 Package pdftex.def Info: CARTA_AUTORIZACION.pdf , page1 used on input line 66.
@@ -1327,7 +1206,7 @@ File: CARTA_AUTORIZACION.pdf Graphic file (type pdf)
 <use CARTA_AUTORIZACION.pdf, page 1>
 Package pdftex.def Info: CARTA_AUTORIZACION.pdf , page1 used on input line 66.
 (pdftex.def)             Requested size: 598.43373pt x 823.33531pt.
- [65 <./CARTA_AUTORIZACION.pdf>] (Tesis.aux (Datos.aux)
+ [60 <./CARTA_AUTORIZACION.pdf>] (Tesis.aux (Datos.aux)
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
  (Caps.aux) (Apendice.aux))
@@ -1339,10 +1218,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 21674 strings out of 481199
- 416609 string characters out of 2915349
- 681976 words of memory out of 3000000
- 36747 multiletter control sequences out of 15000+200000
+ 21608 strings out of 481199
+ 414780 string characters out of 2915349
+ 678844 words of memory out of 3000000
+ 36691 multiletter control sequences out of 15000+200000
  592690 words of font info for 84 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,18n,97p,1193b,534s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1356,9 +1235,9 @@ eX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX/font
 s/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utm
 bi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program 
 Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Tesis.pdf (81 pages, 2594960 bytes).
+Output written on Tesis.pdf (76 pages, 1834178 bytes).
 PDF statistics:
- 363 PDF objects out of 1000 (max. 8388607)
+ 340 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 213 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 168 words of extra memory for PDF output out of 10000 (max. 10000000)
 

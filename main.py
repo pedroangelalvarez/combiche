@@ -19,7 +19,6 @@ import matplotlib
 plt.rcParams['figure.figsize'] = (16, 9)
 plt.style.use('fast')
 
-from keras.utils im
 from keras.models import Sequential
 from keras.layers import Dense,Activation,Flatten
 from sklearn.preprocessing import MinMaxScaler

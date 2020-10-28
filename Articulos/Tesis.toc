@@ -31,21 +31,20 @@
 \contentsline {subsection}{\numberline {2.1.7}Backpropagation}{20}%
 \contentsline {subsection}{\numberline {2.1.8}Definición de regresión }{22}%
 \contentsline {subsubsection}{\numberline {2.1.8.1}Fases del análisis de regresión múltiple}{22}%
-\contentsline {subsection}{\numberline {2.1.9}Mysql Worbench}{24}%
-\contentsline {subsection}{\numberline {2.1.10}Python}{24}%
-\contentsline {subsection}{\numberline {2.1.11}TensorFlow}{25}%
-\contentsline {section}{\numberline {2.2}Método de la investigación}{26}%
-\contentsline {subsection}{\numberline {2.2.1}Tipo de investigación}{26}%
-\contentsline {subsection}{\numberline {2.2.2}Variables de la Investigación}{26}%
-\contentsline {subsubsection}{\numberline {2.2.2.1}Variable Dependiente}{26}%
+\contentsline {subsection}{\numberline {2.1.9}Python}{24}%
+\contentsline {subsection}{\numberline {2.1.10}TensorFlow}{24}%
+\contentsline {section}{\numberline {2.2}Método de la investigación}{25}%
+\contentsline {subsection}{\numberline {2.2.1}Tipo de investigación}{25}%
+\contentsline {subsection}{\numberline {2.2.2}Variables de la Investigación}{25}%
+\contentsline {subsubsection}{\numberline {2.2.2.1}Variable Dependiente}{25}%
 \contentsline {subsubsection}{\numberline {2.2.2.2}Variable Independiente}{26}%
 \contentsline {subsection}{\numberline {2.2.3}Operacionalización de la variable}{26}%
-\contentsline {section}{\numberline {2.3}Recolección de datos para la elaboración del modelo}{27}%
-\contentsline {subsection}{\numberline {2.3.1}Técnica}{27}%
-\contentsline {subsection}{\numberline {2.3.2}Población}{27}%
+\contentsline {section}{\numberline {2.3}Recolección de datos para la elaboración del modelo}{26}%
+\contentsline {subsection}{\numberline {2.3.1}Técnica}{26}%
+\contentsline {subsection}{\numberline {2.3.2}Población}{26}%
 \contentsline {subsection}{\numberline {2.3.3}Muestra}{27}%
-\contentsline {subsubsection}{\numberline {2.3.3.1}Muestra por conveniencia}{28}%
-\contentsline {section}{\numberline {2.4}Etapas de la investigación}{28}%
+\contentsline {subsubsection}{\numberline {2.3.3.1}Muestra por conveniencia}{27}%
+\contentsline {section}{\numberline {2.4}Etapas de la investigación}{27}%
 \contentsline {chapter}{\numberline {3}Sistema Basado en Conocimiento Mediante RNA para Pronósticar las Ventas del Restaurante Combiche en el Mall Aventura}{29}%
 \contentsline {section}{\numberline {3.1}Análisis}{30}%
 \contentsline {subsection}{\numberline {3.1.1}Requerimiento funcional}{30}%
@@ -61,16 +60,16 @@
 \contentsline {subsection}{\numberline {3.2.8}Diseño de algoritmo}{38}%
 \contentsline {subsection}{\numberline {3.2.9}Extracción de datos}{40}%
 \contentsline {subsection}{\numberline {3.2.10}Arquitectura de la aplicación}{41}%
-\contentsline {section}{\numberline {3.3}Implementación}{41}%
-\contentsline {section}{\numberline {3.4}Entrenamiento}{42}%
-\contentsline {section}{\numberline {3.5}Funcionamiento de las redes neuronales}{46}%
-\contentsline {section}{\numberline {3.6}Función activación}{49}%
-\contentsline {chapter}{\numberline {4}Resultados y discusión de la tesis}{50}%
-\contentsline {section}{\numberline {4.1}Resultados computacionales}{50}%
-\contentsline {subsection}{\numberline {4.1.1}Resultado según criterio subir con éxito}{51}%
-\contentsline {subsection}{\numberline {4.1.2}Resultado según criterio sin error ortográfico}{53}%
-\contentsline {section}{\numberline {4.2}Tiempo}{55}%
-\contentsline {chapter}{\numberline {5}Consideraciones finales}{58}%
-\contentsline {section}{\numberline {5.1}Conclusiones}{58}%
-\contentsline {section}{\numberline {5.2}Trabajos futuros}{59}%
-\contentsline {chapter}{ Referencias bibliográfícas}{61}%
+\contentsline {section}{\numberline {3.3}Implementación}{42}%
+\contentsline {section}{\numberline {3.4}Funcionamiento de las redes neuronales}{42}%
+\contentsline {section}{\numberline {3.5}Función activación}{43}%
+\contentsline {section}{\numberline {3.6}Funciones del sistema:}{44}%
+\contentsline {chapter}{\numberline {4}Resultados y discusión de la tesis}{45}%
+\contentsline {section}{\numberline {4.1}Resultados computacionales}{45}%
+\contentsline {subsection}{\numberline {4.1.1}Resultado según criterio subir con éxito}{46}%
+\contentsline {subsection}{\numberline {4.1.2}Resultado según criterio sin error ortográfico}{48}%
+\contentsline {section}{\numberline {4.2}Tiempo}{50}%
+\contentsline {chapter}{\numberline {5}Consideraciones finales}{53}%
+\contentsline {section}{\numberline {5.1}Conclusiones}{53}%
+\contentsline {section}{\numberline {5.2}Trabajos futuros}{54}%
+\contentsline {chapter}{ Referencias bibliográfícas}{56}%
