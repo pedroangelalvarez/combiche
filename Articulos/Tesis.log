@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.12)  19 OCT 2020 00:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.12)  8 NOV 2020 23:16
 entering extended mode
 **./Tesis.tex
 (Tesis.tex
@@ -1040,64 +1040,67 @@ Underfull \hbox (badness 10000) in paragraph at lines 658--659
 [41 <./imagenes/vectorcaracteristico.png> <./imagenes/arquitecturaaplicacion.pn
 g>] [42] [43] [44]
 Cap\'{\i }tulo 4.
+
+LaTeX Warning: Float too large for page by 369.29225pt on input line 815.
+
 [45
 
-]
-<imagenes/holaa.jpg, id=233, 723.70375pt x 265.99374pt>
+] [46]
+<imagenes/holaa.jpg, id=236, 723.70375pt x 265.99374pt>
 File: imagenes/holaa.jpg Graphic file (type jpg)
 <use imagenes/holaa.jpg>
-Package pdftex.def Info: imagenes/holaa.jpg  used on input line 744.
+Package pdftex.def Info: imagenes/holaa.jpg  used on input line 875.
 (pdftex.def)             Requested size: 361.85098pt x 132.99654pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[46]
-<imagenes/tablaCru2.png, id=237, 288.3272pt x 131.74219pt>
+[47]
+<imagenes/tablaCru2.png, id=240, 288.3272pt x 131.74219pt>
 File: imagenes/tablaCru2.png Graphic file (type png)
 <use imagenes/tablaCru2.png>
-Package pdftex.def Info: imagenes/tablaCru2.png  used on input line 762.
+Package pdftex.def Info: imagenes/tablaCru2.png  used on input line 893.
 (pdftex.def)             Requested size: 201.82765pt x 92.21889pt.
- [47 <./imagenes/holaa.jpg> <./imagenes/tablaCru2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 785--790
+ [48 <./imagenes/holaa.jpg> <./imagenes/tablaCru2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 916--921
 
  []
 
-<imagenes/hola123.jpg, id=241, 723.70375pt x 265.99374pt>
+<imagenes/hola123.jpg, id=244, 723.70375pt x 265.99374pt>
 File: imagenes/hola123.jpg Graphic file (type jpg)
 <use imagenes/hola123.jpg>
-Package pdftex.def Info: imagenes/hola123.jpg  used on input line 801.
+Package pdftex.def Info: imagenes/hola123.jpg  used on input line 932.
 (pdftex.def)             Requested size: 361.85098pt x 132.99654pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[48]
-<imagenes/tablacruSEED.png, id=245, 328.22626pt x 133.24782pt>
+[49]
+<imagenes/tablacruSEED.png, id=248, 328.22626pt x 133.24782pt>
 File: imagenes/tablacruSEED.png Graphic file (type png)
 <use imagenes/tablacruSEED.png>
-Package pdftex.def Info: imagenes/tablacruSEED.png  used on input line 811.
+Package pdftex.def Info: imagenes/tablacruSEED.png  used on input line 942.
 (pdftex.def)             Requested size: 229.7568pt x 93.27283pt.
- [49 <./imagenes/hola123.jpg> <./imagenes/tablacruSEED.png>]
+ [50 <./imagenes/hola123.jpg> <./imagenes/tablacruSEED.png>]
 
-LaTeX Warning: Reference `Tabla: EncuentaSinApp' on page 50 undefined on input 
-line 872.
+LaTeX Warning: Reference `Tabla: EncuentaSinApp' on page 51 undefined on input 
+line 1003.
 
-[50]
+[51]
 
-LaTeX Warning: Reference `Tabla: EncuentaConApp' on page 51 undefined on input 
-line 906.
+LaTeX Warning: Reference `Tabla: EncuentaConApp' on page 52 undefined on input 
+line 1037.
 
-<imagenes/matricrua10min20min.png, id=252, 280.79906pt x 126.4725pt>
+<imagenes/matricrua10min20min.png, id=256, 280.79906pt x 126.4725pt>
 File: imagenes/matricrua10min20min.png Graphic file (type png)
 <use imagenes/matricrua10min20min.png>
-Package pdftex.def Info: imagenes/matricrua10min20min.png  used on input line 9
-10.
+Package pdftex.def Info: imagenes/matricrua10min20min.png  used on input line 1
+041.
 (pdftex.def)             Requested size: 196.558pt x 88.53014pt.
-<imagenes/matricrua2seg5seg.png, id=253, 280.79906pt x 124.21407pt>
+<imagenes/matricrua2seg5seg.png, id=257, 280.79906pt x 124.21407pt>
 File: imagenes/matricrua2seg5seg.png Graphic file (type png)
 <use imagenes/matricrua2seg5seg.png>
-Package pdftex.def Info: imagenes/matricrua2seg5seg.png  used on input line 920
-.
+Package pdftex.def Info: imagenes/matricrua2seg5seg.png  used on input line 105
+1.
 (pdftex.def)             Requested size: 196.558pt x 86.94923pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1105,12 +1108,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[51 <./imagenes/matricrua10min20min.png>] [52 <./imagenes/matricrua2seg5seg.png
+[52 <./imagenes/matricrua10min20min.png>] [53 <./imagenes/matricrua2seg5seg.png
 >]
 Cap\'{\i }tulo 5.
-[53
+[54
 
-] [54] [55] (Tesis.bbl
+] [55] [56] (Tesis.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 19--23
 []\T1/ptm/m/n/12 Erlinb (2017).  Re-des neu-ro-na-les: Con-cep-tos bá-si-cos y 
 apli-ca-cio-nes.
@@ -1134,14 +1137,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--30
 ceptron/.  [On-li-
  []
 
-[56
+[57
 
 
-] [57])) [58]
+] [58])) [59]
 \openout2 = `Apendice.aux'.
 
  (Apendice.tex)
-<DECLARACION_JURADA.pdf, id=281, 614.295pt x 845.1575pt>
+<DECLARACION_JURADA.pdf, id=284, 614.295pt x 845.1575pt>
 File: DECLARACION_JURADA.pdf Graphic file (type pdf)
 <use DECLARACION_JURADA.pdf>
 Package pdftex.def Info: DECLARACION_JURADA.pdf  used on input line 65.
@@ -1150,7 +1153,7 @@ File: DECLARACION_JURADA.pdf Graphic file (type pdf)
 <use DECLARACION_JURADA.pdf>
 Package pdftex.def Info: DECLARACION_JURADA.pdf  used on input line 65.
 (pdftex.def)             Requested size: 614.29349pt x 845.15544pt.
-<DECLARACION_JURADA.pdf, id=284, page=1, 614.295pt x 845.1575pt>
+<DECLARACION_JURADA.pdf, id=287, page=1, 614.295pt x 845.1575pt>
 File: DECLARACION_JURADA.pdf Graphic file (type pdf)
 <use DECLARACION_JURADA.pdf, page 1>
 Package pdftex.def Info: DECLARACION_JURADA.pdf , page1 used on input line 65.
@@ -1171,12 +1174,12 @@ File: DECLARACION_JURADA.pdf Graphic file (type pdf)
 <use DECLARACION_JURADA.pdf, page 1>
 Package pdftex.def Info: DECLARACION_JURADA.pdf , page1 used on input line 65.
 (pdftex.def)             Requested size: 598.43373pt x 823.33531pt.
- [59
+ [60
 
 
 
  <./DECLARACION_JURADA.pdf>]
-<CARTA_AUTORIZACION.pdf, id=291, 614.295pt x 845.1575pt>
+<CARTA_AUTORIZACION.pdf, id=294, 614.295pt x 845.1575pt>
 File: CARTA_AUTORIZACION.pdf Graphic file (type pdf)
 <use CARTA_AUTORIZACION.pdf>
 Package pdftex.def Info: CARTA_AUTORIZACION.pdf  used on input line 66.
@@ -1185,7 +1188,7 @@ File: CARTA_AUTORIZACION.pdf Graphic file (type pdf)
 <use CARTA_AUTORIZACION.pdf>
 Package pdftex.def Info: CARTA_AUTORIZACION.pdf  used on input line 66.
 (pdftex.def)             Requested size: 614.29349pt x 845.15544pt.
-<CARTA_AUTORIZACION.pdf, id=294, page=1, 614.295pt x 845.1575pt>
+<CARTA_AUTORIZACION.pdf, id=297, page=1, 614.295pt x 845.1575pt>
 File: CARTA_AUTORIZACION.pdf Graphic file (type pdf)
 <use CARTA_AUTORIZACION.pdf, page 1>
 Package pdftex.def Info: CARTA_AUTORIZACION.pdf , page1 used on input line 66.
@@ -1206,7 +1209,7 @@ File: CARTA_AUTORIZACION.pdf Graphic file (type pdf)
 <use CARTA_AUTORIZACION.pdf, page 1>
 Package pdftex.def Info: CARTA_AUTORIZACION.pdf , page1 used on input line 66.
 (pdftex.def)             Requested size: 598.43373pt x 823.33531pt.
- [60 <./CARTA_AUTORIZACION.pdf>] (Tesis.aux (Datos.aux)
+ [61 <./CARTA_AUTORIZACION.pdf>] (Tesis.aux (Datos.aux)
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
  (Caps.aux) (Apendice.aux))
@@ -1220,7 +1223,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  21608 strings out of 481199
  414780 string characters out of 2915349
- 678844 words of memory out of 3000000
+ 691847 words of memory out of 3000000
  36691 multiletter control sequences out of 15000+200000
  592690 words of font info for 84 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1235,9 +1238,9 @@ eX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX/font
 s/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utm
 bi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program 
 Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Tesis.pdf (76 pages, 1834178 bytes).
+Output written on Tesis.pdf (77 pages, 1837837 bytes).
 PDF statistics:
- 340 PDF objects out of 1000 (max. 8388607)
+ 343 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  168 words of extra memory for PDF output out of 10000 (max. 10000000)
 
