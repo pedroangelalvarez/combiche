@@ -242,8 +242,7 @@ class Application(tk.Frame):
         plt.plot(x_values, y_values)
         plt.gcf().autofmt_xdate()
         plt.title('Predicción de la semana')
-        #plt.legend(loc='best')
-        #plt.show()
+        print(prediccionProxSemana)
         canvas = FigureCanvasTkAgg(fig, master=self.lf)
         canvas.draw()
         canvas.get_tk_widget().grid(row=3, column=0)
@@ -384,7 +383,6 @@ class Application(tk.Frame):
 
             training_data = training_data[0:len(values)-30]
             target_data=target_data[0:len(values)-30]
-            print("LONGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG")
             print(training_data.shape,target_data.shape,valid_data.shape,valid_target.shape)
 
 
