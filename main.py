@@ -19,7 +19,7 @@ import matplotlib
 plt.rcParams['figure.figsize'] = (16, 9)
 plt.style.use('fast')
 
-from keras.models import Sequential
+from keras.models import Sequential,load_model
 from keras.layers import Dense,Activation,Flatten
 from sklearn.preprocessing import MinMaxScaler
 
@@ -46,6 +46,7 @@ import openpyxl
 import xlsxwriter
 import os.path
 from os import path
+from shutil import copyfile
 
 #import tkk
 
@@ -163,6 +164,9 @@ class Application(tk.Frame):
         #fechaFin = str(self.cal2.get_date())
         print(fechaFin)
         print(fechaIni)
+        self.df = pd.read_csv('temp.csv',  parse_dates=[0], header=None,index_col=0, names=['fecha','unidades'])
+        self.df['weekday']=[x.weekday() for x in self.df.index]
+        self.df['month']=[x.month for x in self.df.index]
         ultimosDias = self.df[fechaIni:fechaFin]
         print("ULTIMOS DIAS")
         print(ultimosDias)
@@ -208,6 +212,12 @@ class Application(tk.Frame):
             return x_test,ultDiaSemana
 
         results=[]
+        if not path.exists("model.h5"):
+            print("No existe el modelo pre-entrenado")
+            return False
+        
+        self.model = load_model('model.h5')
+
         for i in range(7):
             dia=np.array([x_test[0][0][0]])
             mes=np.array([x_test[0][0][1]])
@@ -340,6 +350,7 @@ class Application(tk.Frame):
             finEntrenamiento = inicioValido - timedelta(days=1)
             '''
             self.df = pd.read_csv(self.fileSelect,  parse_dates=[0], header=None,index_col=0, names=['fecha','unidades'])
+            copyfile(self.fileSelect,'./temp.csv')
             self.df.head()
 
             self.df['weekday']=[x.weekday() for x in self.df.index]
@@ -387,7 +398,7 @@ class Application(tk.Frame):
 
 
             EPOCHS=100
-            
+
             self.model = self.crear_modeloEmbeddings()
 
             continuas=training_data[['var1(t-7)','var1(t-6)','var1(t-5)','var1(t-4)','var1(t-3)','var1(t-2)','var1(t-1)']]
@@ -395,6 +406,7 @@ class Application(tk.Frame):
 
             history=self.model.fit([training_data['weekday'],training_data['month'],continuas], target_data, epochs=EPOCHS,validation_data=([valid_data['weekday'],valid_data['month'],valid_continuas],valid_target))
             
+            self.model.save('model.h5') 
             #plot_model(self.model, "multi_input_and_output_model.png", show_shapes=True)
             '''
             plt.scatter(range(len(y_val)),y_val,c='g')
