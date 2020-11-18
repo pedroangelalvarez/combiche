@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.14)  18 NOV 2020 10:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.14)  18 NOV 2020 11:26
 entering extended mode
 **./Tesis.tex
 (Tesis.tex
@@ -1095,7 +1095,19 @@ ceptron/.  [On-li-
 ] [51])) [52]
 \openout2 = `Apendice.aux'.
 
- (Apendice.tex) (Tesis.aux (Datos.aux)
+ (Apendice.tex
+Ap\'{e}ndice A.
+
+Underfull \vbox (badness 10000) detected at line 45
+ []
+
+[53
+
+
+
+] [54] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66] [67]
+[68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78] [79] [80]) [81]
+(Tesis.aux (Datos.aux)
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
  (Caps.aux) (Apendice.aux))
@@ -1104,10 +1116,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 21511 strings out of 480790
- 412622 string characters out of 2907048
- 673343 words of memory out of 3000000
- 37012 multiletter control sequences out of 15000+200000
+ 21509 strings out of 480790
+ 412560 string characters out of 2907048
+ 701375 words of memory out of 3000000
+ 37010 multiletter control sequences out of 15000+200000
  589940 words of font info for 79 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,18n,97p,1193b,432s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1121,9 +1133,9 @@ eX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX/font
 s/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utm
 bi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program 
 Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Tesis.pdf (68 pages, 686294 bytes).
+Output written on Tesis.pdf (97 pages, 751900 bytes).
 PDF statistics:
- 294 PDF objects out of 1000 (max. 8388607)
+ 387 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  103 words of extra memory for PDF output out of 10000 (max. 10000000)
 
