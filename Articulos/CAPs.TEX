@@ -48,7 +48,7 @@ En presente trabajo de investigación tiene los siguientes capítulos:
 
 \begin{itemize}
  \item En el primer capítulo se desarrolla los aspectos generales así como la justificación, formulación del problema, hipótesis de la investigación y  objetivos del presente trabajo de investigación.
- \item En el segundo capítulo se realiza la recopilación de diferentes conceptos y definiciones que es de mucha importancia a lo largo de toda la investigación, como la metodología de investigación, inteligencia artificial, sistemas inteligentes, redes neuronales, perceptrón, perceptrón multicapa, backpropagation., también se define definiciones de clasificación automática de documentos, así como su representación vectorial y el centroide del conjunto de palabras, similitud aplicando métodos de clasificación automática de documentos, también describimos los tipos de documentos y por último como conceptos finales, consideramos a los gestores, plataformas y lenguajes que utilizaremos así como MySQL Workbench 8.0, NeatBeans IDE 8.2, Java y Joone.
+ \item En el segundo capítulo se realiza la recopilación de diferentes conceptos y definiciones que es de mucha importancia a lo largo de toda la investigación, como la metodología de investigación, inteligencia artificial, sistemas inteligentes, redes neuronales, perceptrón, perceptrón multicapa, backpropagation., también se define definiciones de clasificación automática de documentos, así como su representación vectorial y el centroide del conjunto de palabras, similitud aplicando métodos de clasificación automática de documentos, también describimos los tipos de documentos y por último como conceptos finales, consideramos a los gestores, plataformas y lenguajes de programación que utilizaremos así como Visual Studio Code, Tensorflow, Python.
  \item En el tercer capítulo se analiza, comprende, implementa  y optimiza las soluciones de los sistemas inteligentes para la clasificación automática de documentos. Empezando por algunos problemas de algoritmos actuales. También la prueba a seguir de redes neuronales, se diseñan los modelos propuestos y se explica la implementación del sistema.
  \item En el cuarto capítulo se contrasta los resultados con el prototipo de la aplicación de sistemas inteligentes para la clasificación automática de documentos.
  \item En el quinto capítulo se presenta las conclusiones de nuestro trabajo de investigación, demostrando los objetivos cumplidos.
@@ -685,10 +685,11 @@ En la aplicación del sistema basado en conocimiento conseguimos resultados espe
 
 \section{Resultados computacionales}
 
-En la siguiente tabla se muestra el dataset con los valores de venta observados y la fecha, además de una columna con los valores de venta pronosticado por el sistema basado en conocimiento.\\
+La presente investigación tiene como finalidad pronósticar las ventas de la siguiente semana utilizando un set de datos que entrena a una red neuronal fast forward en un sistema basado en conocimiento. Se consultó el pronóstico para la semana del 23 de febrero del 2020, tomando en cuenta que es semanas antes de la cuarentena.\\
+En la tabla 4.1 se muestra el dataset con los valores de venta observados y la fecha, además de una columna con los valores de venta pronosticados por el sistema basado en conocimiento.\\
 
 
-\begin{table}
+\begin{table}[h!]
 \centering
 \begin{tabular}{|l|l|l|l|l|} 
 \hline
@@ -711,144 +712,31 @@ En la siguiente tabla se muestra el dataset con los valores de venta observados 
 \end{tabular}
 \end{table}
 
-Chi-Square = 11.4039
 
-Degrees of Freedom = 6
+\section{Discusión de Resultados}
 
-p = 0.0766682
+Para la contrastación se utilizó el método Chi-Cuadrado. Utilizando la Tabla 4.1, podemos decir:\\
 
-p < 0.1
-
-Con los indicadores de la Tabla: \ref{IndicadoresBase}, se obtuvo los siguientes resultados:
-\begin{itemize}
-\item \textbf{Verdadero positivo: }documentos correctos encontrados.
-\item \textbf{Falso positivo: } documentos incorrectos encontrados.
-\item \textbf{Verdadero negativo: } documentos correctos no encontrados.
-\item \textbf{Falso negativo: } documentos incorrectos no encontrados.
-\end{itemize}
-
-
-En los resultados del criterio: Sin error ortográfico, se obtuvo en el indicador de sensibilidad un 92.42\%, de precisión un 99.18\% y en el de exactitud un 91.7\%.
-Por lo tanto consideramos nuestra hipótesis como valida.
-
-\section{Tiempo}
-En esta parte se miden los resultados que obtuvimos con un grupo de 30 trabajadores, antes y después de utilizar la aplicación.
-
-\begin{table}[h!]
-\centering
-\caption{Tabla base de comparación de tiempos}
-\label{TablaBaseTiempo}
-\begin{tabular}{|
->{\columncolor[HTML]{DAE8FC}}l |c|
->{\columncolor[HTML]{DAE8FC}}l |c|}
-\hline
-\multicolumn{2}{|c|}{\cellcolor[HTML]{34CDF9}{\color[HTML]{FFFFFF} \textbf{\begin{tabular}[c]{@{}c@{}}Tiempo de búsqueda\\ sin la aplicación\end{tabular}}}} & \multicolumn{2}{c|}{\cellcolor[HTML]{34CDF9}{\color[HTML]{FFFFFF} \textbf{\begin{tabular}[c]{@{}c@{}}Tiempo de búsqueda\\ con la aplicación\end{tabular}}}} \\ \hline
-\multicolumn{1}{|c|}{\cellcolor[HTML]{34CDF9}{\color[HTML]{FFFFFF} \textbf{Pasos}}} & \cellcolor[HTML]{34CDF9}{\color[HTML]{FFFFFF} \textbf{\begin{tabular}[c]{@{}c@{}}Tiempo\\ (segundos)\end{tabular}}} & \multicolumn{1}{c|}{\cellcolor[HTML]{34CDF9}{\color[HTML]{FFFFFF} \textbf{Pasos}}} & \cellcolor[HTML]{34CDF9}{\color[HTML]{FFFFFF} \textbf{\begin{tabular}[c]{@{}c@{}}Tiempo\\ (segundos)\end{tabular}}} \\ \hline
-Ingresar a (MiPC o Este Equipo) & 60 & Abrir la aplicación & 2.5 \\ \hline
-Buscar documentos & 120 & Cargar documentos & 2 \\ \hline
-\begin{tabular}[c]{@{}l@{}}Abrir el supuesto documento\\ que necesitas\end{tabular} & 60 & \begin{tabular}[c]{@{}l@{}}Abrir el reporte y ver\\ documento buscado\end{tabular} & 2 \\ \hline
-\begin{tabular}[c]{@{}l@{}}Repetir paso 3 hasta encontrar\\ el documento buscado\end{tabular} & 300 a más & Abrir documento & 0.3 \\ \hline
-\end{tabular}
 \begin{center}
-    Fuente: Elaboración propia.
+$df = 6$\\
+$Chi-Square = 11.4039$\\
+$p-value = 0.0766682$\\
 \end{center}
-\end{table}
 
-%\begin{table}[h!]
-%\centering
-%\caption{Criterios a trabajadores antes de usar la aplicación.}
-%\begin{tabular}{|
-%>{\columncolor[HTML]{81DAF5}}c |c|}
-%\hline
-%\cellcolor[HTML]{2E9AFE}{\color[HTML]{FFFFFF} \textbf{Criterios}} & \cellcolor[HTML]{2E9AFE}{\color[HTML]{FFFFFF} \textbf{Si / No}} \\ \hline
-%Aprox. 10 minutos                                                 &                                                                 \\ \hline
-%Aprox. 20 minutos                                                 &                                                                 \\ \hline
-%\end{tabular}
-%\begin{center}
-%Fuente: Elaboración propia.
-%\end{center}
-%\end{table}
-
-Con la Tabla \ref{TablaBaseTiempo} se obtuvieron los resultados (ver Tabla: \ref{Tabla: EncuentaSinApp}) de los cuales se sacó una media aritmética de aproximadamente 760.2 segundos, de los cuales 22 trabajadores demoraban aproximadamente 600 segundos en buscar un documento y 8 trabajadores demoraban aproximadamente 1200 segundos, lo que haces un total de 22800 segundos para 30 trabajadores 
-
-%e aplicó de la misma forma la técnica de la Observación Estructurada a la  misma población de 30 trabajadores, pero esta vez usando la aplicación para la búsqueda.
-%Indicando como únicas respuestas 1= SI, 0=NO
-
-%\begin{algorithm}
-%\begin{algorithmic}[htbp]
-%\begin{enumerate}
-%\item Abrir la aplicación. -->(1 segundo)
-%\item Cargar documentos. --> (2 segundos)
-%\item Abrir el reporte y ver documento buscado. --> (1 segundo)
-%\item Abrir documento. --> (0.300 milésimas de segundo)
-%\item Fin.
-%\end{enumerate}
-%\end{algorithmic}
-%\caption{Pasos para la búsqueda de documentos con la aplicación}
-%\label{alg:algoritmoCA}
-%\end{algorithm}
-
-%\begin{table}[h!]
-%\centering
-%\caption{Criterios a trabajadores después de usar la aplicación.}
-%\begin{tabular}{|
-%>{\columncolor[HTML]{81DAF5}}c |c|}
-%\hline
-%\cellcolor[HTML]{2E9AFE}{\color[HTML]{FFFFFF} \textbf{Criterios}} & \cellcolor[HTML]{2E9AFE}{\color[HTML]{FFFFFF} \textbf{SI / NO}} \\ \hline
-%Aprox. 5 segundos                                                 &                                                                 \\ \hline
-%Aprox. 10 segundos                                                 &                                                                 \\ \hline
-%\end{tabular}
-%\begin{center}
-%Fuente: Elaboración propia.
-%\end{center}
-%\end{table}
-
-Se aplicó la Tabla: \ref{TablaBaseTiempo} y los resultados (ver Tabla: \ref{Tabla: EncuentaConApp}) fueron muy favorables con un total de 16 personas que tardaron aproximadamente 5 segundos en la búsqueda de documentos y 14 personas que tardaron aproximadamente 10 segundos, dándonos un total de 220 segundos para 30 trabajadores, lo cual nos da un media de 7.33 segundos, con este resultado mostramos la optimización de tiempo al usar la aplicación.
-
-\begin{figure}[h!]
+\begin{figure}[H]
 	\centering
-		\includegraphics[scale=0.7]{imagenes/matricrua10min20min.png}
-		\caption{Trabajadores antes de usar la aplicación.}
-		\begin{center}
+		\includegraphics[scale=0.7]{imagenes/chicuadrado.png}
+		\caption{Contrastación por método de Chi-Cuadrado en Geogebra.}
+	\begin{center}
     Fuente: Elaboración propia.
     \end{center}
-	\label{fig:matricrua10min20min}
+	\label{fig:39}
 \end{figure}
 
-\begin{figure}[h!]
-	\centering
-		\includegraphics[scale=0.7]{imagenes/matricrua2seg5seg.png}
-		\caption{Trabajadores usando la aplicación.}
-		\begin{center}
-    Fuente: Elaboración propia.
-    \end{center}
-	\label{fig:matricrua2seg5seg}
-\end{figure}
-
-Estos resultados nos muestran que se llegó al objetivo, cumpliendo con optimizar uno de los principales recursos, el tiempo. Con esto concluimos logrando todos los objetivos planteados para nuestra tesis.
-
-\begin{table}[h!]
-\centering
-\caption{Resultados con tiempos, sin usar la aplicación y usando la aplicación}
-\label{tab:my-table}
-\begin{tabular}{|c|c|}
-\hline
-\rowcolor[HTML]{2E9AFE} 
-{\color[HTML]{FFFFFF} \textbf{Sin aplicación}} & {\color[HTML]{FFFFFF} \textbf{Con aplicación}} \\ \hline
-\rowcolor[HTML]{81DAF5} 
-760.2 segundos                                  & 7.33 segundos                                  \\ \hline
-\end{tabular}
-\begin{center}
-Fuente: Elaboración propia.
-\end{center}
-\end{table}
-\newpage
-Logrando reducir el tiempo de 760.2 segundos a 7.33 segundos, esto significa un ahorro de tiempo en más de 752 segundos en la búsqueda por documento.
-
+Con los resultados obtenidos por la contrastación, se obtiene el p-value = 0.0766682, valor inferior a 0.1 por lo tanto, llegamos a la conclusión que la hipótesis es estadisticamente significativa.
 
 
 \newpage
-
 
 \chapter{Consideraciones finales}
 

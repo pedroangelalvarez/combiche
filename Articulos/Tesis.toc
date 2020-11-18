@@ -66,8 +66,8 @@
 \contentsline {section}{\numberline {3.6}Funciones del sistema:}{44}%
 \contentsline {chapter}{\numberline {4}Resultados y discusión de la tesis}{45}%
 \contentsline {section}{\numberline {4.1}Resultados computacionales}{45}%
-\contentsline {section}{\numberline {4.2}Tiempo}{47}%
-\contentsline {chapter}{\numberline {5}Consideraciones finales}{50}%
-\contentsline {section}{\numberline {5.1}Conclusiones}{50}%
-\contentsline {section}{\numberline {5.2}Trabajos futuros}{51}%
-\contentsline {chapter}{ Referencias bibliográfícas}{52}%
+\contentsline {section}{\numberline {4.2}Discusión de Resultados}{46}%
+\contentsline {chapter}{\numberline {5}Consideraciones finales}{48}%
+\contentsline {section}{\numberline {5.1}Conclusiones}{48}%
+\contentsline {section}{\numberline {5.2}Trabajos futuros}{49}%
+\contentsline {chapter}{ Referencias bibliográfícas}{50}%

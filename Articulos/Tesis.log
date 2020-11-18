@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.14)  17 NOV 2020 11:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.14)  18 NOV 2020 10:52
 entering extended mode
 **./Tesis.tex
 (Tesis.tex
@@ -783,7 +783,7 @@ LaTeX Info: Redefining \% on input line 9.
 LaTeX Warning: Label `fig:diagramaCasosUsoTesis' multiply defined.
 
 
-LaTeX Warning: Label `tab:my-table' multiply defined.
+LaTeX Warning: Label `fig:39' multiply defined.
 
 ) (Apendice.aux))
 \openout1 = `Tesis.aux'.
@@ -1045,44 +1045,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 658--659
 g>] [42] [43] [44]
 Cap\'{\i }tulo 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 688--689
+Underfull \hbox (badness 10000) in paragraph at lines 688--690
 
  []
 
 [45
 
-] [46]
+]
+Underfull \hbox (badness 10000) in paragraph at lines 718--719
 
-LaTeX Warning: Reference `Tabla: EncuentaSinApp' on page 47 undefined on input 
-line 772.
+ []
 
-
-LaTeX Warning: Reference `Tabla: EncuentaConApp' on page 47 undefined on input 
-line 806.
-
-[47]
-<imagenes/matricrua10min20min.png, id=239, 280.79906pt x 126.4725pt>
-File: imagenes/matricrua10min20min.png Graphic file (type png)
-<use imagenes/matricrua10min20min.png>
-Package pdftex.def Info: imagenes/matricrua10min20min.png  used on input line 8
-10.
-(pdftex.def)             Requested size: 196.558pt x 88.53014pt.
-<imagenes/matricrua2seg5seg.png, id=240, 280.79906pt x 124.21407pt>
-File: imagenes/matricrua2seg5seg.png Graphic file (type png)
-<use imagenes/matricrua2seg5seg.png>
-Package pdftex.def Info: imagenes/matricrua2seg5seg.png  used on input line 820
-.
-(pdftex.def)             Requested size: 196.558pt x 86.94923pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[48 <./imagenes/matricrua10min20min.png> <./imagenes/matricrua2seg5seg.png>]
-[49]
+<imagenes/chicuadrado.png, id=233, 588.69937pt x 327.47343pt>
+File: imagenes/chicuadrado.png Graphic file (type png)
+<use imagenes/chicuadrado.png>
+Package pdftex.def Info: imagenes/chicuadrado.png  used on input line 728.
+(pdftex.def)             Requested size: 412.08675pt x 229.22984pt.
+[46] [47 <./imagenes/chicuadrado.png>]
 Cap\'{\i }tulo 5.
-[50
+[48
 
-] [51] (Tesis.bbl
+] [49] (Tesis.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 19--23
 []\T1/ptm/m/n/12 Erlinb (2017).  Re-des neu-ro-na-les: Con-cep-tos bá-si-cos y 
 apli-ca-cio-nes.
@@ -1106,97 +1089,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--30
 ceptron/.  [On-li-
  []
 
-[52
+[50
 
 
-] [53])) [54]
+] [51])) [52]
 \openout2 = `Apendice.aux'.
 
- (Apendice.tex)
-<DECLARACION_JURADA.pdf, id=264, 614.295pt x 845.1575pt>
-File: DECLARACION_JURADA.pdf Graphic file (type pdf)
-<use DECLARACION_JURADA.pdf>
-Package pdftex.def Info: DECLARACION_JURADA.pdf  used on input line 65.
-(pdftex.def)             Requested size: 614.29349pt x 845.15544pt.
-File: DECLARACION_JURADA.pdf Graphic file (type pdf)
-<use DECLARACION_JURADA.pdf>
-Package pdftex.def Info: DECLARACION_JURADA.pdf  used on input line 65.
-(pdftex.def)             Requested size: 614.29349pt x 845.15544pt.
-<DECLARACION_JURADA.pdf, id=267, page=1, 614.295pt x 845.1575pt>
-File: DECLARACION_JURADA.pdf Graphic file (type pdf)
-<use DECLARACION_JURADA.pdf, page 1>
-Package pdftex.def Info: DECLARACION_JURADA.pdf , page1 used on input line 65.
-(pdftex.def)             Requested size: 614.29349pt x 845.15544pt.
-File: DECLARACION_JURADA.pdf Graphic file (type pdf)
-<use DECLARACION_JURADA.pdf, page 1>
-Package pdftex.def Info: DECLARACION_JURADA.pdf , page1 used on input line 65.
-(pdftex.def)             Requested size: 598.43373pt x 823.33531pt.
-File: DECLARACION_JURADA.pdf Graphic file (type pdf)
-<use DECLARACION_JURADA.pdf, page 1>
-Package pdftex.def Info: DECLARACION_JURADA.pdf , page1 used on input line 65.
-(pdftex.def)             Requested size: 598.43373pt x 823.33531pt.
-File: DECLARACION_JURADA.pdf Graphic file (type pdf)
-<use DECLARACION_JURADA.pdf, page 1>
-Package pdftex.def Info: DECLARACION_JURADA.pdf , page1 used on input line 65.
-(pdftex.def)             Requested size: 598.43373pt x 823.33531pt.
-File: DECLARACION_JURADA.pdf Graphic file (type pdf)
-<use DECLARACION_JURADA.pdf, page 1>
-Package pdftex.def Info: DECLARACION_JURADA.pdf , page1 used on input line 65.
-(pdftex.def)             Requested size: 598.43373pt x 823.33531pt.
- [55
-
-
-
- <./DECLARACION_JURADA.pdf>]
-<CARTA_AUTORIZACION.pdf, id=274, 614.295pt x 845.1575pt>
-File: CARTA_AUTORIZACION.pdf Graphic file (type pdf)
-<use CARTA_AUTORIZACION.pdf>
-Package pdftex.def Info: CARTA_AUTORIZACION.pdf  used on input line 66.
-(pdftex.def)             Requested size: 614.29349pt x 845.15544pt.
-File: CARTA_AUTORIZACION.pdf Graphic file (type pdf)
-<use CARTA_AUTORIZACION.pdf>
-Package pdftex.def Info: CARTA_AUTORIZACION.pdf  used on input line 66.
-(pdftex.def)             Requested size: 614.29349pt x 845.15544pt.
-<CARTA_AUTORIZACION.pdf, id=277, page=1, 614.295pt x 845.1575pt>
-File: CARTA_AUTORIZACION.pdf Graphic file (type pdf)
-<use CARTA_AUTORIZACION.pdf, page 1>
-Package pdftex.def Info: CARTA_AUTORIZACION.pdf , page1 used on input line 66.
-(pdftex.def)             Requested size: 614.29349pt x 845.15544pt.
-File: CARTA_AUTORIZACION.pdf Graphic file (type pdf)
-<use CARTA_AUTORIZACION.pdf, page 1>
-Package pdftex.def Info: CARTA_AUTORIZACION.pdf , page1 used on input line 66.
-(pdftex.def)             Requested size: 598.43373pt x 823.33531pt.
-File: CARTA_AUTORIZACION.pdf Graphic file (type pdf)
-<use CARTA_AUTORIZACION.pdf, page 1>
-Package pdftex.def Info: CARTA_AUTORIZACION.pdf , page1 used on input line 66.
-(pdftex.def)             Requested size: 598.43373pt x 823.33531pt.
-File: CARTA_AUTORIZACION.pdf Graphic file (type pdf)
-<use CARTA_AUTORIZACION.pdf, page 1>
-Package pdftex.def Info: CARTA_AUTORIZACION.pdf , page1 used on input line 66.
-(pdftex.def)             Requested size: 598.43373pt x 823.33531pt.
-File: CARTA_AUTORIZACION.pdf Graphic file (type pdf)
-<use CARTA_AUTORIZACION.pdf, page 1>
-Package pdftex.def Info: CARTA_AUTORIZACION.pdf , page1 used on input line 66.
-(pdftex.def)             Requested size: 598.43373pt x 823.33531pt.
- [56 <./CARTA_AUTORIZACION.pdf>] (Tesis.aux (Datos.aux)
+ (Apendice.tex) (Tesis.aux (Datos.aux)
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
  (Caps.aux) (Apendice.aux))
-
-LaTeX Warning: There were undefined references.
-
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 21548 strings out of 480790
- 413704 string characters out of 2907048
- 675376 words of memory out of 3000000
- 37044 multiletter control sequences out of 15000+200000
+ 21511 strings out of 480790
+ 412622 string characters out of 2907048
+ 673343 words of memory out of 3000000
+ 37012 multiletter control sequences out of 15000+200000
  589940 words of font info for 79 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,18n,97p,1193b,534s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,18n,97p,1193b,432s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
@@ -1207,9 +1121,9 @@ eX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX/font
 s/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utm
 bi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program 
 Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Tesis.pdf (72 pages, 1731723 bytes).
+Output written on Tesis.pdf (68 pages, 686294 bytes).
 PDF statistics:
- 322 PDF objects out of 1000 (max. 8388607)
+ 294 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 148 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 103 words of extra memory for PDF output out of 10000 (max. 10000000)
 
