@@ -1,46 +1,46 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.14)  18 NOV 2020 11:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.12)  24 NOV 2020 00:11
 entering extended mode
 **./Tesis.tex
 (Tesis.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-06-18>
+L3 programming layer <2020-09-03>
 ("C:\Program Files\MiKTeX\tex/latex/base\report.cls"
 Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
 ("C:\Program Files\MiKTeX\tex/latex/base\size12.clo"
 File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count167
-\c@chapter=\count168
-\c@section=\count169
-\c@subsection=\count170
-\c@subsubsection=\count171
-\c@paragraph=\count172
-\c@subparagraph=\count173
-\c@figure=\count174
-\c@table=\count175
+\c@part=\count168
+\c@chapter=\count169
+\c@section=\count170
+\c@subsection=\count171
+\c@subsubsection=\count172
+\c@paragraph=\count173
+\c@subparagraph=\count174
+\c@figure=\count175
+\c@table=\count176
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
 )
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/vmargin\vmargin.sty
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/latex/vmargin\vmargin.sty
 Package: vmargin 2004/07/15 V2.5 set document margins (VK)
 
 Package: vmargin 2004/07/15 V2.5 set document margins (VK)
 \PaperWidth=\dimen135
 \PaperHeight=\dimen136
 ) ("C:\Program Files\MiKTeX\tex/generic/babel\babel.sty"
-Package: babel 2020/06/10 3.45 The Babel package
+Package: babel 2020/09/01 3.48 The Babel package
 
 ("C:\Program Files\MiKTeX\tex/generic/babel\babel.def"
-File: babel.def 2020/06/10 3.45 Babel common definitions
-\babel@savecnt=\count176
+File: babel.def 2020/09/01 3.48 Babel common definitions
+\babel@savecnt=\count177
 \U@D=\dimen137
 \l@babelnohyphens=\language79
 
 ("C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def")
 \bbl@readstream=\read2
 )
-\bbl@dirlevel=\count177
+\bbl@dirlevel=\count178
 
 *************************************
 * Local config file bblopts.cfg used
@@ -49,10 +49,10 @@ File: babel.def 2020/06/10 3.45 Babel common definitions
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/babel-spanish\spanish.ldf
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/latex/babel-spanish\spanish.ldf
 Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
 \es@quottoks=\toks15
-\es@quotdepth=\count178
+\es@quotdepth=\count179
 Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
@@ -64,22 +64,22 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \LTright=\skip50
 \LTpre=\skip51
 \LTpost=\skip52
-\LTchunksize=\count179
+\LTchunksize=\count180
 \LTcapwidth=\dimen138
 \LT@head=\box45
 \LT@firsthead=\box46
 \LT@foot=\box47
 \LT@lastfoot=\box48
-\LT@cols=\count180
-\LT@rows=\count181
-\c@LT@tables=\count182
-\c@LT@chunks=\count183
+\LT@cols=\count181
+\LT@rows=\count182
+\c@LT@tables=\count183
+\c@LT@chunks=\count184
 \LT@p@ftn=\toks16
 )
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/multirow\multirow.sty
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip53
-\multirow@cntb=\count184
+\multirow@cntb=\count185
 \multirow@dima=\skip54
 \bigstrutjot=\dimen139
 )
@@ -103,13 +103,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ("C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count185
+\inf@bad=\count186
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count186
-\leftroot@=\count187
+\uproot@=\count187
+\leftroot@=\count188
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count188
-\DOTSCASE@=\count189
+\classnum@=\count189
+\DOTSCASE@=\count190
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
@@ -118,15 +118,15 @@ LaTeX Info: Redefining \cdots on input line 610.
 \big@size=\dimen142
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count190
-\c@MaxMatrixCols=\count191
+\macc@depth=\count191
+\c@MaxMatrixCols=\count192
 \dotsspace@=\muskip16
-\c@parentequation=\count192
-\dspbrk@lvl=\count193
+\c@parentequation=\count193
+\dspbrk@lvl=\count194
 \tag@help=\toks18
-\row@=\count194
-\column@=\count195
-\maxfields@=\count196
+\row@=\count195
+\column@=\count196
+\maxfields@=\count197
 \andhelp@=\toks19
 \eqnshift@=\dimen143
 \alignsep@=\dimen144
@@ -158,9 +158,10 @@ Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
 )
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/anyfontsize\anyfontsize.sty
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/latex/anyfontsize\anyfontsize.sty
 Package: anyfontsize 2007/11/22 anyfontsize.sty by pts
-) ("C:\Program Files\MiKTeX\tex/latex/graphics\color.sty"
+)
+("C:\Program Files\MiKTeX\tex/latex/graphics\color.sty"
 Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
 
 ("C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg"
@@ -169,18 +170,18 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 147.
 
 ("C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def"
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+File: pdftex.def 2020/08/26 v1.2 Graphics/color driver for pdftex
 ))
 ("C:\Program Files\MiKTeX\tex/latex/base\alltt.sty"
 Package: alltt 1997/06/16 v2.0g defines alltt environment
 )
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/psnfss\times.sty
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/latex/psnfss\times.sty
 Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
 )
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/setspace\setspace.sty
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/booktabs\booktabs.sty
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen149
 \lightrulewidth=\dimen150
@@ -192,25 +193,25 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen156
 \cmidrulekern=\dimen157
 \defaultaddspace=\dimen158
-\@cmidla=\count197
-\@cmidlb=\count198
+\@cmidla=\count198
+\@cmidlb=\count199
 \@aboverulesep=\dimen159
 \@belowrulesep=\dimen160
-\@thisruleclass=\count199
-\@lastruleclass=\count266
+\@thisruleclass=\count266
+\@lastruleclass=\count267
 \@thisrulewidth=\dimen161
 )
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/appendix\appendix.sty
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/latex/appendix\appendix.sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
-\c@@pps=\count267
-\c@@ppsavesec=\count268
-\c@@ppsaveapp=\count269
+\c@@pps=\count268
+\c@@ppsavesec=\count269
+\c@@ppsaveapp=\count270
 )
 ("C:\Program Files\MiKTeX\tex/latex/url\url.sty"
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/latex/pdfpages\pdfpages.sty
 Package: pdfpages 2020/01/28 v0.5q Insert pages of external PDF documents (AM)
 
 ("C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty"
@@ -218,35 +219,32 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 ("C:\Program Files\MiKTeX\tex/latex/tools\calc.sty"
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count270
-\calc@Bcount=\count271
+\calc@Acount=\count271
+\calc@Bcount=\count272
 \calc@Adimen=\dimen162
 \calc@Bdimen=\dimen163
 \calc@Askip=\skip58
 \calc@Bskip=\skip59
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count272
+\calc@Ccount=\count273
 \calc@Cskip=\skip60
 )
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/eso-pic\eso-pic.sty
-Package: eso-pic 2020/09/27 v2.0i eso-pic (RN)
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
 
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/generic/atbegshi\atbegshi.sty
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/generic/atbegshi\atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
 )
 ("C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty"
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-\ESO@tempdima=\dimen164
-\ESO@tempdimb=\dimen165
-
 ("C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks22
@@ -265,36 +263,35 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 )
-\Gin@req@height=\dimen166
-\Gin@req@width=\dimen167
+\Gin@req@height=\dimen164
+\Gin@req@width=\dimen165
 )
-\AM@pagewidth=\dimen168
-\AM@pageheight=\dimen169
+\AM@pagewidth=\dimen166
+\AM@pageheight=\dimen167
 
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/pdfpages\pppdftex.def
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/latex/pdfpages\pppdftex.def
 File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box51
 \AM@global@opts=\toks23
-\AM@pagecnt=\count273
+\AM@pagecnt=\count274
 \AM@toc@title=\toks24
-\c@AM@survey=\count274
+\c@AM@survey=\count275
 \AM@templatesizebox=\box52
 )
 ("C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf.sty"
 Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
 
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/grfext\grfext.sty
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/latex/grfext\grfext.sty
 Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
 
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.
-sty
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.st
+y
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-))
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+)) (C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.sty
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 ))
 ("C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty"
@@ -313,23 +310,23 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 504.
 ))
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/subfigure\subfigure.sty
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/latex/subfigure\subfigure.sty
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip61
 \subfigcapskip=\skip62
-\subfigcaptopadj=\dimen170
+\subfigcaptopadj=\dimen168
 \subfigbottomskip=\skip63
-\subfigcapmargin=\dimen171
+\subfigcapmargin=\dimen169
 \subfiglabelskip=\skip64
-\c@subfigure=\count275
-\c@lofdepth=\count276
-\c@subtable=\count277
-\c@lotdepth=\count278
+\c@subfigure=\count276
+\c@lofdepth=\count277
+\c@subtable=\count278
+\c@lotdepth=\count279
 
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/subfigure\subfigure.cfg)
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/latex/subfigure\subfigure.cfg)
 \subfig@top=\skip65
 \subfig@bottom=\skip66
 )
@@ -343,32 +340,32 @@ Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 11
 2.
 
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/psnfss\t1ptm.fd
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ))
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/algorithms\algorithmic.sty
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/latex/algorithms\algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count279
-\c@ALC@line=\count280
-\c@ALC@rem=\count281
-\c@ALC@depth=\count282
+\c@ALC@unique=\count280
+\c@ALC@line=\count281
+\c@ALC@rem=\count282
+\c@ALC@depth=\count283
 \ALC@tlm=\skip67
 \algorithmicindent=\skip68
 )
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/algorithms\algorithm.sty
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/latex/algorithms\algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/float\float.sty
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count283
+\c@float@type=\count284
 \float@exts=\toks27
 \float@box=\box53
 \@float@everytoks=\toks28
 \@floatcapt=\box54
 )
 \@float@every@algorithm=\toks29
-\c@algorithm=\count284
+\c@algorithm=\count285
 )
 (spanishAlgorithmic.tex) ("C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
@@ -377,14 +374,14 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/colortbl\colortbl.sty
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/latex/colortbl\colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 
 ("C:\Program Files\MiKTeX\tex/latex/tools\array.sty"
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
-\col@sep=\dimen172
+\col@sep=\dimen170
 \ar@mcellbox=\box55
-\extrarowheight=\dimen173
+\extrarowheight=\dimen171
 \NC@list=\toks30
 \extratabsurround=\skip69
 \backup@length=\skip70
@@ -394,7 +391,7 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \minrowclearance=\skip71
 )
 LaTeX Info: Redefining \color on input line 709.
-\rownum=\count285
+\rownum=\count286
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -413,8 +410,8 @@ File: x11nam.def 2016/05/11 v2.12 Predefined colors according to Unix/X11 (UK)
 ("C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty"
 ("C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex"
 \pgfutil@everybye=\toks32
-\pgfutil@tempdima=\dimen174
-\pgfutil@tempdimb=\dimen175
+\pgfutil@tempdima=\dimen172
+\pgfutil@tempdimb=\dimen173
 
 ("C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-common-lists.tex"))
 ("C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def"
@@ -441,26 +438,26 @@ Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 ("C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeysfiltered.code.tex"
 \pgfkeys@tmptoks=\toks35
 ))
-\pgf@x=\dimen176
-\pgf@y=\dimen177
-\pgf@xa=\dimen178
-\pgf@ya=\dimen179
-\pgf@xb=\dimen180
-\pgf@yb=\dimen181
-\pgf@xc=\dimen182
-\pgf@yc=\dimen183
-\pgf@xd=\dimen184
-\pgf@yd=\dimen185
+\pgf@x=\dimen174
+\pgf@y=\dimen175
+\pgf@xa=\dimen176
+\pgf@ya=\dimen177
+\pgf@xb=\dimen178
+\pgf@yb=\dimen179
+\pgf@xc=\dimen180
+\pgf@yc=\dimen181
+\pgf@xd=\dimen182
+\pgf@yd=\dimen183
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count286
-\c@pgf@countb=\count287
-\c@pgf@countc=\count288
-\c@pgf@countd=\count289
+\c@pgf@counta=\count287
+\c@pgf@countb=\count288
+\c@pgf@countc=\count289
+\c@pgf@countd=\count290
 \t@pgf@toka=\toks36
 \t@pgf@tokb=\toks37
 \t@pgf@tokc=\toks38
-\pgf@sys@id@count=\count290
+\pgf@sys@id@count=\count291
 ("C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg"
 File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
 )
@@ -474,8 +471,8 @@ File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
 ))) ("C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.t
 ex"
 File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfsyssoftpath@smallbuffer@items=\count291
-\pgfsyssoftpath@bigbuffer@items=\count292
+\pgfsyssoftpath@smallbuffer@items=\count292
+\pgfsyssoftpath@bigbuffer@items=\count293
 ) ("C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
 "
 File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
@@ -486,8 +483,8 @@ Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
 ("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex"
 ("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex")
 ("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex"
-\pgfmath@dimen=\dimen186
-\pgfmath@count=\count293
+\pgfmath@dimen=\dimen184
+\pgfmath@count=\count294
 \pgfmath@box=\box58
 \pgfmath@toks=\toks39
 \pgfmath@stack@operand=\toks40
@@ -509,54 +506,54 @@ ode.tex")
 ("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmet
 ics.code.tex")))
 ("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count294
+\c@pgfmathroundto@lastzeros=\count295
 ))
 ("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfint.code.tex")
 ("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex"
 File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@picminx=\dimen187
-\pgf@picmaxx=\dimen188
-\pgf@picminy=\dimen189
-\pgf@picmaxy=\dimen190
-\pgf@pathminx=\dimen191
-\pgf@pathmaxx=\dimen192
-\pgf@pathminy=\dimen193
-\pgf@pathmaxy=\dimen194
-\pgf@xx=\dimen195
-\pgf@xy=\dimen196
-\pgf@yx=\dimen197
-\pgf@yy=\dimen198
-\pgf@zx=\dimen199
-\pgf@zy=\dimen256
+\pgf@picminx=\dimen185
+\pgf@picmaxx=\dimen186
+\pgf@picminy=\dimen187
+\pgf@picmaxy=\dimen188
+\pgf@pathminx=\dimen189
+\pgf@pathmaxx=\dimen190
+\pgf@pathminy=\dimen191
+\pgf@pathmaxy=\dimen192
+\pgf@xx=\dimen193
+\pgf@xy=\dimen194
+\pgf@yx=\dimen195
+\pgf@yy=\dimen196
+\pgf@zx=\dimen197
+\pgf@zy=\dimen198
 )
 ("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.
 tex"
 File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@path@lastx=\dimen257
-\pgf@path@lasty=\dimen258
+\pgf@path@lastx=\dimen199
+\pgf@path@lasty=\dimen256
 )
 ("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex"
 File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@shorten@end@additional=\dimen259
-\pgf@shorten@start@additional=\dimen260
+\pgf@shorten@end@additional=\dimen257
+\pgf@shorten@start@additional=\dimen258
 ) ("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex"
 File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfpic=\box59
 \pgf@hbox=\box60
 \pgf@layerbox@main=\box61
-\pgf@picture@serial@count=\count295
+\pgf@picture@serial@count=\count296
 )
 ("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.t
 ex"
 File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgflinewidth=\dimen261
+\pgflinewidth=\dimen259
 )
 ("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.cod
 e.tex"
 File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@pt@x=\dimen262
-\pgf@pt@y=\dimen263
-\pgf@pt@temp=\dimen264
+\pgf@pt@x=\dimen260
+\pgf@pt@y=\dimen261
+\pgf@pt@temp=\dimen262
 )
 ("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex"
 File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
@@ -570,13 +567,13 @@ File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
 ("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex"
 File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfarrowsep=\dimen265
+\pgfarrowsep=\dimen263
 )
 ("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@max=\dimen266
-\pgf@sys@shading@range@num=\count296
-\pgf@shadingcount=\count297
+\pgf@max=\dimen264
+\pgf@sys@shading@range@num=\count297
+\pgf@shadingcount=\count298
 )
 ("C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex"
 File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
@@ -605,8 +602,8 @@ File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
 ("C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty"
 Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@nodesepstart=\dimen267
-\pgf@nodesepend=\dimen268
+\pgf@nodesepstart=\dimen265
+\pgf@nodesepend=\dimen266
 ) ("C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.st
 y"
 Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
@@ -619,8 +616,8 @@ Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
 Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 
 ("C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex")
-\pgffor@iter=\dimen269
-\pgffor@skip=\dimen270
+\pgffor@iter=\dimen267
+\pgffor@skip=\dimen268
 \pgffor@stack=\toks42
 \pgffor@toks=\toks43
 ))
@@ -630,39 +627,39 @@ Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
 ("C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code
 .tex"
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@plot@mark@count=\count298
-\pgfplotmarksize=\dimen271
+\pgf@plot@mark@count=\count299
+\pgfplotmarksize=\dimen269
 )
-\tikz@lastx=\dimen272
-\tikz@lasty=\dimen273
-\tikz@lastxsaved=\dimen274
-\tikz@lastysaved=\dimen275
-\tikz@lastmovetox=\dimen276
-\tikz@lastmovetoy=\dimen277
-\tikzleveldistance=\dimen278
-\tikzsiblingdistance=\dimen279
+\tikz@lastx=\dimen270
+\tikz@lasty=\dimen271
+\tikz@lastxsaved=\dimen272
+\tikz@lastysaved=\dimen273
+\tikz@lastmovetox=\dimen274
+\tikz@lastmovetoy=\dimen275
+\tikzleveldistance=\dimen276
+\tikzsiblingdistance=\dimen277
 \tikz@figbox=\box64
 \tikz@figbox@bg=\box65
 \tikz@tempbox=\box66
 \tikz@tempbox@bg=\box67
-\tikztreelevel=\count299
-\tikznumberofchildren=\count300
-\tikznumberofcurrentchild=\count301
-\tikz@fig@count=\count302
+\tikztreelevel=\count300
+\tikznumberofchildren=\count301
+\tikznumberofcurrentchild=\count302
+\tikz@fig@count=\count303
 
 ("C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfmatrixcurrentrow=\count303
-\pgfmatrixcurrentcolumn=\count304
-\pgf@matrix@numberofcolumns=\count305
+\pgfmatrixcurrentrow=\count304
+\pgfmatrixcurrentcolumn=\count305
+\pgf@matrix@numberofcolumns=\count306
 )
-\tikz@expandcount=\count306
+\tikz@expandcount=\count307
 
 ("C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibr
 arytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )))
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/tkz-tab\tkz-tab.sty
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/latex/tkz-tab\tkz-tab.sty
 Package: tkz-tab 2020/04/29 v2.12c variations (ctan version)
 
 ("C:\Program Files\MiKTeX\tex/latex/xkeyval\xkeyval.sty"
@@ -673,7 +670,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks44
 \XKV@tempa@toks=\toks45
 )
-\XKV@depth=\count307
+\XKV@depth=\count308
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 ("C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibr
@@ -682,7 +679,7 @@ File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 
 ("C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.code.tex"
 File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\arrowsize=\dimen280
+\arrowsize=\dimen278
 ))
 ("C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibr
 arypatterns.code.tex"
@@ -692,22 +689,22 @@ File: tikzlibrarypatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 "
 File: pgflibrarypatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ))
-\tkz@XF=\dimen281
-\tkz@YF=\dimen282
-\c@tkz@cnt@line=\count308
-\c@tkz@cnt@lg=\count309
-\c@tkz@cnt@cl=\count310
-\c@tkz@cnt@pred=\count311
-\c@tkz@cnt@temp=\count312
-\c@tkz@cnt@arrow=\count313
-\c@tkz@cnt@zone=\count314
-\c@tkz@cnt@lgnext=\count315
-\c@tkz@cnt@clnext=\count316
-\c@tkz@cnt@pair=\count317
-\c@tkz@cnt@impair=\count318
-\c@tkz@cnt@aw=\count319
+\tkz@XF=\dimen279
+\tkz@YF=\dimen280
+\c@tkz@cnt@line=\count309
+\c@tkz@cnt@lg=\count310
+\c@tkz@cnt@cl=\count311
+\c@tkz@cnt@pred=\count312
+\c@tkz@cnt@temp=\count313
+\c@tkz@cnt@arrow=\count314
+\c@tkz@cnt@zone=\count315
+\c@tkz@cnt@lgnext=\count316
+\c@tkz@cnt@clnext=\count317
+\c@tkz@cnt@pair=\count318
+\c@tkz@cnt@impair=\count319
+\c@tkz@cnt@aw=\count320
 ) ("C:\Program Files\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty"
-Package: tcolorbox 2020/04/28 version 4.30 text color boxes
+Package: tcolorbox 2020/07/31 version 4.31 text color boxes
 
 ("C:\Program Files\MiKTeX\tex/latex/tools\verbatim.sty"
 Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
@@ -722,16 +719,16 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
 ("C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty"
-Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count320
+Package: etoolbox 2020/08/24 v2.5j e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count321
 )
 \tcb@titlebox=\box68
 \tcb@upperbox=\box69
 \tcb@lowerbox=\box70
 \tcb@phantombox=\box71
-\c@tcbbreakpart=\count321
-\c@tcblayer=\count322
-\c@tcolorbox@number=\count323
+\c@tcbbreakpart=\count322
+\c@tcblayer=\count323
+\c@tcolorbox@number=\count324
 \tcb@temp=\box72
 \tcb@temp=\box73
 \tcb@temp=\box74
@@ -739,48 +736,50 @@ Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \tcb@out=\write4
 \tcb@record@out=\write5
 )
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/caption\caption.sty
-Package: caption 2020/09/12 v3.5b Customizing captions (AR)
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2020/09/02 v3.5a Customizing captions (AR)
 
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/caption\caption3.sty
-Package: caption3 2020/09/17 v2.1b caption3 kernel (AR)
-\captionmargin=\dimen283
-\captionmargin@=\dimen284
-\captionwidth=\dimen285
-\caption@tempdima=\dimen286
-\caption@indent=\dimen287
-\caption@parindent=\dimen288
-\caption@hangindent=\dimen289
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2020/08/30 v2.0 caption3 kernel (AR)
+\captionmargin=\dimen281
+\captionmargin@=\dimen282
+\captionwidth=\dimen283
+\caption@tempdima=\dimen284
+\caption@indent=\dimen285
+\caption@parindent=\dimen286
+\caption@hangindent=\dimen287
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count324
-\c@continuedfloat=\count325
+\c@caption@flags=\count325
+\c@continuedfloat=\count326
 Package caption Info: float package is loaded.
 Package caption Info: longtable package is loaded.
 
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/caption\ltcaption.sty
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/latex/caption\ltcaption.sty
 Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
 )
 Package caption Info: subfigure package is loaded.
 )
-(C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/natbib\natbib.sty
+(C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip72
 \bibsep=\skip73
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count326
+\c@NAT@ctr=\count327
 )
-("C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdfmode.def"
-File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count327
+("C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def"
+File: l3backend-pdftex.def 2020-09-01 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count328
 \l__pdf_internal_box=\box76
-)
-(Tesis.aux (Datos.aux)
+) (Tesis.aux (Datos.aux)
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
  (Caps.aux
 
 LaTeX Warning: Label `fig:diagramaCasosUsoTesis' multiply defined.
+
+
+LaTeX Warning: Label `fig:39' multiply defined.
 
 
 LaTeX Warning: Label `fig:39' multiply defined.
@@ -806,20 +805,20 @@ LaTeX Info: Redefining \. on input line 50.
 LaTeX Info: Redefining \% on input line 50.
  ("C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count328
-\scratchdimen=\dimen290
+\scratchcounter=\count329
+\scratchdimen=\dimen288
 \scratchbox=\box77
-\nofMPsegments=\count329
-\nofMParguments=\count330
+\nofMPsegments=\count330
+\nofMParguments=\count331
 \everyMPshowfont=\toks48
-\MPscratchCnt=\count331
-\MPscratchDim=\dimen291
-\MPnumerator=\count332
-\makeMPintoPDFobject=\count333
+\MPscratchCnt=\count332
+\MPscratchDim=\dimen289
+\MPnumerator=\count333
+\makeMPintoPDFobject=\count334
 \everyMPtoPDFconversion=\toks49
 )
 \AtBeginShipoutBox=\box78
- (C:\Users\Usuario\AppData\Roaming\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+ (C:\Users\Pedro\AppData\Roaming\MiKTeX\tex/latex/pdflscape\pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
 
 ("C:\Program Files\MiKTeX\tex/latex/graphics\lscape.sty"
@@ -841,8 +840,8 @@ Package pdftex.def Info: unt.jpg  used on input line 14.
  [1
 
 
-{C:/Users/Usuario/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./unt.jpg>] [
-1] [2]
+{C:/Users/Pedro/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./unt.jpg>] [1]
+ [2]
 LaTeX Font Info:    Trying to load font information for U+msa on input line 105
 .
 
@@ -1014,58 +1013,69 @@ File: imagenes/flujograma.png Graphic file (type png)
 Package pdftex.def Info: imagenes/flujograma.png  used on input line 608.
 (pdftex.def)             Requested size: 246.70401pt x 455.2979pt.
 [38] [39 <./imagenes/flujograma.png>]
-<imagenes/extracciondatos.png, id=209, 1075.76906pt x 472.01344pt>
+<imagenes/neuralnetwork.png, id=209, 1089.06876pt x 629.35126pt>
+File: imagenes/neuralnetwork.png Graphic file (type png)
+<use imagenes/neuralnetwork.png>
+Package pdftex.def Info: imagenes/neuralnetwork.png  used on input line 624.
+(pdftex.def)             Requested size: 457.40576pt x 264.32571pt.
+
+Overfull \hbox (16.38805pt too wide) in paragraph at lines 624--625
+ [][] 
+ []
+
+[40 <./imagenes/neuralnetwork.png>]
+<imagenes/extracciondatos.png, id=214, 851.43094pt x 369.63094pt>
 File: imagenes/extracciondatos.png Graphic file (type png)
 <use imagenes/extracciondatos.png>
-Package pdftex.def Info: imagenes/extracciondatos.png  used on input line 619.
-(pdftex.def)             Requested size: 430.3pt x 188.80202pt.
-<imagenes/vectorcaracteristico.png, id=210, 979.40906pt x 154.32657pt>
+Package pdftex.def Info: imagenes/extracciondatos.png  used on input line 636.
+(pdftex.def)             Requested size: 340.56635pt x 147.84975pt.
+<imagenes/vectorcaracteristico.png, id=215, 936.49875pt x 109.91063pt>
 File: imagenes/vectorcaracteristico.png Graphic file (type png)
 <use imagenes/vectorcaracteristico.png>
 Package pdftex.def Info: imagenes/vectorcaracteristico.png  used on input line 
-638.
-(pdftex.def)             Requested size: 391.75668pt x 61.72952pt.
+655.
+(pdftex.def)             Requested size: 374.59286pt x 43.96346pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[40 <./imagenes/extracciondatos.png>]
-<imagenes/arquitecturaaplicacion.png, id=215, 464.4853pt x 405.01312pt>
+[41 <./imagenes/extracciondatos.png>]
+<imagenes/arquitecturaaplicacion.png, id=220, 464.4853pt x 405.01312pt>
 File: imagenes/arquitecturaaplicacion.png Graphic file (type png)
 <use imagenes/arquitecturaaplicacion.png>
 Package pdftex.def Info: imagenes/arquitecturaaplicacion.png  used on input lin
-e 649.
+e 666.
 (pdftex.def)             Requested size: 185.79083pt x 162.00237pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 658--659
+Underfull \hbox (badness 10000) in paragraph at lines 675--676
 
  []
 
-[41 <./imagenes/vectorcaracteristico.png> <./imagenes/arquitecturaaplicacion.pn
-g>] [42] [43] [44]
+[42 <./imagenes/vectorcaracteristico.png> <./imagenes/arquitecturaaplicacion.pn
+g>] [43] [44] [45]
 Cap\'{\i }tulo 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 688--690
+Underfull \hbox (badness 10000) in paragraph at lines 705--707
 
  []
 
-[45
+[46
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 718--719
+Underfull \hbox (badness 10000) in paragraph at lines 735--736
 
  []
 
-<imagenes/chicuadrado.png, id=233, 588.69937pt x 327.47343pt>
+<imagenes/chicuadrado.png, id=239, 588.69937pt x 327.47343pt>
 File: imagenes/chicuadrado.png Graphic file (type png)
 <use imagenes/chicuadrado.png>
-Package pdftex.def Info: imagenes/chicuadrado.png  used on input line 728.
+Package pdftex.def Info: imagenes/chicuadrado.png  used on input line 745.
 (pdftex.def)             Requested size: 412.08675pt x 229.22984pt.
-[46] [47 <./imagenes/chicuadrado.png>]
+[47] [48 <./imagenes/chicuadrado.png>]
 Cap\'{\i }tulo 5.
-[48
+[49
 
-] [49] (Tesis.bbl
+] [50] (Tesis.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 19--23
 []\T1/ptm/m/n/12 Erlinb (2017).  Re-des neu-ro-na-les: Con-cep-tos bá-si-cos y 
 apli-ca-cio-nes.
@@ -1089,10 +1099,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--30
 ceptron/.  [On-li-
  []
 
-[50
+[51
 
 
-] [51])) [52]
+] [52])) [53]
 \openout2 = `Apendice.aux'.
 
  (Apendice.tex
@@ -1101,12 +1111,12 @@ Ap\'{e}ndice A.
 Underfull \vbox (badness 10000) detected at line 45
  []
 
-[53
+[54
 
 
 
-] [54] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66] [67]
-[68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78] [79] [80]) [81]
+] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66] [67] [68]
+[69] [70] [71] [72] [73] [74] [75] [76] [77] [78] [79] [80] [81]) [82]
 (Tesis.aux (Datos.aux)
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
@@ -1116,11 +1126,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 21509 strings out of 480790
- 412560 string characters out of 2907048
- 701375 words of memory out of 3000000
- 37010 multiletter control sequences out of 15000+200000
- 589940 words of font info for 79 fonts, out of 3000000 for 9000
+ 21550 strings out of 481199
+ 413237 string characters out of 2915349
+ 706789 words of memory out of 3000000
+ 36641 multiletter control sequences out of 15000+200000
+ 592690 words of font info for 84 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,18n,97p,1193b,432s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX
@@ -1133,9 +1143,9 @@ eX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX/font
 s/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utm
 bi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program 
 Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Tesis.pdf (97 pages, 751900 bytes).
+Output written on Tesis.pdf (98 pages, 741212 bytes).
 PDF statistics:
- 387 PDF objects out of 1000 (max. 8388607)
+ 393 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 103 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 108 words of extra memory for PDF output out of 10000 (max. 10000000)
 

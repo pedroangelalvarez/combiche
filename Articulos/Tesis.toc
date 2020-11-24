@@ -58,17 +58,18 @@
 \contentsline {subsection}{\numberline {3.2.6}Diagrama de secuencia}{36}%
 \contentsline {subsection}{\numberline {3.2.7}Diseño de interfaces}{37}%
 \contentsline {subsection}{\numberline {3.2.8}Diseño de algoritmo}{38}%
-\contentsline {subsection}{\numberline {3.2.9}Extracción de datos}{40}%
-\contentsline {subsection}{\numberline {3.2.10}Arquitectura de la aplicación}{41}%
-\contentsline {section}{\numberline {3.3}Implementación}{42}%
-\contentsline {section}{\numberline {3.4}Funcionamiento de las redes neuronales}{42}%
-\contentsline {section}{\numberline {3.5}Función activación}{43}%
-\contentsline {section}{\numberline {3.6}Funciones del sistema:}{44}%
-\contentsline {chapter}{\numberline {4}Resultados y discusión de la tesis}{45}%
-\contentsline {section}{\numberline {4.1}Resultados computacionales}{45}%
-\contentsline {section}{\numberline {4.2}Discusión de Resultados}{46}%
-\contentsline {chapter}{\numberline {5}Consideraciones finales}{48}%
-\contentsline {section}{\numberline {5.1}Conclusiones}{48}%
-\contentsline {section}{\numberline {5.2}Trabajos futuros}{49}%
-\contentsline {chapter}{ Referencias bibliográfícas}{50}%
-\contentsline {chapter}{\numberline {A}Dataset de entrenamiento}{53}%
+\contentsline {subsection}{\numberline {3.2.9}Diseño de Red Neuronal}{40}%
+\contentsline {subsection}{\numberline {3.2.10}Extracción de datos}{41}%
+\contentsline {subsection}{\numberline {3.2.11}Arquitectura de la aplicación}{42}%
+\contentsline {section}{\numberline {3.3}Implementación}{43}%
+\contentsline {section}{\numberline {3.4}Funcionamiento de las redes neuronales}{43}%
+\contentsline {section}{\numberline {3.5}Función activación}{44}%
+\contentsline {section}{\numberline {3.6}Funciones del sistema:}{45}%
+\contentsline {chapter}{\numberline {4}Resultados y discusión de la tesis}{46}%
+\contentsline {section}{\numberline {4.1}Resultados computacionales}{46}%
+\contentsline {section}{\numberline {4.2}Discusión de Resultados}{47}%
+\contentsline {chapter}{\numberline {5}Consideraciones finales}{49}%
+\contentsline {section}{\numberline {5.1}Conclusiones}{49}%
+\contentsline {section}{\numberline {5.2}Trabajos futuros}{50}%
+\contentsline {chapter}{ Referencias bibliográfícas}{51}%
+\contentsline {chapter}{\numberline {A}Dataset de entrenamiento}{54}%
