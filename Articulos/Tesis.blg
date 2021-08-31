@@ -14,45 +14,45 @@ Database file #1: Bibliografia.bib
 Warning--there's a number but no series in pat2013introduccion
 Warning--empty publisher in pat2013introduccion
 Warning--empty journal in rossum1995python
-You've used 13 entries,
+You've used 12 entries,
             1935 wiz_defined-function locations,
-            548 strings with 6153 characters,
-and the built_in function-call counts, 4277 in all, are:
-= -- 423
-> -- 170
-< -- 13
-+ -- 56
-- -- 56
-* -- 312
-:= -- 795
-add.period$ -- 44
-call.type$ -- 13
-change.case$ -- 90
-chr.to.int$ -- 13
-cite$ -- 16
-duplicate$ -- 171
-empty$ -- 276
-format.name$ -- 73
-if$ -- 817
+            541 strings with 5965 characters,
+and the built_in function-call counts, 3873 in all, are:
+= -- 381
+> -- 157
+< -- 12
++ -- 52
+- -- 52
+* -- 275
+:= -- 727
+add.period$ -- 41
+call.type$ -- 12
+change.case$ -- 83
+chr.to.int$ -- 12
+cite$ -- 15
+duplicate$ -- 157
+empty$ -- 246
+format.name$ -- 66
+if$ -- 738
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 10
-newline$ -- 72
-num.names$ -- 39
-pop$ -- 74
+missing$ -- 9
+newline$ -- 67
+num.names$ -- 36
+pop$ -- 70
 preamble$ -- 1
-purify$ -- 92
+purify$ -- 85
 quote$ -- 0
-skip$ -- 141
+skip$ -- 130
 stack$ -- 0
-substring$ -- 213
-swap$ -- 17
+substring$ -- 176
+swap$ -- 16
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 74
+type$ -- 68
 warning$ -- 3
-while$ -- 31
+while$ -- 27
 width$ -- 0
-write$ -- 169
+write$ -- 156
 (There were 3 warnings)

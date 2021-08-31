@@ -39,7 +39,7 @@ Desarrollar un sistema basado en conocimiento mediante RNA para pronosticar las 
 \item Aplicar la metodología RUP para sistemas basados en conocimientos.
 \item Diseñar la arquitectura de nuestro sistema basado en conocimiento.
 \item Entrenar el software basándonos en el modelo computacional diseñado previamente.
-\item Analizar y comparar los resultados del software contra otros métodos de pronósticos de ventas (lineal, algorítmico).
+\item Analizar los resultados obtenidos con el software.
 \end{itemize}
 
 \section{Estructura de la tesis}
@@ -345,7 +345,21 @@ Observación, fue la técnica aplicada para la recolección de datos, específic
 La población para nuestra investigación son las ventas del 2018 hasta el 2020 en el Restaurante Combiche en el Mall Aventura Plaza - Trujillo.
 
 \subsection{Muestra}
-Este conjunto de datos está conformado por un dataset de 968 registros, que representan las ventas durante el período enero del 2018 hasta agosto del 2020.
+Este conjunto de datos está conformado por un dataset de 968 registros, que representan las ventas durante el período enero del 2018 hasta agosto del 2020. Se optó por usar un muestreo aletorio simple  con un nivel de confianza del 95\% y un error de muestreo del 5\%.
+
+\begin{equation}
+\label{eq:ecuacion}
+n = \frac{z^{2}pq}{e^2}
+\end{equation}
+
+En el que:
+\begin{enumerate}
+\item[•]$n$ = Tamaño de muestra.
+\item[•]$z$ = Coeficiente de confiabilidad 95\% al que corresponde (1.96).
+\item[•]$pq$ = Varianza de la población, ponemos la varianza mayor posible porque a mayor varianza hará falta una muestra mayor (0.25).
+\item[•]$e$ = Error muestral 5\% (0.5).
+\end{enumerate}
+
 %Este conjunto de documentos está conformado por una población de 134 documentos, los cuales fueron datos tomados de la recepción en una oficina al azar de la Universidad Nacional de Trujillo, Dirección de Calidad Universitaria, estos documentos fueron editados de tal forma que no permita dar a conocer nombres o datos que podrían ser utilizados con otros fines que no sean de estudio o investigación. Los datos obtenidos fueron:
 %\begin{table}[h!]
 %\centering
@@ -420,7 +434,6 @@ Nuestra investigación comprenderá  las siguientes etapas:
 \item Recolección de nuestra población, ventas, los cuales se utilizó en el desarrollo de la investigación.
 \item Teniendo en cuenta que se necesita entrenar a las redes neuronales, puesto que son  que las redes neuronales son heurísticas se requieren un constante ajuste para obtener un óptimo resultado.
 \item Comparar resultados del software con la información del dataset.
-
 \end{itemize}
 
 \chapter{Sistema Basado en Conocimiento Mediante RNA para Pronósticar las Ventas del Restaurante Combiche en el Mall Aventura}
@@ -591,7 +604,19 @@ El siguiente diagrama de flujo en el cual mostramos el proceso de implementació
 
 \subsection{Diseño de Red Neuronal}
 
-El siguiente gráfico generado en Tensoboard, demuestra el diseño de la red neuronal utilizada.
+El siguiente gráfico es el modelo de neurona utilizada en la red neuronal de la investigación.
+
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[scale=0.42]{imagenes/modeloneurona.png}
+		\caption{Red Neuronal utilizada en la investigación.}
+	\begin{center}
+    Fuente: Elaboración propia.
+    \end{center}
+	\label{fig:modelneurona}
+\end{figure}
+
 
 \begin{figure}[H]
 	\centering
@@ -600,7 +625,7 @@ El siguiente gráfico generado en Tensoboard, demuestra el diseño de la red neu
 	\begin{center}
     Fuente: Elaboración propia.
     \end{center}
-	\label{fig:39}
+	\label{fig:neuralnetwork}
 \end{figure}
 
 \newpage
@@ -665,6 +690,17 @@ Las redes neuronales feedforward tienen la característica de ir hacia adelante,
 Una de las funciones es mostrar gráficamente la pérdida(valores de la función de coste con los datos de entrenamiento).\\
 Además, reporta gráficamente los valores de testing y el pronóstico para las fechas a probar.\\
 Principalmente, muestra gráficamente los valores del pronóstico de la semana de la fecha seleccionada.
+
+\section{Código Fuente:}
+
+\lstinputlisting[language=Matlab,
+    basicstyle=\footnotesize,
+    numbers=left,
+    stepnumber=1,
+    showstringspaces=false,
+    tabsize=1,
+    breaklines=true,
+    breakatwhitespace=false,]{./main.py}
 
 \newpage
 

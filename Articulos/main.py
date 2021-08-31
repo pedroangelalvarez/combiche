@@ -1,12 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-'''
-import numpy as np
-np.random.seed(4)
-from sklearn.preprocessing import MinMaxScaler
-from keras.models import Sequential
-from keras.layers import Dense, LSTM
-'''
+
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from matplotlib.figure import Figure
@@ -27,7 +21,7 @@ from keras.layers import Input, Embedding, Dense, Flatten, Dropout, concatenate,
 from keras.layers import BatchNormalization, SpatialDropout1D
 from keras.callbacks import Callback
 from keras.models import Model
-from tensorflow.keras.optimizers import Adam
+from keras.optimizers import Adam
 
 
 import tkinter as tk
@@ -48,7 +42,6 @@ import os.path
 from os import path
 from shutil import copyfile
 
-#import tkk
 
 class Application(tk.Frame):
     def __init__(self, parent, *args, **kwargs):
@@ -101,21 +94,6 @@ class Application(tk.Frame):
 
         self.lf = ttk.Labelframe(self.parent, text='Ventas')
         self.lf.grid(row=3, column=0, sticky='nwes', padx=3, pady=3)
-
-        '''
-        t = np.arange(0.0,3.0,0.01)
-        df = pd.DataFrame({'t':t, 's':((2*t/3)*np.pi+120)})
-
-        fig = Figure(figsize=(5,4), dpi=100)
-        ax = fig.add_subplot(111)
-
-        df.plot(x='t', y='s', ax=ax)
-
-        self.canvas = FigureCanvasTkAgg(fig, master=lf)
-        self.canvas.draw()
-        self.canvas.get_tk_widget().grid(row=0, column=0)
-        '''
-    
     
     def saveReport(self):
         if path.exists('report.png'):
@@ -136,23 +114,6 @@ class Application(tk.Frame):
         print("GUARDADO")
 
     def graficar_predicciones(self):
-        
-        
-        #fig = Figure(figsize=(5,4), dpi=100)
-        '''
-        fig = plt.figure(figsize=(6, 5))
-        plt.plot(real[0:len(prediccion)],color='red', label='Valor real')
-        plt.plot(prediccion, color='blue', label='Predicción')
-        plt.ylim(1.1 * np.min(prediccion)/2, 1.1 * np.max(prediccion))
-        plt.xlabel('Tiempo')
-        plt.ylabel('Ingresos')
-        plt.legend()
-        plt.savefig("report.png", dpi = 150)
-        #plt.show()
-        canvas = FigureCanvasTkAgg(fig, master=self.lf)
-        canvas.draw()
-        canvas.get_tk_widget().grid(row=2, column=2)
-        '''
         ##INTERPRETACION
 
         for widget in self.lf.winfo_children():
@@ -230,8 +191,6 @@ class Application(tk.Frame):
         adimen = [x for x in results]
         inverted = scaler.inverse_transform(adimen)
         #inverted
-
-
         prediccionProxSemana = pd.DataFrame(inverted)
         prediccionProxSemana.columns = ['pronostico']
         prediccionProxSemana.plot()
@@ -290,18 +249,6 @@ class Application(tk.Frame):
             agg.dropna(inplace=True)
         return agg
 
-    '''
-    def crear_modeloFF(self):
-        PASOS=7
-        model = Sequential() 
-        model.add(Dense(PASOS, input_shape=(1,PASOS),activation='tanh'))
-        model.add(Flatten())
-        model.add(Dense(1, activation='tanh'))
-        model.compile(loss='mean_absolute_error',optimizer='Adam',metrics=["mse"])
-        model.summary()
-        return model
-    '''
-    
     def agregarNuevoValor(self,x_test,nuevoValor):
         for i in range(x_test.shape[2]-3):
             x_test[0][0][i+2] = x_test[0][0][i+3]
@@ -331,7 +278,7 @@ class Application(tk.Frame):
         x = Dense(PASOS,activation='tanh')(x)
         outp = Dense(1,activation='tanh')(x)
         model = Model(inputs=[in_dias,in_meses,in_cli], outputs=outp)
-        
+
         model.compile(loss='mean_absolute_error', 
                     optimizer='adam',
                     metrics=['MSE'])
@@ -341,14 +288,6 @@ class Application(tk.Frame):
 
     def entrenamiento(self):
         if "csv" in self.fileSelect:
-            '''
-            dias = (pd.to_datetime(fechaFin) - pd.to_datetime(fechaIni)).days
-            diasValidos = int(20*dias/100)
-            finValido = datetime.datetime.strptime(fechaFin, '%Y-%m-%d') 
-            inicioValido = finValido - timedelta(days=diasValidos)
-            inicioEntrenamiento = datetime.datetime.strptime(fechaIni, '%Y-%m-%d') 
-            finEntrenamiento = inicioValido - timedelta(days=1)
-            '''
             self.df = pd.read_csv(self.fileSelect,  parse_dates=[0], header=None,index_col=0, names=['fecha','unidades'])
             copyfile(self.fileSelect,'./temp.csv')
             self.df.head()
@@ -400,48 +339,15 @@ class Application(tk.Frame):
             EPOCHS=100
 
             self.model = self.crear_modeloEmbeddings()
-            #print(model.layers[0].get_weights()[0])
-            print(str("<---------------------------------->"))
-            for i in range(len(self.model.layers)):
-                print((self.model.layers[i]).get_weights())
-                print("********************")
-            print(str("<---------------------------------->"))
+
             continuas=training_data[['var1(t-7)','var1(t-6)','var1(t-5)','var1(t-4)','var1(t-3)','var1(t-2)','var1(t-1)']]
             valid_continuas=valid_data[['var1(t-7)','var1(t-6)','var1(t-5)','var1(t-4)','var1(t-3)','var1(t-2)','var1(t-1)']]
-            print("DATAAAAAAAAAAAAAAAAAA")
-            print(training_data['weekday'])
+
             history=self.model.fit([training_data['weekday'],training_data['month'],continuas], target_data, epochs=EPOCHS,validation_data=([valid_data['weekday'],valid_data['month'],valid_continuas],valid_target))
-            print(str("<---------------------------------->"))
-            for i in range(len(self.model.layers)):
-                print((self.model.layers[i]).get_weights())
-                print("********************")
-            print(str("<---------------------------------->"))
+            
             self.model.save('model.h5') 
-            #plot_model(self.model, "multi_input_and_output_model.png", show_shapes=True)
-            '''
-            plt.scatter(range(len(y_val)),y_val,c='g')
-            plt.scatter(range(len(results)),results,c='r')
-            plt.title('validate')
-            plt.show()
-
-            plt.plot(history.history['loss'])
-            plt.title('loss')
-            plt.plot(history.history['val_loss'])
-            plt.title('validate loss')
-            plt.show()
-            '''
-
             results=self.model.predict([valid_data['weekday'],valid_data['month'],valid_continuas])
-
-            
-            '''
-            plt.scatter(range(len(valid_target)),valid_target,c='g')
-            plt.scatter(range(len(results)),results,c='r')
-            plt.title('validate')
-            '''
             #plt.show()
-            
-            
             fig = plt.figure(figsize=(6, 5))
             plt.plot(history.history['loss'], label='loss')
             plt.title('loss')
@@ -452,14 +358,6 @@ class Application(tk.Frame):
             canvas = FigureCanvasTkAgg(fig, master=self.lf)
             canvas.draw()
             canvas.get_tk_widget().grid(row=3, column=1)
-            
-
-            '''
-            plt.title('Accuracy')
-            plt.plot(history.history['mean_squared_error'])
-            plt.show()
-            '''
-
             print("VALIDATE ")
             compara = pd.DataFrame(np.array([valid_target, [x[0] for x in results]])).transpose()
             compara.columns = ['real', 'prediccion']
@@ -486,73 +384,6 @@ class Application(tk.Frame):
             canvas = FigureCanvasTkAgg(fig, master=self.lf)
             canvas.draw()
             canvas.get_tk_widget().grid(row=3, column=2)
-            
-
-            
-
-
-
-
-            '''
-
-            dataset = pd.read_csv(self.fileSelect, index_col='Date', parse_dates=['Date'])
-            dataset.head()
-            set_entrenamiento = dataset[inicioEntrenamiento.strftime("%Y-%m-%d"):finEntrenamiento.strftime("%Y-%m-%d")].iloc[:,0:1]
-            set_validacion = dataset[inicioValido.strftime("%Y-%m-%d"):finValido.strftime("%Y-%m-%d")].iloc[:,0:1]  #20%
-
-            set_entrenamiento['Cantidad'].plot(legend=True)
-            set_validacion['Cantidad'].plot(legend=True)
-
-            fig = plt.figure(figsize=(6, 5))
-            plt.plot(set_entrenamiento['Cantidad'])
-            plt.plot(set_validacion['Cantidad'])
-            plt.xticks(rotation='vertical')
-            plt.subplots_adjust(bottom=.3)
-            plt.legend(['Entrenamiento ('+inicioEntrenamiento.strftime("%Y-%m")+' a '+finEntrenamiento.strftime("%Y-%m")+')', 'Validación ('+finValido.strftime("%Y-%m")+')'])
-            canvas = FigureCanvasTkAgg(fig, master=self.lf)
-            canvas.draw()
-            canvas.get_tk_widget().grid(row=2, column=1)
-
-            sc = MinMaxScaler(feature_range=(0,1))
-            set_entrenamiento_escalado = sc.fit_transform(set_entrenamiento)
-
-            time_step = 60
-            X_train = []
-            Y_train = []
-            m = len(set_entrenamiento_escalado)
-
-            for i in range(time_step,m):
-                X_train.append(set_entrenamiento_escalado[i-time_step:i,0])
-                Y_train.append(set_entrenamiento_escalado[i,0])
-            X_train, Y_train = np.array(X_train), np.array(Y_train)
-            X_train = np.reshape(X_train, (X_train.shape[0], X_train.shape[1], 1))
-
-            dim_entrada = (X_train.shape[1],1)
-            dim_salida = 1
-            na = 50
-
-            modelo = Sequential()
-            modelo.add(LSTM(units=na, input_shape=dim_entrada))
-            modelo.add(Dense(units=dim_salida))
-            modelo.compile(optimizer='rmsprop', loss='mse')
-            modelo.fit(X_train,Y_train,epochs=600,batch_size=32)
-
-            x_test = set_validacion.values
-            x_test = sc.transform(x_test)
-
-            X_test = []
-            for i in range(time_step,len(x_test)):
-                X_test.append(x_test[i-time_step:i,0])
-            X_test = np.array(X_test)
-            X_test = np.reshape(X_test, (X_test.shape[0],X_test.shape[1],1))
-
-            prediccion = modelo.predict(X_test)
-            prediccion = sc.inverse_transform(prediccion)
-
-            self.graficar_predicciones(set_validacion.values,prediccion)
-            '''
-
-
 
 if __name__ == "__main__":
     root = tk.Tk()
