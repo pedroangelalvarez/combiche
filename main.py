@@ -397,7 +397,7 @@ class Application(tk.Frame):
             print(training_data.shape,target_data.shape,valid_data.shape,valid_target.shape)
 
 
-            EPOCHS=100
+            EPOCHS=5000
 
             self.model = self.crear_modeloEmbeddings()
             #print(model.layers[0].get_weights()[0])
